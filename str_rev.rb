@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 def reverse_string(string)
-    
-    split_string = string.split("")
-    reversed = []
-    string.size.times { reversed << split_string.pop }
-    puts reversed.join
-    #reversed.join
+  split_string = string.split('')
+  reversed = []
+  string.size.times { reversed << split_string.pop }
+  puts reversed.join
+  # reversed.join
 end
-puts reverse_string("hello")
+puts reverse_string('hello')

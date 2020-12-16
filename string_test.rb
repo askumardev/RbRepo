@@ -1,8 +1,9 @@
-puts "satish"
-puts "kumar"
+# frozen_string_literal: true
+
+puts 'satish'
+puts 'kumar'
 
 #---------------
-puts "satish" + "kumar"
-name="satish"
-puts "my name is: "+"#{name}"
-
+puts 'satishkumar'
+name = 'satish'
+puts "my name is: #{name}"

@@ -1,4 +1,6 @@
-# Class A 
+# frozen_string_literal: true
+
+# Class A
 #     def self.hi
 #         puts "hi"
 #     end
@@ -13,4 +15,3 @@ end
 
 Shop.new
 Shop.instance.object_id
-

@@ -1,7 +1,9 @@
-p = Proc.new do |a|
-    puts "This is #{a}"
+# frozen_string_literal: true
+
+p = proc do |a|
+  puts "This is #{a}"
 end
 p.call(10)
-p.(20)
+p.call(20)
 p[30]
 p === 40

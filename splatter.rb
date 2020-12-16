@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # def meth *players
 # 	puts players
 # 	p players
@@ -18,11 +20,11 @@
 # }
 # meth data
 ############################################
-def invoice options={}
-	puts options[:company]
-	puts options[:total]
-	puts options[:state]
-	puts options[:country]
+def invoice(options = {})
+  puts options[:company]
+  puts options[:total]
+  puts options[:state]
+  puts options[:country]
 end
 
-invoice company: "Google",total: 100,state: "Hyd"
+invoice company: 'Google', total: 100, state: 'Hyd'

@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 class Animal
   def name
-    puts "Animal"
+    puts 'Animal'
   end
 end
+
 class Cat < Animal
   # def name
   #   super

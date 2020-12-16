@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class JSONServer
-  def call(env)
-    [200, {"Content-Type" => "application/json"}, ['{ "message" : "Hello!" }']]
+  def call(_env)
+    [200, { 'Content-Type' => 'application/json' }, ['{ "message" : "Hello!" }']]
   end
 end
 
@@ -23,4 +25,4 @@ use RackLogger
 
 map '/hello.json' do
   run JSONServer.new
-end  
+end
