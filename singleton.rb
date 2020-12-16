@@ -1,8 +1,16 @@
-Class A 
-    def self.hi
-        puts "hi"
-    end
+# Class A 
+#     def self.hi
+#         puts "hi"
+#     end
+# end
+
+# A.hi
+
+require 'singleton'
+class Shop
+  include Singleton
 end
 
-A.hi
+Shop.new
+Shop.instance.object_id
 
