@@ -39,6 +39,7 @@ class B < A
 end
 
 B.new.name1
+puts B.ancestors
 # obj = B.new.name
 # puts obj.methods
 # puts obj.methods.count
