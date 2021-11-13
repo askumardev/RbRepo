@@ -1,0 +1,16 @@
+first_name,last_name,email,mobile_number,address_line1,address_line2,city,state,country,zip
+Pavan,Kunche,pavan.k@gmail.com,9876543310,D No: 99-99-9/9,Narayan bagh,Mumbai,Maharashtra,India,400001
+amar,Jain,amar.j@gmail.com,9876543311,D No: 123,kphb,hyderabad,Telangana,India,500001
+Bhargavi,Bommi,bhargavi.b@gmail.com,9876543312,D No: 456,bhandra,Mumbai,Maharashtra,India,400002
+Sunil,Sura,sunil.s@gmail.com,9876543313,D No: 789,sector 10,noida,UP,India,600001
+Pavani,Krishna,pavani.k@gmail.com,9876543314,D No: 3452,samerpet,bhopal,MP,India,700001
+Pavan1,Kunche1,pavan1.k@gmail.com,9876543315,D No: 99-99-9/2,Narayan bagh,Mumbai,Maharashtra,India,400001
+amar1,Jain1,amar1.j@gmail.com,9876543316,D No: 123a,kphb,hyderabad,Telangana,India,500001
+Bhargavi1,Bommi1,bhargavi1.b@gmail.com,9876543317,D No: 456a,bhandra,Mumbai,Maharashtra,India,400002
+Sunil1,Sura1,sunil1.s@gmail.com,9876543318,D No: 789a,sector 10,noida,UP,India,600001
+Pavani1,Krishna1,pavani1.k@gmail.com,9876543319,D No: 3452a,samerpet,bhopal,MP,India,700001
+Pavan2,Kunche2,pavan2.k@gmail.com,9876543320,D No: 99-99-9/3,Narayan bagh,Mumbai,Maharashtra,India,400001
+amar2,Jain2,amar2.j@gmail.com,9876543321,D No: 123b,kphb,hyderabad,Telangana,India,500001
+Bhargavi2,Bommi2,bhargavi2.b@gmail.com,9876543322,D No: 456b,bhandra,Mumbai,Maharashtra,India,400002
+Sunil2,Sura2,sunil2.s@gmail.com,9876543323,D No: 789b,sector 10,noida,UP,India,600001
+Pavani2,Krishna2,pavani2.k@gmail.com,9876543324,D No: 3452b,samerpet,bhopal,MP,India,700001
