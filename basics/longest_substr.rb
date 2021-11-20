@@ -18,6 +18,6 @@ end
 # input = ["Extra tv in bedroom",
 #  "Extra tv in living room",
 #  "Extra tv outside the shop"]
-input = %w[helloworld hellokitty hell]
+input = %w[helloworld hellokitty hell hello hellojin]
 
 puts substr(input)

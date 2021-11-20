@@ -4,9 +4,8 @@ puts "each loop"
 end
 
 arr = [1,2,4,5]
-uts "for loop"
+puts "for loop"
 for i in arr do
   puts i
 end
 
-# https://launchschool.com/books/ruby/read/loops_iterators
