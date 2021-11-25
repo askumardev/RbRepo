@@ -1,7 +1,10 @@
 require 'pry'
-print('Enter your name: ' )
-name = gets()
-puts( "Hello #{name}" )
+print('Enter your fname: ' )
+fname = gets()
+puts( "Hello #{fname}" )
+print('Enter your lname: ' )
+lname = gets
+puts( "Hello #{lname}" )
 #-----------addition---------------
 print 'enter a value :'
 a = gets.chomp

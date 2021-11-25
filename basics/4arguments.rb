@@ -13,3 +13,11 @@ end
 puts "Hello #{showname}"
 puts( "\n\t#{(1+2) * 3}\nGoodbye" )
 
+# following  method holds default paramerer
+def say(words='hello')
+  puts words + '.'
+end
+
+say()
+say('hi')
+
