@@ -12,7 +12,8 @@ Array methods: 189
 :untrusted?, :trust, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, 
 :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, 
 :instance_of?, :kind_of?, :is_a?, :tap, :class, :clone, :display, :hash, :singleton_class, :singleton_method, :method, 
-:public_send, :define_singleton_method, :public_method, :extend, :to_enum, :enum_for, :=~, :!~, :nil?, :eql?, :respond_to?, :object_id, :send, :__send__, :!, :!=, :__id__, :equal?, :instance_eval, :instance_exec
+:public_send, :define_singleton_method, :public_method, :extend, :to_enum, :enum_for, :=~, :!~, :nil?, :eql?, :respond_to?, 
+:object_id, :send, :__send__, :!, :!=, :__id__, :equal?, :instance_eval, :instance_exec
 
 Hash methods: 192
 ---------------------
