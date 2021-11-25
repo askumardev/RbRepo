@@ -1,3 +1,6 @@
+# gets 
+# gets.chomp
+
 require 'pry'
 print('Enter your fname: ' )
 fname = gets()
