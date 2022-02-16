@@ -15,11 +15,6 @@
 #     + Each letter in pattern must map to a word with length that is at
 #       least 1.
 
-
-
-# @param {String} pattern
-# @param {String} str
-# @return {Boolean}
 def word_pattern(pattern, str)
   pattern = pattern.chars
   str = str.split(' ')
