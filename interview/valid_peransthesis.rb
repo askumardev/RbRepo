@@ -1,3 +1,4 @@
+require 'pry'
 PARENS = {
   "(" => ")",
   "{" => "}",
@@ -17,9 +18,9 @@ def valid_parentheses(string)
       ch == PARENS[stack.last] ? stack.pop : (return false)
     end
   end
-
   stack.empty?
 end
 
 p valid_parentheses("(){}[]") # true
 p valid_parentheses("[(])")   # false
+p valid_parentheses("1 + (4 + 6 * 2")
