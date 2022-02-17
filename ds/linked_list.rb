@@ -200,3 +200,17 @@ list.print
 #     @head = nil 
 #   end
 # end
+
+# list = LinkedList.new
+
+# list.push(1)
+# list.push(2)
+# list.push(3)
+# list.push(4)
+# list
+
+# list.unshift(0)
+# list
+
+# list.pretty_print
+# list.size
