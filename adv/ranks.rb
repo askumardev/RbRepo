@@ -15,8 +15,8 @@ ranks_arr = [3, 4, 3, 0, 2, 2, 3, 0, 0]
 # ranks_arr2= [4, 2, 0]
 solution(ranks_arr)
 
-hash = { 'key1' => 'val1', 'key2' => 'val2' }
-string = ''
-hash.each { |k, v| string << k << v << "\n" }
-puts "#{hash.keys.join("\n")}\n"
-puts string
+# hash = { 'key1' => 'val1', 'key2' => 'val2' }
+# string = ''
+# hash.each { |k, v| string << k << v << "\n" }
+# puts "#{hash.keys.join("\n")}\n"
+# puts string

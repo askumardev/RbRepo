@@ -1,9 +1,9 @@
 class Array
   def filter_even
-    select{|x| x%2==0}
+    select{ |x| x % 2 == 0}
   end
   def multiply_ten
-    map{|x| x *10}
+    map{ |x| x * 10}
   end
 end
 
