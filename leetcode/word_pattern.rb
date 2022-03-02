@@ -18,10 +18,10 @@
 def word_pattern(pattern, str)
   pattern = pattern.chars
   str = str.split(' ')
- if pattern.size != str.size
-  puts("F")
-   return false 
- end
+  if pattern.size != str.size
+    puts("F")
+    return false 
+  end
 
   p2s, s2p = {}, {}
   pattern.zip(str) do |p, s|
