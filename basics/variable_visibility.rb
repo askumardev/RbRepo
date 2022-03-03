@@ -1,4 +1,4 @@
-require 'pry'
+
 class Vehicle
   @@vehicle = "Sample vehicle"
 
@@ -21,7 +21,7 @@ class Car < Vehicle
   end
 end
 
-puts  Vehicle.new.vehicle
-puts Vehicle.vehicle
-puts Car.vehicle
-puts Car.new.vehicle
+puts  Vehicle.new.vehicle #not self vehicle
+puts Vehicle.vehicle      #self vehicle
+puts Car.vehicle          #self vehicle
+puts Car.new.vehicle      #dummy vehicle
