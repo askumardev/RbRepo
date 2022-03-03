@@ -1,3 +1,4 @@
+require 'pry'
 class Vehicle
   @@vehicle = "Sample vehicle"
 
@@ -11,9 +12,16 @@ class Vehicle
 end
 
 class Car < Vehicle
-  @@vehicle = "Car vehicle"
+  #@@vehicle is "Sample Vehicle" here
+  def vehicle
+    #@@vehicle is "self vehicle" here
+    @@vehicle = "dummy vehicle"
+    #@@vehicle is "dummy vehicle" here
+    puts @@vehicle
+  end
 end
-vehi = Vehicle.new
-p vehi.vehicle
-p Vehicle.vehicle
-p Car.vehicle
+
+puts  Vehicle.new.vehicle
+puts Vehicle.vehicle
+puts Car.vehicle
+puts Car.new.vehicle
