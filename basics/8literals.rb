@@ -11,11 +11,11 @@ arr = [1,2,3]           # array literal
 x = nil                 # nil literal
 
 
-puts str
+puts "str=#{str}"
 puts int_val
 puts float_val
 puts bool
 puts hash
 puts arr
 puts :sym
-puts x
+puts "x=#{x}"
