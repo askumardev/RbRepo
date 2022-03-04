@@ -1,4 +1,4 @@
-
+# This program demonstrates the functionality of class variables
 class Vehicle
   @@vehicle = "Sample vehicle"
 
