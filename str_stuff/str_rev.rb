@@ -1,3 +1,14 @@
+#string reverse without any methods
+s = "chetan barawkar"
+b = s.length - 1
+p b
+while b >= 0
+  print s[b]
+  b=b-1
+end
+puts"\n**************"
+
+
 def reverse_string(string)
   split_string = string.split('')
   reversed = []

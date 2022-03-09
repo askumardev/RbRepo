@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Feature to add new method to existing class in runtime
 
 class Object
