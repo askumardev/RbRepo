@@ -1,5 +1,5 @@
 #string reverse without any methods
-s = "chetan barawkar"
+s = "ruby programming"
 b = s.length - 1
 p b
 while b >= 0

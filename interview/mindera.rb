@@ -26,3 +26,4 @@ arr.each do |s|
   end
 end
 puts b.inspect
+puts b.to_a.inspect
