@@ -1,3 +1,7 @@
+s="hello patrick this is patrick"
+s['patrick'] = "satish"
+p s
+#================================>
 # "Hellooo" => "Helo" using each
 str = "Hellooo"
 res = ""
@@ -6,9 +10,7 @@ str.chars.each do |s|
 end
 p res
 
-#===========================>
-
-# using map
+#========Alt way using map===================>
 res1 = ""
 str.chars.map{|s| res1 += s unless res1.chars.last == s }
 p res1
