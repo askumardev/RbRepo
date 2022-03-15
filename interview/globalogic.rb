@@ -14,3 +14,12 @@ p res
 res1 = ""
 str.chars.map{|s| res1 += s unless res1.chars.last == s }
 p res1
+
+#***Alt way using next***
+arr = str.chars
+new = []
+arr.each_with_index do |x,i|
+  next if new.last == x
+  new << x
+end
+p new.join("")
