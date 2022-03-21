@@ -5,6 +5,7 @@ def valid_sentence(str, dictionary)
   dictionary.each { |w| hash[w] = true }
   # puts dictionary
   words_arr = str[0..str.length - 2].split('')
+  p words_arr
   words_arr.each do |e|
     return false unless hash[e.downcase]
   end
