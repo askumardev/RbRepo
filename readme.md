@@ -8,4 +8,11 @@
   * while
   * do..while
   * until
-  * for 
+  * for
+
+* Enumerators
+  * map/collect
+  * select
+  * each
+  * each_with_index
+  * reduce/inject
