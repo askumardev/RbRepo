@@ -16,7 +16,7 @@ dest = routes.find_index("chennai")
 (src..dest).each do |x|
   result << routes.values_at(x)
 end
-p result.flatten#.join("","=>")
+p result.flatten.join(",").gsub(",","=>")
 
 # routes = 'mumbai=>delhi=>goa=>bangalore=>chennai'.gsub!('=>', ',').split(',')
 # ind = nil
