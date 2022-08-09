@@ -12,7 +12,8 @@ puts "enter route::"
 inp = gets.chomp.to_s
 abort('no routes available/ mismatched route') if !routes.include?(inp)
 src = routes.find_index(inp)
-dest = routes.find_index("chennai")
+#dest = routes.find_index("chennai")
+dest = routes.index(routes.last)
 (src..dest).each do |x|
   result << routes.values_at(x)
 end
