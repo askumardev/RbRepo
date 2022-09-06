@@ -9,10 +9,10 @@ large = 0;
 large=arr[0];
 
 while (count<arr.size)
-    if(large<arr[count])
-        large=arr[count];
-    end
-    count=count + 1;
+  if(large<arr[count])
+      large=arr[count];
+  end
+  count=count + 1;
 end
 
 print "Largest element is: ",large,"\n";
