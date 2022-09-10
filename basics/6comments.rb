@@ -9,3 +9,5 @@ puts( "hello" ) # this is also a comment
 =end
 
 puts( "goodbye" )
+
+# ruby basics/6comments.rb
