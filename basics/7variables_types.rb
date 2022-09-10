@@ -60,3 +60,5 @@ end
 
 customer1 = Customer.new("Satish")
 customer1.display
+
+# ruby basics/7variable_types.rb
