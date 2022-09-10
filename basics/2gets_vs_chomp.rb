@@ -24,3 +24,5 @@ puts "Product = #{a.to_i * b.to_i}"
 
 puts "Division = #{a.to_i / b.to_i}"
 puts "Modulo Division = #{a.to_f / b.to_i}"
+
+# ruby basics/2gets_vs_chomp.rb
