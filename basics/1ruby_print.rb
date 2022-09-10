@@ -42,5 +42,4 @@ puts data
 p data
 pp data
 
-
-
+# ruby basics/1ruby_print.rb
