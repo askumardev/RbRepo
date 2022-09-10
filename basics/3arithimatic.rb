@@ -24,4 +24,6 @@ def divide(a, b)
   a / b
 end
 
-puts add(subtract(80,10), multiply(20,6))
+puts add(subtract(80,10), multiply(20,6))  # add(70,120)
+
+# ruby basics/3arithimatic.rb
