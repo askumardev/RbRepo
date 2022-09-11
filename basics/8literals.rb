@@ -19,3 +19,5 @@ puts hash
 puts arr
 puts :sym
 puts "x=#{x}"
+
+# ruby basics/8literals.rb
