@@ -7,3 +7,5 @@ class Ex1
 end
 e = Ex1.new
 e.say_hello
+
+# ruby basics/ex1.rb
