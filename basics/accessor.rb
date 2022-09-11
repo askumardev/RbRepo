@@ -1,3 +1,5 @@
+# ruby basics/accessor.rb
+
 # Accessors are a way to create getter and setter methods without explicitly defining them in a class.
 # There are three types fo accessors in Ruby.
 
@@ -16,6 +18,7 @@ class Movie
     @year = year
   end
 end
+pp("*********attr_reader*********")
 obj1 = Movie.new('Forrest Gump', 1994)
 p obj1.name #=> Forrest Gump
 p obj1.year #=> 1994
@@ -33,6 +36,7 @@ class Movie
     @year = year
   end
 end
+pp("*********attr_reader&&attr_writer*********")
 obj1 = Movie.new('Forrest Gump', 1994)
 obj1.name = 'Fight Club'
 obj1.year = 1999
@@ -50,8 +54,9 @@ class Movie
     @year = year
   end
 end
-obj1 = Movie.new('Forrest Gump', 1994)
+pp("*********attr_accessor*********")
+obj1 = Movie.new('Forrest Gump', 1995)
 obj1.name = 'Fight Club'
-obj1.year = 1999
+obj1.year = 2000
 p obj1.name #=> "Fight Club"
 p obj1.year #=> 1999
