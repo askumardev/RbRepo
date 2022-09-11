@@ -4,3 +4,5 @@ count.times do |n|
   print ' ' * (count - n)
   puts ' *'* (1 * n + 1)
 end
+
+# ruby basics/triangle.rb

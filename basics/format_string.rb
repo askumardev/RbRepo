@@ -1,3 +1,5 @@
+# ruby basics/format_string.rb
+
 # If a string is having any "%" prefixed literals in it, they are called as "format sequences", and that string is a format specification string.
 # "str is %[flags][width][.precision]type"
 

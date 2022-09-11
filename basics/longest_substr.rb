@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby basics/longest_substr.rb
 
 def substr(a)
   return '' unless a.length.positive?

@@ -1,3 +1,5 @@
+# ruby basics/setter.rb
+
 # A setter is a method that sets a value of an instance variable.
 # Without a setter method, you can not assign a value to an instance variable outside its class.
 # if you try to set a value of an instance variable outside its class, Ruby raises No Method Error 

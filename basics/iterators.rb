@@ -1,3 +1,5 @@
+# ruby basics/iterators.rb
+
 # Summary:
 # Each -> returns same array
 # Map & collect -> returns new array with code executed in block for each element

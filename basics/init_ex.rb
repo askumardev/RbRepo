@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby basics/init_ex.rb
 
 class Abc
   def initialize(a: a, b: b)
