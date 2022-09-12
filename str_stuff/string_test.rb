@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby str_stuff/string_test.rb
 
 # puts 'satish'
 # puts 'kumar'
