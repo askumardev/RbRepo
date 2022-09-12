@@ -1,10 +1,6 @@
 # ruby str_stuff/string_test.rb
 
 # puts 'satish'
-# puts 'kumar'
-
-# #---------------
-# puts 'satishkumar'
 # name = 'satish'
 # puts "my name is: #{name}"
 
