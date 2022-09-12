@@ -1,3 +1,5 @@
+# ruby str_stuff/str.rb
+
 "ruby".size     # 4
 "".size == 0    # true
 "".empty?   # true
