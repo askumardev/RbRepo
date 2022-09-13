@@ -1,7 +1,6 @@
-# frozen_string_literal: true
+# ruby adv/poly_duck_typing.rb
 
 # Ruby program of polymorphism using Duck typing
-
 # Creating three different classes
 class Hotel
   def enters
