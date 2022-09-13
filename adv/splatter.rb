@@ -1,3 +1,5 @@
+# ruby adv/splatter.rb
+
 prime = [3,5,7]
 
 arr = [1,2,*prime,4]
@@ -26,7 +28,6 @@ dubSplat(1,2,3, 4, a: 40, b: 50)
 # 	"Sachin": "2",
 # 	"Kohli": "3",
 # 	"Dhoni": 4
-
 # }
 # meth data
 ############################################
