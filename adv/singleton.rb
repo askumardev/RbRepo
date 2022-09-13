@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/singleton.rb
 
 # Class A
 #     def self.hi
