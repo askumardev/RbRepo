@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/rack_ex.rb
 
 class JSONServer
   def call(_env)
