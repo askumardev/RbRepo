@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/proc_ex2.rb
 
 p = proc do |a|
   puts "This is #{a}"
