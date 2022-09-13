@@ -6,3 +6,5 @@ def find_missing(sequence)
   puts missing_between.first + sequence
 end
 find_missing([2,4,6,10])
+
+# ruby adv/missing_seq.rb
