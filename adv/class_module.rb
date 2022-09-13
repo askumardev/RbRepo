@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/class_module.rb
 
 module C
   def name
