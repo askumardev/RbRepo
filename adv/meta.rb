@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/meta.rb
 
 class String
   def self.add_new_method(name)
