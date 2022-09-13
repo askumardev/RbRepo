@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/proc_ex.rb
 
 def run_procs(a, b)
   a.call
