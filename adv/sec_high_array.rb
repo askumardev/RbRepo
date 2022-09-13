@@ -14,3 +14,5 @@ end
 
 puts "First highest: #{first}"
 puts "Second highest: #{second}"
+
+# ruby adv/sec_high_array.rb
