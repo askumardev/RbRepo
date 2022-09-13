@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/ranks.rb
 
 def solution(ranks)
   rank = []
