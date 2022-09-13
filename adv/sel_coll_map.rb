@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/sel_coll_map.rb
 
 list = (1..10).to_a
 
