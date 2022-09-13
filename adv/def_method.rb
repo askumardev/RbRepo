@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/def_method.rb
 
 class Doctor
   %w[rhinoplasty checkup interpretive_dance].each do |action|
