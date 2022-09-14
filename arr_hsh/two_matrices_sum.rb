@@ -1,3 +1,5 @@
+# ruby arr_hsh/two_matrices_sum.rb
+
 # Ruby program to add two matrices
 
 Matrix1 = Array.new(2){Array.new(2)};
