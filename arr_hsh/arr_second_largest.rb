@@ -3,7 +3,6 @@
 
 arr = [12,45,23,39,38];
 count = 0;
-
 large1 = 0;
 large2 = 0;
 
@@ -20,3 +19,6 @@ while count < arr.size()
 end
 
 print "Second largest element is: ",large2,"\n";
+
+
+# ruby arr_hsh/arr_second_largest.rb
