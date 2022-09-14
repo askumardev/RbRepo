@@ -6,3 +6,5 @@ while i > 0
   i = i - 1
 end
 p b
+
+# ruby arr_hsh/arr_rev.rb
