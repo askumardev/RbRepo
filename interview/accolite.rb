@@ -7,3 +7,5 @@ index.times do |x|
 end
 new = arr + new
 p new
+
+# ruby interview/accolite.rb
