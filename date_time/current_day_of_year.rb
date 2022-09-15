@@ -7,3 +7,6 @@ curretDateTime = date_time.inspect();
 dayOfYear  = date_time.yday();
 
 print "Current day of year(Out of 365) is: ",dayOfYear;
+
+
+# ruby date_time/current_day_of_year.rb
