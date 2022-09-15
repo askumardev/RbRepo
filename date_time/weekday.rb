@@ -9,3 +9,5 @@ curretDateTime = date_time.inspect();
 weeknum  = date_time.wday();
 
 print "Weekday is: ",Weekday[weeknum];
+
+# ruby date_time/weekday.rb
