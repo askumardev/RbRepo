@@ -14,3 +14,6 @@ minute = date_time.min();
 second = date_time.sec();
 
 printf "DateTime: %02d/%02d/%04d %02d:%02d:%02d ",day, month,year,hour,minute,second;
+
+
+# ruby date_time/date_components.rb
