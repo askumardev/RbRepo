@@ -1,3 +1,5 @@
+# ruby interview/globalogic.rb
+
 s="hello patrick this is patrick"
 s['patrick'] = "satish"
 p s
