@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby interview/disp_cities.rb
 
 city_names = {
   'delhi' => '011',
