@@ -7,3 +7,5 @@ class Object
 end
 
 'satish'.sample_method
+
+# ruby interview/monkey_patch.rb
