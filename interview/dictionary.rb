@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby interview/dictionary.rb
 
 def valid_sentence(str, dictionary)
   hash = {}
