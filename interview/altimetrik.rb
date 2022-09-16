@@ -1,3 +1,5 @@
+# ruby interview/altimetrik.rb
+
 def is_palin(x)
   rev = 0
   num = x
