@@ -15,3 +15,5 @@ if(temp == sum)
 else
   puts "The #{temp} is not Armstrong"
 end
+
+# ruby interview/armstrong_no.rb
