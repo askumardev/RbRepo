@@ -1,3 +1,5 @@
+# ruby interview/nsr.rb
+
 def is_annkissam(str)
   nouns = ['abcd', 'c', 'def', 'h', 'ij', 'cde']
   verbs = ['bc', 'fg', 'g', 'hij', 'bcd']
