@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby interview/copart.rb
 
 class Range
   def doubles
