@@ -1,3 +1,5 @@
+# ruby interview/destination.rb
+
 # Finding the available destinations from given route source
 # routes "mumbai=>delhi=>goa=>bangalore=>chennai"
 # i/p: chennai
