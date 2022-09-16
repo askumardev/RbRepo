@@ -1,3 +1,5 @@
+# ruby interview/mindera.rb
+
 # Sum of consicutive array elements without methods
 a = [1,3,4,6,12,5]
 b = []
