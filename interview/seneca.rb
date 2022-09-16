@@ -1,3 +1,5 @@
+# ruby interview/seneca.rb
+
 # def arr_flatten(arr)
 #   result = []
 #   arr.each do |e|
