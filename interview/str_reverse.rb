@@ -8,3 +8,5 @@ def rev_string(str)
 end
 
 p rev_string("satish")
+
+# ruby interview/str_reverse.rb
