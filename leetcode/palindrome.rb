@@ -12,3 +12,5 @@ def is_palindrome(x)
 end
 
 is_palindrome(121)
+
+# ruby leetcode/palindrome.rb
