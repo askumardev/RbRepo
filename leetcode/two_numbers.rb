@@ -8,3 +8,5 @@ def two_sum(nums, target)
 end
 
 p two_sum([3,2,4], 7)
+
+# ruby leetcode/two_numbers.rb
