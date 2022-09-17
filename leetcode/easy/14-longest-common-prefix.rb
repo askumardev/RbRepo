@@ -25,13 +25,10 @@ def longest_common_prefix(strs)
     
     (0..prefix.size).each do |i|
       next if string[i] == prefix[i]
-      
-      return '' if i == 0
-      
+      return '' if i == 0      
       prefix = prefix[0..i - 1]
-
       break
     end
-  end  
+  end
   prefix
 end
