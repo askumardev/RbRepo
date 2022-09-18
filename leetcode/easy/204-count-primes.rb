@@ -1,3 +1,5 @@
+# ruby leetcode/easy/204-count-primes.rb
+
 # Count the number of prime numbers less than a non-negative number, n.
 
 # Example:
