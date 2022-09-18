@@ -1,3 +1,5 @@
+# ruby leetcode/medium/950-reveal-cards-in-increasing-order.rb
+
 # In a deck of cards, every card has a unique integer.  You can order the deck in any order you want.
 
 # Initially, all the cards start face down (unrevealed) in one deck.
@@ -12,7 +14,6 @@
 # The first entry in the answer is considered to be the top of the deck.
 
 # Example 1:
-
 # Input: [17,13,11,2,3,5,7]
 # Output: [2,13,3,11,5,17,7]
 # Explanation: 
