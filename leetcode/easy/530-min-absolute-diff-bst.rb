@@ -1,3 +1,5 @@
+# ruby leetcode/easy/530-min-absolute-diff-bst.rb
+
 # Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
 # [1,null,3,2]
 # Output:

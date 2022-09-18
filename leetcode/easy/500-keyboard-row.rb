@@ -1,4 +1,7 @@
-# Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard.
+# ruby leetcode/easy/500-keyboard-row.rb
+
+# Given a List of words, return the words that can be typed using letters of alphabet on only one row's of 
+# American keyboard.
  
 # Example:
 
@@ -45,3 +48,6 @@ def choose_row(word)
   
   row_chosen
 end
+
+
+find_words(["Hello", "Alaska", "Dad", "Peace"])

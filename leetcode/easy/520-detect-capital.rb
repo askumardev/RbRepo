@@ -1,3 +1,5 @@
+# ruby leetcode/easy/520-detect-capital.rb
+
 # Given a word, you need to judge whether the usage of capitals in it is right or not.
 
 # We define the usage of capitals in a word to be right when one of the following cases holds:
@@ -8,12 +10,10 @@
 # Otherwise, we define that this word doesn't use capitals in a right way.
  
 # Example 1:
-
 # Input: "USA"
 # Output: True
  
 # Example 2:
-
 # Input: "FlaG"
 # Output: False
  

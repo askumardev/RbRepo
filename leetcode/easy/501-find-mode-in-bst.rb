@@ -1,4 +1,7 @@
-# Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST.
+# ruby leetcode/easy/501-find-mode-in-bst.rb
+
+# Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in 
+# the given BST.
 
 # Assume a BST is defined as follows:
 
