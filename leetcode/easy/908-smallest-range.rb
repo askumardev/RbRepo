@@ -1,3 +1,5 @@
+# ruby leetcode/easy/908-smallest-range.rb
+
 # Given an array A of integers, for each integer A[i] we may choose any x with -K <= x <= K, and add x to A[i].
 
 # After this process, we have some array B.

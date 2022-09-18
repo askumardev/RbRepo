@@ -1,7 +1,8 @@
+# ruby leetcode/easy/824-goat-latin.rb
+
 # A sentence S is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.
 
 # We would like to convert the sentence to "Goat Latin" (a made-up language similar to Pig Latin.)
-
 # The rules of Goat Latin are as follows:
 
 # If a word begins with a vowel (a, e, i, o, or u), append "ma" to the end of the word.
@@ -15,7 +16,6 @@
 # Return the final sentence representing the conversion from S to Goat Latin. 
 
 # Example 1:
-
 # Input: "I speak Goat Latin"
 # Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 # Example 2:
