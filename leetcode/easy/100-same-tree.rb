@@ -1,3 +1,5 @@
+# ruby leetcode/easy/100-same-tree.rb
+
 # Given two binary trees, write a function to check if they are the same or not.
 
 # Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
@@ -9,25 +11,22 @@
 #          2   3     2   3
 
 #         [1,2,3],   [1,2,3]
-
 # Output: true
-# Example 2:
 
+# Example 2:
 # Input:     1         1
 #           /           \
 #          2             2
 
 #         [1,2],     [1,null,2]
-
 # Output: false
-# Example 3:
 
+# Example 3:
 # Input:     1         1
 #           / \       / \
 #          2   1     1   2
 
 #         [1,2,1],   [1,1,2]
-
 # Output: false
 
 # Definition for a binary tree node.
@@ -44,10 +43,8 @@
 # @return {Boolean}
 
 def is_same_tree(p, q)
-  @same = true
-    
-  traverse(p, q)
-  
+  @same = true    
+  traverse(p, q)  
   @same
 end
 
