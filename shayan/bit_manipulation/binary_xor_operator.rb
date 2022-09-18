@@ -1,3 +1,5 @@
+# ruby shayan/bit_manipulation/binary_xor_operator.rb
+
 def binary_xor(x, y)
   raise 'Input must only contain positive integers' if x < 0 or y < 0
 

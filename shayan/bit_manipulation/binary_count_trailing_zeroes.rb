@@ -1,3 +1,5 @@
+# ruby shayan/bit_manipulation/binary_count_trailing_zeroes.rb
+
 def binary_count_trailing_zeroes(x)
   raise 'Input must be a positive integer' if x < 0
 

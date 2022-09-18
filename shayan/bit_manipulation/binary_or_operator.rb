@@ -1,3 +1,5 @@
+# ruby shayan/bit_manipulation/binary_or_operator.rb
+
 def binary_or(x, y)
   raise 'Input must only contain positive integers' if x < 0 or y < 0
 

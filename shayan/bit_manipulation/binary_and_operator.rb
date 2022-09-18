@@ -1,3 +1,5 @@
+# ruby shayan/bit_manipulation/binary_and_operator.rb
+
 def binary_and(x, y)
   raise 'Input must only contain positive integers' if x < 0 or y < 0
 
