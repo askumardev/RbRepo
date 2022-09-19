@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby oop/method_overloading.rb
 
 class Customer
   def self.display_info(*args)

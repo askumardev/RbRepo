@@ -1,3 +1,5 @@
+# ruby oop/pub_pri_pro.rb
+
 #By default, all the methods you define will be public
 
 # Private methods can only be used within the class definition;

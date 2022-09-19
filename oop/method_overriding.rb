@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby oop/method_overriding.rb
 
 class GrandParent
   def say(message)

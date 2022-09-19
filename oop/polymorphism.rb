@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby oop/polymorphism.rb
 
 class Vehicle
   def tyreType

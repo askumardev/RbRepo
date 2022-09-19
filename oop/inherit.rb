@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby oop/inherit.rb
 
 module A
   def a1

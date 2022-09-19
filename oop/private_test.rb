@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby oop/private_test.rb
 
 class User
   def some_public_method
