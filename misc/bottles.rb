@@ -1,3 +1,5 @@
+# ruby misc/bottles.rb
+
 # Method name: bottles
 # Inputs:      A number, n
 # Returns:     Nothing
