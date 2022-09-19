@@ -1,3 +1,5 @@
+# ruby loops/next_loop.rb
+
 i = 0
 loop do
   i = i + 2

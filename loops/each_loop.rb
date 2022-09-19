@@ -9,3 +9,5 @@ puts "***each with array"
 end
 puts "*** each with single line"
 [1,2,3,4,5].each {|i| puts "i = #{i}"}
+
+# ruby loops/each_loop.rb

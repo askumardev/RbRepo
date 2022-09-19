@@ -1,3 +1,5 @@
+# ruby loops/while_ex.rb
+
 # while loop is executes repeatedly as long as condition is true
 
 x = 4

@@ -1,3 +1,5 @@
+# ruby loops/cond_if_else.rb
+
 a = 78 
 if a  < 50  
   puts "Student is failed"  
