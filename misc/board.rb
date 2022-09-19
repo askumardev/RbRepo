@@ -1,3 +1,5 @@
+# ruby misc/board.rb
+
 # Classes: Board
 
 # Let's write a class that represents a basic grid-based "game board",
