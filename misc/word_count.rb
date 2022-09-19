@@ -1,3 +1,5 @@
+# ruby misc/word_count.rb
+
 # Method name: word_count
 # Input: A string representing an English sentence
 # Returns: The number of words in the sentence

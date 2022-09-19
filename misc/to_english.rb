@@ -1,4 +1,6 @@
-# Method name: to_roman
+# ruby misc/to_english.rb
+
+# Method name: to_english
 # Inputs:      A number
 # Returns:     A String representing the number in English
 # Prints:      Nothing

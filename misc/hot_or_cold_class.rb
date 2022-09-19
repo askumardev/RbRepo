@@ -1,3 +1,5 @@
+# ruby misc/hot_or_cold_class.rb
+
 # Classes: HotOrCold
 
 # We're going to object-orient-ify the hot_or_cold kata.

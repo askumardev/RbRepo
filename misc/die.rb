@@ -1,3 +1,5 @@
+# ruby misc/die.rb
+
 # Classes: Die
 
 # Your job is to implement the Die#roll instance method.  We've hard-coded

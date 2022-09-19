@@ -1,3 +1,5 @@
+# ruby misc/print_pyramid.rb
+
 # Method name: print_pyramid
 # Input: a number n
 # Returns: Nothing

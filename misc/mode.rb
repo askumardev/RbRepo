@@ -1,3 +1,5 @@
+# ruby misc/mode.rb
+
 # Method name: mode
 # Inputs:      An arbitrary array -- could be of anything
 # Returns:     The item in the array which occurs most frequently (the mode)

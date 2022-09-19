@@ -1,3 +1,5 @@
+# ruby misc/factorial.rb
+
 # Method name: factorial
 # Inputs:      A single non-negative integer, n
 # Returns:     The factorial of n (see below)

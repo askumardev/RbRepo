@@ -1,3 +1,5 @@
+# ruby misc/pig_latin.rb
+
 # Method name: pig_latin
 # Inputs:      A string representing a single word (i.e., no spaces)
 # Returns:     The word translated into "pig latin"

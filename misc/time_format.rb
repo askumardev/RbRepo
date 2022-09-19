@@ -1,3 +1,5 @@
+# ruby misc/time_format.rb
+
 # Method name: time_format
 # Inputs:      A number, representing seconds
 # Returns:     A string, describing the number of weeks, days, minutes, seconds

@@ -1,3 +1,5 @@
+# ruby misc/pad_array.rb
+
 # Method name: pad_array
 # Inputs:      An array, a minimum size, and a padding element
 # Returns:     An array which has been padded with the padding element

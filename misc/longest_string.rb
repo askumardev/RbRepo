@@ -1,3 +1,5 @@
+# ruby misc/longest_string.rb
+
 # Method name: longest_string(list)
 # Inputs:      a list of strings
 # Returns:     the longest string in the list

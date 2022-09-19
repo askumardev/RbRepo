@@ -1,3 +1,5 @@
+# ruby misc/print_horizontal_pyramid.rb
+
 # Method name: print_horizontal_pyramid
 # Input: a number n
 # Returns: Nothing

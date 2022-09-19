@@ -1,3 +1,5 @@
+# ruby misc/hot_or_cold.rb
+
 # Method name: hot_or_cold(num_to_guess)
 # Input: a single number, num_to_guess
 # Returns: Nothing

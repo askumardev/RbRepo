@@ -1,3 +1,5 @@
+# ruby misc/is_fibonacci.rb
+
 # Method:  is_fibonacci?(n)
 # Inputs:  A single non-negative integer +n+
 # Returns: true if +n+ is a Fibonacci number and false otherwise

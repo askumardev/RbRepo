@@ -1,3 +1,5 @@
+# ruby misc/count_in_list.rb
+
 # Method name: count_in_list(list, item_to_count)
 # Inputs:      1. a list of anything, 2. an item for us to count in the list
 # Returns:     The number of times our item is contained in the input list

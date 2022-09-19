@@ -1,3 +1,5 @@
+# ruby misc/sum.rb
+
 # Method name: sum
 # Input: a list of numbers
 # Returns: the SUM of all the numbers in the list

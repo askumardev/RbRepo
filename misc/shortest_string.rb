@@ -1,3 +1,5 @@
+# ruby misc/shortest_string.rb
+
 # Method name: shortest_string(list)
 # Inputs:      a list of strings
 # Returns:     the shortest string in the list

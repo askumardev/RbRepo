@@ -1,3 +1,5 @@
+# ruby misc/person_notes.rb
+
 # Classes: Person
 #
 # We're going to learn how to define classes in Ruby and create custom

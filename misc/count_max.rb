@@ -1,3 +1,5 @@
+# ruby misc/count_max.rb
+
 # Method name: count_max
 # Inputs:      A list of numbers
 # Returns:     The number of times the largest number in the list

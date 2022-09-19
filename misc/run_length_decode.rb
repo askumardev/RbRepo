@@ -1,4 +1,6 @@
-# Method name: run_length_encode
+# ruby misc/run_length_decode.rb
+
+# Method name: run_length_decode
 # Inputs:      A String that has been "run-length encoded"
 # Returns:     The original string
 # Prints:      Nothing

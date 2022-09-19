@@ -1,3 +1,5 @@
+# ruby misc/min.rb
+
 # Method name: min
 # Input: a list of numbers
 # Returns: the SMALLEST number in the list

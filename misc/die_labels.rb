@@ -1,3 +1,5 @@
+# ruby misc/die_labels.rb
+
 # Classes: Die
 
 # Now write a Die class that can return more than numbers.

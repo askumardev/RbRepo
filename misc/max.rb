@@ -1,3 +1,5 @@
+# ruby misc/max.rb
+
 # Method name: max
 # Input: a list of numbers
 # Returns: the largest number in the list

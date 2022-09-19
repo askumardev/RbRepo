@@ -1,3 +1,5 @@
+# ruby misc/mean.rb
+
 # Method name: mean
 # Input: a list of numbers
 # Returns: the MEAN (aka average) of all the numbers in the list

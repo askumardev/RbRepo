@@ -1,3 +1,5 @@
+# ruby misc/print_square.rb
+
 # Method name: print_square
 # Input: a number n
 # Returns: Nothing

@@ -1,3 +1,5 @@
+# ruby misc/run_length_decode.rb
+
 # Method name: run_length_encode
 # Inputs:      A String to be encoded
 # Returns:     A String that has been "run-length encoded"

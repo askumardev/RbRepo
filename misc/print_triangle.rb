@@ -1,3 +1,5 @@
+# ruby misc/print_triangle.rb
+
 # Method name: print_triangle
 # Input: a number n
 # Returns: Nothing

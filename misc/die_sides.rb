@@ -1,3 +1,5 @@
+# ruby misc/die_sides.rb
+
 # Classes: Die
 
 # This is a variation on the previous Die class.  Rather than hard-coding
