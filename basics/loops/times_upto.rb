@@ -1,4 +1,4 @@
-# ruby loops/times_upto.rb
+# ruby basics/loops/times_upto.rb
 
 5.times do |i|
   puts "i = #{i}"

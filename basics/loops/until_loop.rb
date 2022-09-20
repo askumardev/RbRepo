@@ -1,4 +1,4 @@
-# ruby loops/until_loop.rb
+# ruby basics/loops/until_loop.rb
 
 # until loop executes while condition is false
 

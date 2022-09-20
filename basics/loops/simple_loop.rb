@@ -1,4 +1,4 @@
-# ruby loops/simple_loop.rb
+# ruby basics/loops/simple_loop.rb
 
 loop do
   puts "This will keep printing until you hit Ctrl + C"

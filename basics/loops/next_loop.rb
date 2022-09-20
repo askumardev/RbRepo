@@ -1,4 +1,4 @@
-# ruby loops/next_loop.rb
+# ruby basics/loops/next_loop.rb
 
 i = 0
 loop do
