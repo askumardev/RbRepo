@@ -1,3 +1,5 @@
+# ruby ds/Collections/Stack.rb
+
 stk = []
 stk.push(1)
 stk.push(2)
