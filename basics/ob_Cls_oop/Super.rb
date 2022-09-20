@@ -1,4 +1,4 @@
-# ruby basics/super_ex.rb
+# ruby basics/Super.rb
 
 class Animal
   def name

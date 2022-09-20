@@ -1,4 +1,4 @@
-# ruby basics/init_ex.rb
+# ruby basics/initializer.rb
 
 class Abc
   def initialize(a: a, b: b)

@@ -1,4 +1,4 @@
-# ruby ds/basics/Nested.rb
+# ruby ds/basics/NestedCls.rb
 
 class OuterClass
   class NestedClass
