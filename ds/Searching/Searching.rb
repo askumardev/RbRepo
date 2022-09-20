@@ -1,3 +1,5 @@
+# ruby ds/Searching/Searching.rb
+
 require 'set'
 
 def linearSearchUnsorted(arr, value)

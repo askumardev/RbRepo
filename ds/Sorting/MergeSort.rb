@@ -1,3 +1,5 @@
+# ruby ds/Sorting/MergeSort.rb
+
 def MergeSort(arr)
   size = arr.size
   tempArray = Array.new(size,0)
