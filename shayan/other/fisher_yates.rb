@@ -1,3 +1,5 @@
+# ruby shayan/other/fisher_yates.rb
+
 # Fisher and Yates Shuffle is one of the simplest and most popular shuffling algorithm
 def fisher_yates_shuffle(array)
   n = array.length

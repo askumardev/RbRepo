@@ -1,4 +1,4 @@
-# ruby loops/for_loop.rb
+# ruby basics/loops/for_loop.rb
 
 #for loop : rarely used in modern ruby
 
