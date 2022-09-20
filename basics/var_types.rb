@@ -1,3 +1,5 @@
+# ruby basics/var_types.rb
+
 =begin
   Local variables : A local variable name starts with a lower case or underscore(_).
                     It is only accessible or have its scope within the block of its initialization.
@@ -60,5 +62,3 @@ end
 
 customer1 = Customer.new("Satish")
 customer1.display
-
-# ruby basics/var_types.rb

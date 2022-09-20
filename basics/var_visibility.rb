@@ -1,4 +1,4 @@
-# ruby basics/variable_visibility.rb
+# ruby basics/var_visibility.rb
 
 # This program demonstrates the functionality of class variables
 class Vehicle
