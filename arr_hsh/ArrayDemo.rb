@@ -1,4 +1,4 @@
-# ruby ds/basics/ArrayDemo.rb
+# ruby arr_hsh/ArrayDemo.rb
 
 class ArrayDemo
   def initialize()
