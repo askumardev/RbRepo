@@ -1,3 +1,5 @@
+# ruby arr_hsh/single_number.rb
+
 # Challenge name: Single Number
 #
 # Given a non-empty array of integers nums, every element appears twice

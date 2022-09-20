@@ -1,8 +1,11 @@
+# ruby arr_hsh/next_greater_element.rb
+
 # You are given two integer arrays nums1 and nums2 both of unique elements, where nums1 is a subset of nums2.
 #
 # Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 #
-# The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, return -1 for this number.
+# The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not 
+# exist, return -1 for this number.
 
 # Example 1:
 #
@@ -29,7 +32,8 @@
 
 # Complexity Analysis
 # 
-# Time complexity: O(m*n). The complete nums1 array (of size n) needs to be scanned for all the m elements of nums2 in the worst case.
+# Time complexity: O(m*n). The complete nums1 array (of size n) needs to be scanned for all the m elements of nums2 in 
+# the worst case.
 # Space complexity: O(1). No additional space since we're swapping elements in nums1 and returning the input array.
 
 # @param {Integer[]} nums1

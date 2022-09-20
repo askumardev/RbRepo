@@ -1,3 +1,5 @@
+# ruby arr_hsh/find_duplicates_in_array.rb
+
 # Find All Duplicates in an Array
 #
 # Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array),

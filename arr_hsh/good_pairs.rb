@@ -1,3 +1,5 @@
+# ruby arr_hsh/good_pairs.rb
+
 # Challenge name: Number of good pairs
 #
 # Given an array of integers nums.

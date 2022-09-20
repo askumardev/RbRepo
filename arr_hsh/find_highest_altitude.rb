@@ -1,3 +1,5 @@
+# ruby arr_hsh/find_highest_altitude.rb
+
 # Find the Highest Altitude
 
 # There is a biker going on a road trip. The road trip

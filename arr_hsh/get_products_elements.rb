@@ -1,3 +1,5 @@
+# ruby arr_hsh/get_products_elements.rb
+
 # Arrays - Get Products of all other elements in Ruby
 
 # Algorithm challenge description:

@@ -1,3 +1,5 @@
+# ruby arr_hsh/array_sorted_squares.rb
+
 # Arrays - Sorted Squares
 
 # Algorithm challenge description:

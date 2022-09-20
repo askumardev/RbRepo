@@ -1,3 +1,5 @@
+# ruby arr_hsh/intersection.rb
+
 # Challenge name: Intersection of two arrays ii
 #
 # Given two arrays, write a function to compute their intersection.
