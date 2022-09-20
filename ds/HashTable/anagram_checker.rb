@@ -1,3 +1,5 @@
+# ruby ds/HashTable/anagram_checker.rb
+
 # Challenge name: Is anagram
 #
 # Given two strings s and t , write a function to determine

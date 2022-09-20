@@ -1,3 +1,5 @@
+# ruby ds/HashTable/uncommon_words.rb
+
 # Challenge name: Uncommon words from two sentences
 #
 # We are given two sentences A and B.

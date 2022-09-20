@@ -1,3 +1,5 @@
+# ruby ds/HashTable/good_pairs.rb
+
 # Challenge name: Number of good pairs
 #
 # Given an array of integers nums.

@@ -1,3 +1,5 @@
+# ruby ds/HashTable/richest_customer_wealth.rb
+
 # Challenge name: Richest Customer Wealth
 #
 # You are given an m x n integer grid accounts where accounts[i][j]

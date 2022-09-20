@@ -1,6 +1,5 @@
 # ruby ds/HashTable/CounterMap.rb
 
-
 class Counter
   def initialize()
     @hm = {}

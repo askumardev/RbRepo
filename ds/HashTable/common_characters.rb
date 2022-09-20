@@ -1,3 +1,5 @@
+# ruby ds/HashTable/common_characters.rb
+
 # Challenge name: Find Common Characters
 #
 # Given an array A of strings made only from lowercase letters, return a list

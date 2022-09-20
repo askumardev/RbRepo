@@ -1,4 +1,7 @@
-# Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a sorted array of only the integers that appeared in all three arrays.
+# ruby ds/HashTable/arrays_intersection.rb
+
+# Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a 
+# sorted array of only the integers that appeared in all three arrays.
 #
 # Example 1:
 #
