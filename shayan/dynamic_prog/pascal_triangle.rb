@@ -1,20 +1,19 @@
+# ruby shayan/dynamic_prog/pascal_triangle.rb
+
 # Given an integer row_index, return the rowIndexth (0-indexed) row of the Pascal's triangle.
-# Example 1:
-#
+
+# Example 1:#
 # Input: row_index = 3
 # Output: [1,3,3,1]
 #
-# Example 2:
-#
+# Example 2:#
 # Input: row_index = 0
 # Output: [1]
 #
-# Example 3:
-#
+# Example 3:#
 # Input: row_index = 1
 # Output: [1,1]
 
-#
 # Approach 1: Brute Force
 #
 
