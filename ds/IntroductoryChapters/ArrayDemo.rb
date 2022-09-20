@@ -1,3 +1,5 @@
+# ruby ds/IntroductoryChapters/ArrayDemo.rb
+
 class ArrayDemo
   def initialize()
     @numbers = Array.new(100)

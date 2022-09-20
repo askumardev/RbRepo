@@ -1,3 +1,5 @@
+# ruby ds/IntroductoryChapters/Analysis.rb
+
 def fun1(n)
   m = 0
   i = 0

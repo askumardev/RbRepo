@@ -1,3 +1,5 @@
+# ruby ds/IntroductoryChapters/ClassExample.rb
+
 class ClassExample
   def initialize( name )
     @name = name

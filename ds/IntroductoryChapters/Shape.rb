@@ -1,3 +1,5 @@
+# ruby ds/IntroductoryChapters/Shape.rb
+
 class Shape
   attr_accessor :colour
   def initialize(colour = "black")

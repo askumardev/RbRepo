@@ -1,3 +1,5 @@
+# ruby ds/IntroductoryChapters/NQueen.rb
+
 def isPrime(n)
   answer = (n > 1) ? true : false
   i = 2
