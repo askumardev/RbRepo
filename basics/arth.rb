@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby basics/arth.rb
 
 def arth(num1, num2)
   num1 + num2
@@ -25,5 +25,3 @@ def divide(a, b)
 end
 
 puts add(subtract(80,10), multiply(20,6))  # add(70,120)
-
-# ruby basics/3arithimatic.rb

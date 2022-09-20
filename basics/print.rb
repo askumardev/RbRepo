@@ -1,3 +1,5 @@
+# ruby basics/print.rb
+
 # print : Displays object without new line. Allows you to print multiple times on the same line
 
 # puts : Displays object and adds a new line at the end
@@ -41,5 +43,3 @@ print data
 puts data
 p data
 pp data
-
-# ruby basics/1ruby_print.rb

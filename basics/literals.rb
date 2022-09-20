@@ -1,3 +1,5 @@
+# ruby basics/literals.rb
+
 # A literal is any notation that lets you to represent a fixed value in source code. Below are literals in ruby
 # nil is a way of expressing 'nothing'
 
@@ -19,5 +21,3 @@ puts hash
 puts arr
 puts :sym
 puts "x=#{x}"
-
-# ruby basics/8literals.rb

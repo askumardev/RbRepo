@@ -1,4 +1,4 @@
-# ruby ds/basics/Hello.rb
+# ruby basics/Hello.rb
 
 # This is a single line comment.
 

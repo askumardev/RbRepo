@@ -1,3 +1,5 @@
+# ruby basics/comments.rb
+
 # this is a single line comment
 
 puts( "hello" ) # this is also a comment
@@ -9,5 +11,3 @@ puts( "hello" ) # this is also a comment
 =end
 
 puts( "goodbye" )
-
-# ruby basics/6comments.rb
