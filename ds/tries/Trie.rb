@@ -1,4 +1,4 @@
-# ruby ds/String/Trie.rb
+# ruby ds/String/tries/Trie.rb
 
 class Trie
   class Node

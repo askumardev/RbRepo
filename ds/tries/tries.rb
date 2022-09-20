@@ -1,3 +1,5 @@
+# ruby ds/String/tries/tries.rb
+
 # A Trie (prefix tree) is a kind of search tree used to provide quick lookup
 # of words/patterns in a set of words. A basic Trie however has O(n^2)
 # space complexity making it impractical in practice.
