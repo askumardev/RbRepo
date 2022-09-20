@@ -1,3 +1,5 @@
+# ruby shayan/discrete_maths/lcm.rb
+
 # LCM (Least Common Multiple) of two numbers is the smallest number which can be divided by both numbers.
 
 p 'Least Common Multiple'

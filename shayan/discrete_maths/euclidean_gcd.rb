@@ -1,3 +1,5 @@
+# ruby shayan/discrete_maths/euclidean_gcd.rb
+
 # https://en.wikipedia.org/wiki/Euclidean_algorithm
 
 def euclidean_gcd(a, b)
