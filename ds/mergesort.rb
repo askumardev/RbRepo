@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby ds/mergesoft.rb
 
 def merge_sort(list)
   if list.length <= 1

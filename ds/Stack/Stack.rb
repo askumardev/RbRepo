@@ -1,3 +1,5 @@
+# ruby ds/Stack/Stack.rb
+
 class Stack
   def initialize(capacity=1000)
     @capacity = capacity

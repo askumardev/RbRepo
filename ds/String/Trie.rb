@@ -1,3 +1,5 @@
+# ruby ds/String/Trie.rb
+
 class Trie
   class Node
     attr_accessor :child, :isLastChar

@@ -1,3 +1,5 @@
+# ruby ds/Stack/StackExercise.rb
+
 def isBalancedParenthesis(expn)
   stk = []
   expn.split("").each  do |ch|

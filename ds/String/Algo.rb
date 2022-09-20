@@ -1,3 +1,5 @@
+# ruby ds/String/Algo.rb
+
 def BruteForceSearch(text, pattern)
   i = 0
   j = 0

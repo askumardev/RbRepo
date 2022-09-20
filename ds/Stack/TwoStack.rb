@@ -1,3 +1,5 @@
+# ruby ds/Stack/TwoStack.rb
+
 class TwoStack
   def initialize(size = 50)
     @MAX_SIZE = size

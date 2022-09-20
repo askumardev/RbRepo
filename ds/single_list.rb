@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby ds/single_list.rb
 
 a = [1, 2, 3, 4, 5, 6, 7, 8]
 def insert(arr, item, pos)

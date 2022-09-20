@@ -1,3 +1,5 @@
+# ruby ds/String/StringTree.rb
+
 class StringTree
   class Node
     attr_accessor :value, :count, :lChild, :rChild
