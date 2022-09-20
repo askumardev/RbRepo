@@ -1,4 +1,4 @@
-# ruby oop/method_overloading.rb
+# ruby basics/ObjClsOop/method_overloading.rb
 
 class Customer
   def self.display_info(*args)

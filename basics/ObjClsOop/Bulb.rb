@@ -1,4 +1,4 @@
-# ruby ds/basics/Bulb.rb
+# ruby basics/ObjClsOop/Bulb.rb
 
 class Bulb
   def initialize()

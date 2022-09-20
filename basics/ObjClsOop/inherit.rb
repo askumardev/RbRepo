@@ -1,4 +1,4 @@
-# ruby oop/inherit.rb
+# ruby basics/ObjClsOop/inherit.rb
 
 module A
   def a1

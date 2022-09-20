@@ -1,4 +1,4 @@
-# ruby oop/include_extend.rb
+# ruby basics/ObjClsOop/include_extend.rb
 
 module SayHello
 	def hello

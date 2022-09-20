@@ -1,4 +1,4 @@
-# ruby basics/setter.rb
+# ruby basics/ObjClsOop/setter.rb
 
 # A setter is a method that sets a value of an instance variable.
 # Without a setter method, you can not assign a value to an instance variable outside its class.

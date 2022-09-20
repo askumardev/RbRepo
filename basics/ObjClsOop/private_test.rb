@@ -1,4 +1,4 @@
-# ruby oop/private_test.rb
+# ruby basics/ObjClsOop/private_test.rb
 
 class User
   def some_public_method

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby basics/ObjClsOop/ex1.rb
 
 class Ex1
   def say_hello
@@ -7,5 +7,3 @@ class Ex1
 end
 e = Ex1.new
 e.say_hello
-
-# ruby basics/ex1.rb

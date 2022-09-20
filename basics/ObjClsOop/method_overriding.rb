@@ -1,4 +1,4 @@
-# ruby oop/method_overriding.rb
+# ruby basics/ObjClsOop/method_overriding.rb
 
 class GrandParent
   def say(message)

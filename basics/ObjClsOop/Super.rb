@@ -1,4 +1,4 @@
-# ruby basics/Super.rb
+# ruby basics/ObjClsOop/Super.rb
 
 class Animal
   def name

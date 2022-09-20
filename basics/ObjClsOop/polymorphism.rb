@@ -1,4 +1,4 @@
-# ruby oop/polymorphism.rb
+# ruby basics/ObjClsOop/polymorphism.rb
 
 class Vehicle
   def tyreType

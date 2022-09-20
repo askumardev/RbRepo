@@ -1,4 +1,4 @@
-# ruby ds/basics/ClassExample.rb
+# ruby basics/ObjClsOop/ClassExample.rb
 
 class ClassExample
   def initialize( name )

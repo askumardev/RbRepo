@@ -1,4 +1,4 @@
-# ruby ds/basics/Shape.rb
+# ruby basics/ObjClsOop/Shape.rb
 
 class Shape
   attr_accessor :colour

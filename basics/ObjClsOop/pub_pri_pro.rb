@@ -1,4 +1,4 @@
-# ruby oop/pub_pri_pro.rb
+# ruby basics/ObjClsOop/pub_pri_pro.rb
 
 #By default, all the methods you define will be public
 
