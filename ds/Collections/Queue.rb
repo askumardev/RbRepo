@@ -1,3 +1,5 @@
+# ruby ds/Collections/Queue.rb
+
 que = Queue.new()
 que.push(1)
 que.push(2)
