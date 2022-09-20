@@ -1,3 +1,5 @@
+# ruby ds/HashTable/HashTableSC.rb
+
 class HashTableSC
   class Node
     attr_accessor :value, :next

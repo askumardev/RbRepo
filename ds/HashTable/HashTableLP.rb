@@ -1,3 +1,5 @@
+# ruby ds/HashTable/HashTableLP.rb
+
 class HashTable
   def initialize(tSize)
     @EMPTY_NODE = -1
