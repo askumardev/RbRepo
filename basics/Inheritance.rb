@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Inheritance.rb
+# ruby ds/basics/Inheritance.rb
 
 #implements BulbInterface
 class Bulb

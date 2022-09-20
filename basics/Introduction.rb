@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Introduction.rb
+# ruby ds/basics/Introduction.rb
 
 def increment(var)
   var += 1

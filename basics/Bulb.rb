@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Bulb.rb
+# ruby ds/basics/Bulb.rb
 
 class Bulb
   def initialize()

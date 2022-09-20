@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Calculator.rb
+# ruby ds/basics/Calculator.rb
 
 class Calculator
   def initialize(val = 0)

@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/BulbDemo.rb
+# ruby ds/basics/BulbDemo.rb
 
 class Bulb
   #Class Variables 

@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Fibo.rb
+# ruby interview/Fibo.rb
 
 def fibonacci(n)
   if n <= 1 then

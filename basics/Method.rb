@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/Method.rb
+# ruby ds/basics/Method.rb
 
 def hello
   puts "Hello, World!"

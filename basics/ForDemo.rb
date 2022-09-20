@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/ForDemo.rb
+# ruby ds/basics/ForDemo.rb
 
 @text = "Hello, World!"
 @PI = 3.141592653589793

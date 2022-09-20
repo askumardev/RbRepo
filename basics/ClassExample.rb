@@ -1,4 +1,4 @@
-# ruby ds/IntroductoryChapters/ClassExample.rb
+# ruby ds/basics/ClassExample.rb
 
 class ClassExample
   def initialize( name )
