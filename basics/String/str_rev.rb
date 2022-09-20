@@ -1,4 +1,4 @@
-# ruby str_stuff/str_rev.rb
+# ruby basics/String/str_rev.rb
 
 #string reverse without any methods
 s = "ruby programming"

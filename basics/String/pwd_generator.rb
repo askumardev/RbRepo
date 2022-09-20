@@ -7,4 +7,4 @@ p password
 password = password.chars.sample(8).join
 puts password
 
-# ruby str_stuff/pwd_generator.rb
+# ruby basics/String/pwd_generator.rb

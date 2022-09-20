@@ -1,4 +1,4 @@
-# ruby str_stuff/str.rb
+# ruby basics/String/str.rb
 
 "ruby".size     # 4
 "".size == 0    # true

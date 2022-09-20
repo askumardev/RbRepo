@@ -16,4 +16,4 @@ p str2.split #returns arry ["Lorem", "Ipsum",...]
 p str2.split(//) #["L", "o", "r", "e", "m", " ",...]
 p str2.chars
 
-# ruby str_stuff/split_strip.rb
+# ruby basics/String/split_strip.rb

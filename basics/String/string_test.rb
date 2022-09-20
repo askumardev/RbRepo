@@ -1,4 +1,4 @@
-# ruby str_stuff/string_test.rb
+# ruby basics/String/string_test.rb
 
 # puts 'satish'
 # name = 'satish'
