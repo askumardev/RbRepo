@@ -1,3 +1,5 @@
+# ruby ds/Searching/recursive_double_linear_search.rb
+
 # Iterate through the array to find the index of key using recursion.
 
 def recursive_double_linear_search(data, key, left = 0, right = 0)

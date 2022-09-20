@@ -1,3 +1,5 @@
+# ruby ds/Searching/ternary_search.rb
+
 #         Ternary Search
 # -------------------------------
 # Ternary search is a searching technique that is used to search the position of a specific value in an array.
@@ -11,24 +13,24 @@
 def ternary_search(l, r, key, arr)
     # l is the starting index and r is the ending index of the array/sub-array.
   if r >= l
-      # find mid1 and mid2
-      mid1 = l + (r - l) / 3
-      mid2 = r - (r - l) / 3
-      # check if key is equal to mid1
-      if arr[mid1] == key
-          mid1
-      # check if key is equal to mid2
-      elsif arr[mid2] == key
-          mid2
-      # Since key is not present at mid, check in which region it is present
-      # then repeat the Search operation in that region
-      elsif key < arr[mid1]
-          ternary_search(l, mid1 - 1, key, arr)
-      elsif key > arr[mid2]
-          ternary_search(mid2 + 1, r, key, arr)
-      else
-          ternary_search(mid1 + 1, mid2 - 1, key, arr)
-      end
+    # find mid1 and mid2
+    mid1 = l + (r - l) / 3
+    mid2 = r - (r - l) / 3
+    # check if key is equal to mid1
+    if arr[mid1] == key
+        mid1
+    # check if key is equal to mid2
+    elsif arr[mid2] == key
+        mid2
+    # Since key is not present at mid, check in which region it is present
+    # then repeat the Search operation in that region
+    elsif key < arr[mid1]
+        ternary_search(l, mid1 - 1, key, arr)
+    elsif key > arr[mid2]
+        ternary_search(mid2 + 1, r, key, arr)
+    else
+        ternary_search(mid1 + 1, mid2 - 1, key, arr)
+    end
   end
 end
 

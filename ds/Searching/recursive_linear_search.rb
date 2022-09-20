@@ -1,3 +1,5 @@
+# ruby ds/Searching/recursive_linear_search.rb
+
 # A pure Ruby implementation of a recursive linear search algorithm
 
 def rec_linear_search(sequence, low, high, target)

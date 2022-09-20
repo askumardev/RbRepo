@@ -1,3 +1,5 @@
+# ruby ds/Searching/double_linear_search.rb
+
 # Iterate through the array from both sides to find the index of search_item.
 
 def double_linear_search(array, search_item)

@@ -1,3 +1,5 @@
+# ruby ds/Searching/linear_search.rb
+
 # Looks through array for a value in O(n) time.
 # Array does not need to be sorted.
 def linear_search(array, key)

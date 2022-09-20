@@ -1,3 +1,5 @@
+# ruby ds/Searching/binary_search.rb
+
 # Searches through a list for a value in O(log(n)) time.
 # The list must be sorted.
 def binary_search(array, key)
