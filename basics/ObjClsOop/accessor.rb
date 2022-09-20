@@ -1,4 +1,4 @@
-# ruby basics/accessor.rb
+# ruby basics/ObjClsOop/accessor.rb
 
 # Accessors are a way to create getter and setter methods without explicitly defining them in a class.
 # There are three types fo accessors in Ruby.
