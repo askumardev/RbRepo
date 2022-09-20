@@ -1,3 +1,5 @@
+# ruby ds/Queue/queue.rb
+
 # A queue is like a waiting list.
 # Imagine you are waiting in line to buy the latest Android product
 # or getting a parking ticket. These are queues!
