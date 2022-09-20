@@ -11,4 +11,4 @@ def fibonacci(n)
 end
 puts fibonacci(15)
 
-# ruby basics/fibonaci.rb
+# ruby interview/fibonaci.rb

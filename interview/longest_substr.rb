@@ -1,4 +1,4 @@
-# ruby basics/longest_substr.rb
+# ruby interview/longest_substr.rb
 
 def substr(a)
   return '' unless a.length.positive?

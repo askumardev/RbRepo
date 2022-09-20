@@ -1,4 +1,4 @@
-# ruby basics/fizbuz.rb
+# ruby interview/fizbuz.rb
 
 def fizbuz(n)
   hash = {}

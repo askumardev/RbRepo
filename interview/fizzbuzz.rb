@@ -1,4 +1,4 @@
-# ruby basics/fizzbuzz.rb
+# ruby interview/fizzbuzz.rb
 
 # (1..50).each do |x|
 # 	m3 = x.modulo(3) == 0
