@@ -1,3 +1,5 @@
+# ruby ds/Collections/LinkedList.rb
+
 class List
   class Node
     attr_accessor :value, :next
