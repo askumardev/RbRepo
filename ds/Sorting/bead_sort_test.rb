@@ -1,3 +1,5 @@
+# ruby ds/Sorting/bead_sort_test.rb
+
 require 'minitest/autorun'
 require_relative './sort_tests'
 require_relative './bead_sort'

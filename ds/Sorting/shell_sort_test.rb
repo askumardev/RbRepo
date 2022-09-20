@@ -1,3 +1,5 @@
+# ruby ds/Sorting/shell_sort_test.rb
+
 require 'minitest/autorun'
 require_relative './sort_tests'
 require_relative './shell_sort'

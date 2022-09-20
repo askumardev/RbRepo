@@ -1,4 +1,4 @@
-# ruby ds/quicksort.rb
+# ruby ds/Sorting/sk_quicksort.rb
 
 # def quick_sort(list)
 #   return [] if list.empty?

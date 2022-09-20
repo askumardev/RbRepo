@@ -1,3 +1,5 @@
+# ruby ds/Sorting/comb_sort.rb
+
 def comb_sort(array)
   gap = array.length
   swaps = true

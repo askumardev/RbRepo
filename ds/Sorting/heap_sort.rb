@@ -1,3 +1,5 @@
+# ruby ds/Sorting/heap_sort.rb
+
 # Algorithm: Heap-Sort
 # Time-Complexity: O(nlogn)
 def heap_sort(array)

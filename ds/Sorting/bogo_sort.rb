@@ -1,3 +1,5 @@
+# ruby ds/Sorting/bogo_sort.rb
+
 class Array
   def sorted?
     ### goes thru array and checks if all elements are in order

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby ds/Sorting/sort.rb
 
 a = [1, 5, 7, 2, 3, 50, 78, 34, 89]
 

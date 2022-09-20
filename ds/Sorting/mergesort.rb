@@ -1,4 +1,4 @@
-# ruby ds/mergesoft.rb
+# ruby ds/Sorting/mergesort.rb
 
 def merge_sort(list)
   if list.length <= 1

@@ -1,3 +1,5 @@
+# ruby ds/Sorting/insertion_sort.rb
+
 def insertion_sort(array)
   0.upto(array.length - 1).each do |index|
     element = array[index]

@@ -1,3 +1,5 @@
+# ruby ds/Sorting/shell_sort.rb
+
 def shell_sort(a)
   n = a.length
   h = 1

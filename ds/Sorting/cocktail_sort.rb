@@ -1,3 +1,5 @@
+# ruby ds/Sorting/cocktail_sort.rb
+
 def cocktail_sort(array)
   start = 0
   finish = array.length - 1

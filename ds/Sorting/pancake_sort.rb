@@ -1,3 +1,5 @@
+# ruby ds/Sorting/pancake_sort.rb
+
 def pancake_sort(array)
   return array if array.length <= 1
   (array.length - 1).downto(1) do |index|

@@ -1,3 +1,6 @@
+# ruby ds/Sorting/pancake_sort_test.rb
+
+
 require 'minitest/autorun'
 require_relative './sort_tests'
 require_relative './pancake_sort'

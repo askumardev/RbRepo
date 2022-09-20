@@ -1,3 +1,5 @@
+# ruby ds/Sorting/selection_sort.rb
+
 def selection_sort(array)
   n = array.length - 1
   i = 0
