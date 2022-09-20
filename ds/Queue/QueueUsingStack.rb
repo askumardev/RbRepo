@@ -1,3 +1,5 @@
+# ruby ds/Queue/QueueUsingStack.rb
+
 class QueueUsingStack
   def initialize()
     @stk1 = []

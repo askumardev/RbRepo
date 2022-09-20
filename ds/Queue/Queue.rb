@@ -1,3 +1,5 @@
+# ruby ds/Queue/Queue.rb
+
 class Queue
   def initialize(size = 100)
     @capacity = size
