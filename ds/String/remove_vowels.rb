@@ -1,3 +1,5 @@
+# ruby ds/String/remove_vowels.rb
+
 # Challenge name: Remove vowels from a string
 #
 # Given a string s, remove the vowels 'a', 'e', 'i', 'o', and 'u'

@@ -1,3 +1,5 @@
+# ruby ds/String/palindrome.rb
+
 # Challenge name: Valid Palindrome
 #
 # Given a string s, determine if it is a palindrome,

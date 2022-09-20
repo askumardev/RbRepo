@@ -1,3 +1,5 @@
+# ruby ds/String/jewels_and_stones.rb
+
 # Challenge name: Jewels and Stones
 #
 # You're given strings jewels representing the types of stones that are jewels,

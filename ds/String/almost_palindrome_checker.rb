@@ -1,3 +1,5 @@
+# ruby ds/String/almost_palindrome_checker.rb
+
 # Challenge name: Almost Palindrome
 #
 # Given a string s, return true if the s can be palindrome after deleting at most one character from it.
