@@ -1,3 +1,5 @@
+# ruby ds/Stack/stack.rb
+
 # A stack is an abstract data type that serves as a collection of
 # elements with two principal operations: push() and pop(). push() adds an
 # element to the top of the stack, and pop() removes an element from the top
