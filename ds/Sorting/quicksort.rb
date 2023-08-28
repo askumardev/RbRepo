@@ -1,21 +1,40 @@
-# ruby ds/Sorting/quicksort.rb
+# ruby ds/Sorting/QuickSort.rb
 
-def quicksort(arr)
-  return [] if arr.empty?
-
-  # chose a random pivot value
-  pivot = arr.delete_at(rand(arr.size))
-  # partition array into 2 arrays and comparing them to each other and eventually returning
-  # array with the pivot value sorted
-  left, right = arr.partition(&pivot.method(:>))
-
-  # recursively calling the quicksort method on itself
-  [*quicksort(left), pivot, *quicksort(right)]
+def QuickSort(arr)
+  size = arr.size
+  quickSortUtil(arr, 0, size - 1)
 end
 
-if $0 == __FILE__
-  puts 'Enter a list of numbers separated by space'
-
-  list = gets.split.map(&:to_i)
-  p quicksort(list)
+def swap(arr, first, second)
+  temp = arr[first]
+  arr[first] = arr[second]
+  arr[second] = temp
 end
+
+def quickSortUtil(arr, lower, upper)
+  if upper <= lower
+    return
+  end
+  pivot = arr[lower]
+  start = lower
+  stop = upper
+  while lower < upper
+    while arr[lower] <= pivot and lower < upper
+      lower += 1
+    end
+    while arr[upper] > pivot and lower <= upper
+      upper -= 1
+    end
+    if lower < upper
+      swap(arr, upper, lower)
+    end
+  end
+  swap(arr, upper, start) #upper is the pivot position
+  quickSortUtil(arr, start, upper - 1) #pivot -1 is the upper for left sub array.
+  quickSortUtil(arr, upper + 1, stop)# pivot + 1 is the lower for right sub array.
+end
+
+# Testing code
+array = [3, 4, 2, 1, 6, 5, 7, 8, 1, 1]
+QuickSort(array)
+print array
