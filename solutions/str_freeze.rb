@@ -8,6 +8,11 @@ str[0] = "H"
 
 puts str
 
+STR = "abc".freeze
+STR += "def"
+
+puts STR
+
 # greeting = "Hello, "
 # name = "John"
 
