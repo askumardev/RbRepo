@@ -44,4 +44,15 @@ puts str
 puts "***5***"
 puts str.chars.inject{|x,y| y + x}
 
+#
+original_string = "Hello, World!"
+length = original_string.length
+reversed_string = ""
+
+(length - 1).downto(0) do |i|
+  reversed_string += original_string[i]
+end
+
+puts reversed_string
+
 
