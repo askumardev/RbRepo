@@ -3,21 +3,18 @@
 # the output should be [[0, 3], [2, 4]], as both pairs (2, 7) and (11, -2) add up to 9.
 
 # ruby leetcode/easy/1_two_sum.rb
-
+require 'pry'
 def two_sum_indices(nums, target)
   num_indices = {}
   result = []
 
   nums.each_with_index do |num, index|
     complement = target - num
-
     if num_indices.key?(complement)
       result << [num_indices[complement], index]
     end
-
     num_indices[num] = index
   end
-
   return result
 end
 
