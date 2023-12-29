@@ -1,6 +1,11 @@
 # rbRepo
 
 * dev is the default branch
+* .env 
+
+  SAMPLE=SomeText
+
+  ABC=abc
 * vscode extensions
 
   * Ruby, Ruby Runner, Ruby Solargraph, VSCode Ruby, Code Runner
