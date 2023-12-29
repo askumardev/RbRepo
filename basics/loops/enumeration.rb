@@ -7,6 +7,7 @@
 # each Method:
 # The each method is used to iterate over elements in a collection. 
 # It can be applied to arrays, hashes, ranges, and other enumerable objects.
+pp(Enumerator.methods.to_a.join(','))
 puts("-------------each Method----------------")
 numbers = [1, 2, 3, 4, 5]
 numbers.each do |num|
