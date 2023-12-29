@@ -11,7 +11,6 @@ def count_anagrams(parent, child)
   # Iterate through substrings of the parent string
   parent.chars.each_cons(child.length) do |substring|
     # Check if the substring is an anagram of the child string
-    puts(substring.sort)
     count += 1 if substring.sort == child.chars.sort
   end
 
