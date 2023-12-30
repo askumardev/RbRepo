@@ -1,12 +1,11 @@
-# Ruby program to find the second largest element 
-# from the array
+# Ruby program to find the second largest element from the array
 
-arr = [12,45,23,39,38];
-count = 0;
-large1 = 0;
-large2 = 0;
+arr = [12,45,23,39,38]
 
-large1= arr[0];
+count = 0
+large1 = 0
+large2 = 0
+large1= arr[0]
 
 while count < arr.size()
   if (large1 < arr[count]) 
@@ -19,6 +18,5 @@ while count < arr.size()
 end
 
 print "Second largest element is: ",large2,"\n";
-
 
 # ruby arr_hsh/arr_second_largest.rb
