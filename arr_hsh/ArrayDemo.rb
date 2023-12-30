@@ -2,7 +2,7 @@
 
 class ArrayDemo
   def initialize()
-    @numbers = Array.new(100)
+    @numbers = Array.new(10)
   end
 
   def addValue(index, data)

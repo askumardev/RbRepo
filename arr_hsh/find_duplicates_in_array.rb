@@ -41,10 +41,8 @@ def find_duplicates(array)
 
       result_array.push(current_num)
     end
-
     current_num = array[i + 1]
   end
-
   result_array.uniq
 end
 
@@ -79,7 +77,6 @@ def find_duplicates(array)
 
     result_array.push(sorted_array[i])
   end
-
   result_array.uniq
 end
 

@@ -1,5 +1,5 @@
-arr1 = ["name","description","rating"]
-arr2 = ["Godrej","A godrej brand","5"]
+arr1 = ["name","description","rating", :a]
+arr2 = ["Godrej","A godrej brand","5", 1]
 
 hsh = {}
 

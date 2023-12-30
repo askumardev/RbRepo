@@ -28,11 +28,10 @@ def calculate_products_of_all_other_elements(nums)
       product_of_other_elements[i] = product_of_other_elements[i] * nums[j]
     end
   end
-
   product_of_other_elements
 end
 
-puts(calculate_products_of_all_other_elements([1, 2, 3]))
+pp(calculate_products_of_all_other_elements([1, 2, 3]))
 
 #
 # Approach 2: Left and Right product lists
@@ -111,7 +110,7 @@ def products(nums)
   output(prefix_products, suffix_products, nums)
 end
 
-puts(products([1, 2, 3]))
+pp(products([1, 2, 3]))
 # => [6, 3, 2]
 
 #
@@ -161,5 +160,5 @@ def products(nums)
   res
 end
 
-puts(products([1, 2, 3]))
+pp(products([1, 2, 3]))
 # => [6, 3, 2]
