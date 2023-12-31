@@ -9,7 +9,7 @@ x ||= 10 # Use ||= to assign a value only if x is nil
 
 puts x  # Output: 10
 
-x ||= # If x already has a value, ||= won't change it
+x ||= 20 # If x already has a value, ||= won't change it
 
 puts x  # Output: 10 (unchanged)
 
