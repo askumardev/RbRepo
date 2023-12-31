@@ -44,3 +44,10 @@ matrix_3d = [
 # Using custom flatten function on the 3D array
 flat_array_3d = custom_flatten(matrix_3d)
 puts flat_array_3d.inspect
+
+startyear = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]]
+arr = startyear.flat_map(&:itself)
+puts arr.inspect
+
+arr1 = startyear.reduce(:+)
+puts arr.inspect
