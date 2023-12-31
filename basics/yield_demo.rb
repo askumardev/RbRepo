@@ -22,3 +22,14 @@ end
 # we define a custom_greeting method that takes a name as a parameter and uses the yield keyword to execute the provided block of code.
 #  The block is responsible for generating a greeting based on the name, and the method prints the final greeting message.
 # When we call the method with different blocks, we get different greeting messages for different names.
+
+
+def greet(name)
+  puts "Hello, #{name}!"
+  yield if block_given?
+  puts "Goodbye, #{name}!"
+end
+
+greet("Alice") do
+  puts "How are you today?"
+end
