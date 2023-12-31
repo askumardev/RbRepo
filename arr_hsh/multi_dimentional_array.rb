@@ -42,6 +42,9 @@ matrix_3d = [
 ]
 
 # Using custom flatten function on the 3D array
+p matrix_3d[1][0][2] 
+# In above example, matrix_3d[1] selects the second 2D array within the outermost array, then [0] selects the 
+# first array within that 2D array, and finally [2] selects the third element within that innermost array.
 flat_array_3d = custom_flatten(matrix_3d)
 puts flat_array_3d.inspect
 
