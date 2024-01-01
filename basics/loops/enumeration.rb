@@ -23,6 +23,12 @@ numbers = [1, 2, 3, 4, 5]
 squared_numbers = numbers.map { |num| num**2 }
 pp squared_numbers
 
+puts("-------------for Method----------------")
+# for method
+for num in numbers
+  pp num
+end
+
 # select and reject Methods:
 # The select method is used to filter elements based on a given condition, 
 # while reject is used to exclude elements that meet a certain condition.
@@ -30,13 +36,21 @@ puts("-------------select/reject Method----------------")
 numbers = [1, 2, 3, 4, 5]
 even_numbers = numbers.select { |num| num.even? }
 odd_numbers = numbers.reject { |num| num.even? }
+p even_numbers
+p odd_numbers
 
 # each_with_index Method:
 # The each_with_index method allows you to iterate over both the elements and their corresponding indices.
-
+puts("-------------each_with_index Method----------------")
 fruits = ['apple', 'banana', 'orange']
 fruits.each_with_index do |fruit, index|
   puts "#{index + 1}. #{fruit}"
+end
+
+puts("-------------each_index Method----------------")
+# each_index method
+fruits.each_index do |index|
+  pp index
 end
 
 # Enumerable Module:
@@ -55,10 +69,10 @@ pp(sorted_numbers)
 # You can create custom enumerators using the Enumerator class. 
 # This allows you to define your own iteration logic.
 puts("-------------Enumeration with Enumerator----------------")
-enumerator = Enumerator.new do |yielder|
-  yielder << 1
-  yielder << 2
-  yielder << 3
+enumerator = Enumerator.new do |a|
+  a << 1
+  a << 2
+  a << 3
 end
 enumerator.each { |num| puts num }
 
