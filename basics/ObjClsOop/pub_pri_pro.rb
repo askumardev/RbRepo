@@ -31,6 +31,7 @@ class Sample
 
   def public_method
     puts "Some public text"
+    some_private_method
   end
 end
 
@@ -42,3 +43,4 @@ obj.public_method
 #obj.some_protected_method  #we cannot call a protected method directly using a object
 Sample.new.send :some_private_method
 Sample.new.send :some_protected_method
+Sample.new.public_method
