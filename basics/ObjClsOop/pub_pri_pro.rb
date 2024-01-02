@@ -28,12 +28,17 @@ class Sample
     s.some_private_method
     s.some_protected_method
   end
+
+  def public_method
+    puts "Some public text"
+  end
 end
 
 obj = Sample.new
 obj.some_public_method
-obj.random_method
+obj.public_method
+#obj.random_method # we get HelloWorld.rb:18:in `random_method': private method `some_private_method' called for #<Sample:0x000055704771aba8> (NoMethodError)
 #obj.some_private_method    #we cannot call a private method directly using a object
 #obj.some_protected_method  #we cannot call a protected method directly using a object
-# Sample.new.send :some_private_method
-# Sample.new.send :some_protected_method
+Sample.new.send :some_private_method
+Sample.new.send :some_protected_method
