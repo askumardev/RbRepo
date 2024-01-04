@@ -17,3 +17,4 @@ Struct::Address.superclass # => Struct
 home = Struct::Address.new('Broadway', 'NYC', 10040)
 p home.class # => Struct::Address
 p home.city # "NYC"
+p Address.ancestors
