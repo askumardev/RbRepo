@@ -1,3 +1,5 @@
+# ruby arr_hsh/str_rev.rb
+
 str = "BLUE SKY"
 puts "------Simplest way by using split, reverse and join methods-----"
 str_rev = str.split.reverse.join(' ')
