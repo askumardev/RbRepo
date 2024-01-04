@@ -10,6 +10,7 @@ words[0], words[1] = words[1], words[0]
 p words.join(' ')
 
 puts "------Alternate way without using reverse-------"
+str = "This is Ruby Programming"
 words = str.split
 p words
 reversed_string = ""
