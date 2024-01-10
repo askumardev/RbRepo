@@ -26,6 +26,11 @@ def fibonacci(n)
   return temp
 end
 
+def fibo(n)
+  (1..n).inject([0,1]){|fib| fib << fib.last(2).sum}
+end
+
 # Testing code
-puts fibo(10)
-puts fibonacci(10)
+print fibo(10)
+puts("-----Fibonacci series using inject--------")
+puts fibonacci(10)#print sum
