@@ -31,3 +31,10 @@ puts '0! = ' + factorial(0).to_s
 
 puts '10! = ' + factorial(10).to_s
 # 10! = 3628800
+
+
+def fact(n)
+  n.downto(1).inject(:*)
+end
+
+p fact(5)
