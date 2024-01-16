@@ -14,3 +14,6 @@ time_with_frozen = Benchmark.realtime do
 end
 
 puts "Time with frozen_string_literal: #{time_with_frozen} seconds"
+
+
+# ruby solutions/benchmark2.rb
