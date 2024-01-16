@@ -7,6 +7,7 @@ hm = {} # (or hm = Hash.new)
 hm["Apple"] = 40
 hm["Banana"] = 30
 hm["Mango"] = 50
+p hm
 puts "Total number of fruits :: #{hm.size}"
 
 hm.each do |key, value|
