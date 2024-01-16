@@ -1,3 +1,5 @@
+# ruby solutions/singleton.rb
+
 # A singleton pattern is a design pattern that restricts the instantiation of a class to only one instance. 
 # This is useful when you need a single object to coordinate actions across the system. 
 # In Ruby, you can implement a singleton pattern using the Singleton module from the Ruby Standard Library.
