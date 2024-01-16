@@ -18,10 +18,7 @@ def bubble_sort(array)
   array
 end
 
-if $0 == __FILE__
-  puts 'Enter a list of numbers separated by space'
-
-  list = gets
-  bubble_sort(list)
-  print list
-end
+a = [9, 1, 5, 3, 7, 2, 8, 6, 4]
+b = [9, 1, 8, 2, 7, 3, 6, 4, 5]
+p bubble_sort(a)
+p bubble_sort(b)
