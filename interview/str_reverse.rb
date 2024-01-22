@@ -1,6 +1,6 @@
 #string reverse without string#reverse method
 def rev_string(str)
-  arr = str.split("")
+  arr = str.split("") # or str.chars
   p arr
   rev = []
   str.size.times { rev << arr.pop }
