@@ -6,11 +6,11 @@ def is_palin(x)
   return false if num < 0
   while num != 0
     ex = num%10
-    p ex
+    #p ex
     rev = rev*10 + ex
-    p rev
+    #p rev
     num = num/10
-    p num
+    #p num
   end
   if rev != x
     false
@@ -20,5 +20,5 @@ def is_palin(x)
 end
 
 p is_palin(1234)
-# p is_palin(1221)
-# p is_palin(-123)
+p is_palin(1221)
+#p is_palin(-123)
