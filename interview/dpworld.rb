@@ -10,7 +10,7 @@ a = JSON.parse(json.body)
 selected_values = a["data"].map { |x| { "city" => x["city"], "cost" =>x["estimated_cost"] } }#.group_by{|x| x["city"], avg(x["cost"])}
 #p selected_values
 grouped_data = selected_values.group_by { |entry| entry["city"] }
-#p grouped_data
+p grouped_data
 
 # Calculate average cost for each city and format the result
 average_costs = grouped_data.map do |city, entries|
