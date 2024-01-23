@@ -18,3 +18,5 @@ home = Struct::Address.new('Broadway', 'NYC', 10040)
 p home.class # => Struct::Address
 p home.city # "NYC"
 p Address.ancestors
+
+# ruby adv/struct.rb
