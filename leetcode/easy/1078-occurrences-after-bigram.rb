@@ -27,3 +27,8 @@ def find_ocurrences(text, first, second)
   
   word_output
 end
+
+text = "alice is a good girl she is a good student"
+first = "a"
+second = "good"
+p find_ocurrences(text, first, second)
