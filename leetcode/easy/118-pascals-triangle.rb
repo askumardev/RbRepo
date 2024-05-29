@@ -23,7 +23,6 @@ def generate(num_rows)
   
   (2..num_rows).each do |index|
     array = []
-    
     (0..index - 1).each do |checker|
       if checker == 0 || checker == index - 1
         array << 1 
@@ -31,9 +30,9 @@ def generate(num_rows)
         array << rows.last[checker] + rows.last[checker - 1]
       end
     end
-    
     rows << array
   end
-  
   rows
 end
+
+p generate(6)
