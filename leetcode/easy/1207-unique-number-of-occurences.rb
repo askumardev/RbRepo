@@ -29,3 +29,6 @@ def unique_occurrences(arr)
   
   nums_hash.values == nums_hash.values.uniq
 end
+
+arr = [1,2,2,1,1,3]
+p unique_occurrences(arr)
