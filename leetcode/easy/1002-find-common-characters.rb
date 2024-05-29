@@ -68,3 +68,6 @@ def create_hash_of_common_characters(a)
     
   key_hash
 end
+
+arr = ["cool","lock","cook"]
+p common_chars(arr)
