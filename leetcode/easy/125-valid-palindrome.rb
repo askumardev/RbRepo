@@ -18,3 +18,6 @@ def is_palindrome(s)
   
   s == s.reverse
 end
+
+p is_palindrome("race a car")
+p is_palindrome("A man, a plan, a canal: Panama")
