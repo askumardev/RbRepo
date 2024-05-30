@@ -37,3 +37,5 @@ def is_happy(n)
     n = total
   end
 end
+
+p is_happy(19)
