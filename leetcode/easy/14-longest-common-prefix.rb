@@ -32,3 +32,9 @@ def longest_common_prefix(strs)
   end
   prefix
 end
+
+strs = ["flower","flow","flight"]
+p longest_common_prefix(strs)
+
+strs = ["dog","racecar","car"]
+p longest_common_prefix(strs)
