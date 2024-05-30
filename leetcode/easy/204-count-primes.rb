@@ -27,3 +27,5 @@ def is_prime(n)
   
   true
 end
+
+p count_primes(10)
