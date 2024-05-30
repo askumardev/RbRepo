@@ -32,3 +32,5 @@ def recursive_dp(n, step_hash)
   
   step_hash[n] = recursive_dp(n - 1, step_hash) + recursive_dp(n - 2, step_hash)
 end
+
+p climb_stairs(3)
