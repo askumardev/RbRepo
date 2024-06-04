@@ -28,3 +28,4 @@ end
 
 # time rails db:seed
 #
+#sample
