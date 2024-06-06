@@ -21,4 +21,4 @@ p Set.new(arr).to_a
 # puts remove_duplicates(arr).inspect
 # # Output: [1, 2, 3, 4, 5]
 
-# ruby interview/arr_uniq.rb
+# ruby interview/arr_uniq_set.rb
