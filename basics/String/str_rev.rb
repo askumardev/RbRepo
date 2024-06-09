@@ -6,7 +6,7 @@ b = s.length - 1
 p b
 while b >= 0
   print s[b]
-  b=b-1
+  b = b - 1
 end
 puts"\n**************"
 
@@ -54,5 +54,21 @@ reversed_string = ""
 end
 
 puts reversed_string
+
+puts "****two pointer technique**"
+def reverse_string(str)
+  chars = str.chars
+  left = 0
+  right = chars.length - 1
+  while left < right
+    chars[left], chars[right] = chars[right], chars[left]
+    left += 1
+    right -= 1
+  end
+  chars.join
+end
+
+str = "hello"
+puts reverse_string(str)  # Output: "olleh"
 
 
