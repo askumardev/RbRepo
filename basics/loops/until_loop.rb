@@ -12,5 +12,5 @@ end
 #----------------------
 puts '***until another format'
 a = 0
-a += 1 until a >1 0
+a += 1 until a > 10
 p a
