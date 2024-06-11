@@ -40,6 +40,7 @@ end
 
 B.new.name1
 puts B.ancestors
-# obj = B.new.name
+obj = B.new.name
+p obj
 # puts obj.methods
 # puts obj.methods.count
