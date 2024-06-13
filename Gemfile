@@ -8,3 +8,4 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'httparty'
 
 gem 'benchmark'
+gem 'coderay', '~> 1.1', '>= 1.1.3'
