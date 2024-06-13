@@ -1,9 +1,11 @@
 # ruby interview/dpworld.rb
 
 require 'httparty'
+require 'openssl'
 require 'json'
 require 'pry'
 
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 url = "https://demo2459056.mockable.io/url"
 json = HTTParty.get(url)
 a = JSON.parse(json.body)
