@@ -26,3 +26,12 @@ arr.permutation(2) do |x|
 #[[0,2],[2,0]]
  p x.first if x.inject(:+) == target 
 end
+p"-------------------------------------"
+arr = [1,2,5,7,13,11,-2]
+target = 9
+new = []
+arr = arr.combination(2)
+arr.each do |a|
+  new << a if a.sum == target
+end
+p new
