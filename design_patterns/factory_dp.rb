@@ -1,4 +1,5 @@
-# The Factory Method pattern defines an interface for creating an object but lets subclasses alter the type of objects that will be created.
+# The Factory Method pattern defines an interface for creating an object but lets subclasses alter the type of 
+# objects that will be created.
 
 class Animal
   def speak
