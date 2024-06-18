@@ -1,3 +1,18 @@
+# The Presenter Design Pattern is often used in the context of the Model-View-Presenter (MVP) architecture. 
+# MVP separates the concerns of application logic, user interface, and presentation logic, 
+# making your code more maintainable and testable.
+
+# In MVP, the Presenter handles the presentation logic. It acts as an intermediary between the 
+# Model (which contains the business logic) and the View (which is responsible for the user interface).
+
+# Here's an example of the Presenter Design Pattern implemented in Ruby:
+
+# Components
+# Model: Represents the data and business logic.
+# View: Displays the data and sends user actions to the Presenter.
+# Presenter: Contains the presentation logic and interacts with both the Model and the View.
+
+
 # ruby design_patterns/presenter_dp.rb
 
 # Model
