@@ -1,18 +1,19 @@
 # ruby ds/Sorting/sort.rb
 
-a = [1, 5, 7, 2, 3, 50, 78, 34, 89]
+arr = [1, 5, 7, 2, 3, 50, 78, 34, 89]
 
-def sort(a)
-  a.size.times.each do |_t|
-    i = 0
-    a.each do |b|
-      a[i], a[i + 1] = a[i + 1], a[i] if b > a[i + 1]
-      i += 1 if i < a.size - 2
+def sort(arr)
+  arr.size.times do
+    (arr.size - 1).times do |i|
+      if arr[i] > arr[i + 1]
+        arr[i], arr[i + 1] = arr[i + 1], arr[i]
+      end
     end
   end
-  print a
+  print arr
 end
-sort(a)
+
+sort(arr)
 
 # a.size.times.each do |t|
 #   i=0
