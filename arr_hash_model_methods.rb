@@ -1,36 +1,30 @@
-Array methods: 189
+Array methods: 117(Ruby 3.3)
 --------------------
-:[], :try_convert, :new, :allocate, :superclass, :<=>, :<=, :>=, :==, :===, :included_modules, :include?, 
-:ancestors, :attr, :attr_reader, :attr_writer, :attr_accessor, :freeze, :inspect, :public_instance_methods, 
-:instance_methods, :const_missing, :protected_instance_methods, :private_instance_methods, :const_set, :constants, 
-:remove_class_variable, :class_variable_get, :class_variable_set, :class_variable_defined?, :const_get, :const_defined?, 
-:<, :>, :public_constant, :class_variables, :private_constant, :deprecate_constant, :singleton_class?, 
-:const_source_location, :to_s, :class_eval, :include, :module_exec, :module_eval, :prepend, :undef_method, 
-:alias_method, :class_exec, :remove_method, :method_defined?, :name, :private_class_method, :public_method_defined?,
- :private_method_defined?, :protected_method_defined?, :public_class_method, :public_instance_method, :define_method, 
-:autoload, :autoload?, :instance_method, :dup, :itself, :yield_self, :then, :taint, :tainted?, :untaint, :untrust, 
-:untrusted?, :trust, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, 
-:instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, 
-:instance_of?, :kind_of?, :is_a?, :tap, :class, :clone, :display, :hash, :singleton_class, :singleton_method, :method, 
-:public_send, :define_singleton_method, :public_method, :extend, :to_enum, :enum_for, :=~, :!~, :nil?, :eql?, :respond_to?, 
-:object_id, :send, :__send__, :!, :!=, :__id__, :equal?, :instance_eval, :instance_exec
+[:[], :new, :try_convert, :allocate, :attached_object, :superclass, :subclasses, :<=>, :autoload, :<=, :>=, :==, :===, :autoload?, :included_modules, :include?,
+ :set_temporary_name, :ancestors, :attr, :attr_reader, :attr_writer, :attr_accessor, :define_method, :instance_methods, :public_instance_methods, :protected_instance_methods,
+ :private_instance_methods, :undefined_instance_methods, :freeze, :inspect, :const_get, :constants, :const_missing, :const_defined?, :const_set, :const_source_location,
+ :remove_class_variable, :class_variable_get, :<, :class_variables, :>, :private_constant, :class_variable_set, :class_variable_defined?, :public_constant, :include,
+ :deprecate_constant, :singleton_class?, :prepend, :refinements, :instance_method, :to_s, :module_exec, :class_exec, :module_eval, :class_eval, :pretty_print, :name,
+ :remove_method, :undef_method, :alias_method, :method_defined?, :public_method_defined?, :private_method_defined?, :protected_method_defined?, :public_class_method,
+ :private_class_method, :public_instance_method, :pretty_print_cycle, :pretty_print_inspect, :pretty_print_instance_variables, :singleton_class, :dup, :itself,
+ :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?,
+ :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :display, :public_send, :pretty_inspect, :extend, :clone, :!~, :frozen?, :class, :then, :tap, :nil?,
+ :eql?, :respond_to?, :method, :public_method, :singleton_method, :define_singleton_method, :yield_self, :hash, :object_id, :send, :to_enum, :enum_for, :equal?,
+ :!, :__send__, :!=, :instance_eval, :instance_exec, :__id__]
 
-Hash methods: 192
+Hash methods: 119(Ruby 3.3)
 ---------------------
-:[], :try_convert, :ruby2_keywords_hash?, :ruby2_keywords_hash, :new, :allocate, :superclass, :<=>, :<=, :>=, :==, :===, 
-:included_modules, :include?, :ancestors, :attr, :attr_reader, :attr_writer, :attr_accessor, :freeze, :inspect, 
-:public_instance_methods, :instance_methods, :const_missing, :protected_instance_methods, :private_instance_methods, 
-:const_set, :constants, :remove_class_variable, :class_variable_get, :class_variable_set, :class_variable_defined?, 
-:const_get, :const_defined?, :<, :>, :public_constant, :class_variables, :private_constant, :deprecate_constant, 
-:singleton_class?, :const_source_location, :to_s, :class_eval, :include, :module_exec, :module_eval, :prepend, :undef_method,
- :alias_method, :class_exec, :remove_method, :method_defined?, :name, :private_class_method, :public_method_defined?, 
-:private_method_defined?, :protected_method_defined?, :public_class_method, :public_instance_method, :define_method, 
-:autoload, :autoload?, :instance_method, :dup, :itself, :yield_self, :then, :taint, :tainted?, :untaint, :untrust, :untrusted?,
- :trust, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables,
- :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, 
-:kind_of?, :is_a?, :tap, :class, :clone, :display, :hash, :singleton_class, :singleton_method, :method, :public_send, 
-:define_singleton_method, :public_method, :extend, :to_enum, :enum_for, :=~, :!~, :nil?, :eql?, :respond_to?, :object_id,
- :send, :__send__, :!, :!=, :__id__, :equal?, :instance_eval, :instance_exec
+[:ruby2_keywords_hash?, :[], :try_convert, :ruby2_keywords_hash, :allocate, :attached_object, :superclass, :subclasses, :new, :<=>, :autoload, :<=, :>=, :==, :===,
+ :autoload?, :included_modules, :include?, :set_temporary_name, :ancestors, :attr, :attr_reader, :attr_writer, :attr_accessor, :define_method, :instance_methods,
+ :public_instance_methods, :protected_instance_methods, :private_instance_methods, :undefined_instance_methods, :freeze, :inspect, :const_get, :constants,
+ :const_missing, :const_defined?, :const_set, :const_source_location, :remove_class_variable, :class_variable_get, :<, :class_variables, :>, :private_constant,
+ :class_variable_set, :class_variable_defined?, :public_constant, :include, :deprecate_constant, :singleton_class?, :prepend, :refinements, :instance_method, :to_s,
+ :module_exec, :class_exec, :module_eval, :class_eval, :pretty_print, :name, :remove_method, :undef_method, :alias_method, :method_defined?, :public_method_defined?,
+ :private_method_defined?, :protected_method_defined?, :public_class_method, :private_class_method, :public_instance_method, :pretty_print_cycle, :pretty_print_inspect,
+ :pretty_print_instance_variables, :singleton_class, :dup, :itself, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables,
+ :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :display, :public_send, :pretty_inspect,
+ :extend, :clone, :!~, :frozen?, :class, :then, :tap, :nil?, :eql?, :respond_to?, :method, :public_method, :singleton_method, :define_singleton_method, :yield_self,
+ :hash, :object_id, :send, :to_enum, :enum_for, :equal?, :!, :__send__, :!=, :instance_eval, :instance_exec, :__id__]
 
 Model methods: 681
 --------------------
