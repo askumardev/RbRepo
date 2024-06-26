@@ -1,32 +1,19 @@
 Cases I
-str.capitalize
-Return a copy of str capitalized # "string" => "String"
-str.downcase
-Return a lowercase copy of str # "STRING" => "string"
-str.swapcase
-Return a swapped case copy of str # "String" => "sTRING"
-str.upcase
-Return a uppercase copy of str # "string" => "STRING"
+str.capitalize-Return a copy of str capitalized # "string" => "String"
+str.downcase-Return a lowercase copy of str # "STRING" => "string"
+str.swapcase-Return a swapped case copy of str # "String" => "sTRING"
+str.upcase-Return a uppercase copy of str # "string" => "STRING"
 Search / Replace I
-str.end_with?(str2)
-Returns true if str ends with str2
-str.include?(str2)
-Return true if str includes str2
-str.index(str2)
-Return index of first occurrence of str2 in str
-str.rindex(str2)
-Return the index of the last occurrence of str2 in str
-str.start_with?(str2)
-Return true if str starts with str2
+str.end_with?(str2)-Returns true if str ends with str2
+str.include?(str2)-Return true if str includes str2
+str.index(str2)-Return index of first occurrence of str2 in str
+str.rindex(str2)-Return the index of the last occurrence of str2 in str
+str.start_with?(str2)-Return true if str starts with str2
 Modification I
-str + str2
-Return a new string adding str2 to str # "one" + "two" => "onetwo"
-str << str2
-Modify str in place by appending str2 to the end
-str[index] = str2
-Replace str at index with str2
-str[start,length] = str2
-Replace str from start to length with str2
+str + str2-Return a new string adding str2 to str # "one" + "two" => "onetwo"
+str << str2-Modify str in place by appending str2 to the end
+str[index] = str2-Replace str at index with str2
+str[start,length] = str2-Replace str from start to length with str2
 str[regexp] = str2
 Replace str using regexp with str2
 str.chomp
@@ -88,7 +75,7 @@ str.eql?(str2)
 Return true if str is equal to str2 by length and content
 Conversion I
 str.hash
-Return a hash based on str's length, content, and encoding
+Return a hash based on str length, content, and encoding
 str.hex
 Return number of str as hexadecimal digits
 str.oct
