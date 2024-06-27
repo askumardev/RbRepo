@@ -149,6 +149,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   benchmark
+  coderay (~> 1.1, >= 1.1.3)
   dotenv-rails
   httparty
   pry
