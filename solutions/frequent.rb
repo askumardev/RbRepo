@@ -2,7 +2,7 @@
 
 inp = "346555578123999021344"
 puts inp.chars.chunk{|e| e}.map{
-  |e| e[1].join if e[1].size >1 
+  |e| e[1].join if e[1].size >1
 }.compact.inspect
 
 puts("--------------------------------------------------")

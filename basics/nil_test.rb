@@ -18,15 +18,15 @@ puts (students[0] == students[1]).class #this will output the class that belongs
 #nil treated as false
 Jeery = nil
 if Jeery
-   puts "Jeery is present"
+  puts "Jeery is present"
 else
-   puts "Jeery is absent"
+  puts "Jeery is absent"
 end
 
 #false treated as false
 Tom = false
 if Tom
-   puts "Tom is present"
+  puts "Tom is present"
 else
-   puts "Tom is absent"
+  puts "Tom is absent"
 end
