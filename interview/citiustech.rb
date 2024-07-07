@@ -23,7 +23,18 @@ Human.new.send(:whisper) "I’m whispering"
 p "--------------------------------------------"
 
 
-[1,1,1,1,2,2,2,3,3,4]---> find highest frequbt number
+arr = [1,1,1,1,2,2,2,3,3,4] #---> find highest frequbt number
+frequency_hash = arr.map { |x| [x, arr.count(x)] }.to_h
+
+# Find the key-value pair with the maximum count
+max_pair = frequency_hash.max_by { |_, count| count }
+
+# Extract the character and its count
+max_char = max_pair[0]
+max_count = max_pair[1]
+
+puts "Character with maximum frequency: #{max_char}"
+puts "Maximum frequency count: #{max_count}"
 &
 [1,[2,3,4,5]]--->single dim array without flatten method
 p "----------------------------------------------------"
