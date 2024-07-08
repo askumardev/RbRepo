@@ -36,7 +36,7 @@ def clumsy(n)
   a[1..a.size - 1].each_with_index do |num, index|
     if index % 4 == 0
       result << '*'
-    elsif index % 4 == 1            
+    elsif index % 4 == 1
       result << '/'
     elsif index % 4 == 2
       result << '+'

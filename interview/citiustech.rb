@@ -37,6 +37,8 @@ puts "Character with maximum frequency: #{max_char}"
 puts "Maximum frequency count: #{max_count}"
 &
 [1,[2,3,4,5]]--->single dim array without flatten method
+
+
 p "----------------------------------------------------"
 User
 Post
