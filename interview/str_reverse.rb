@@ -1,12 +1,20 @@
 #string reverse without string#reverse method
-def rev_string(str)
-  arr = str.split("") # or str.chars
-  p arr
+str = "satish"
+arr = str.chars
+rev = []
+arr.size.times { rev << arr.pop}
+p rev.join
+p "---------------------------------"
+def rev(str)
+  arr = str.split
   rev = []
-  str.size.times { rev << arr.pop }
-  rev.join
+  p arr
+  arr.size.times { rev << arr.pop}
+  p rev.join(" ")
+    
 end
+str = "satish kumar"
+rev(str)
 
-p rev_string("satish")
 
 # ruby interview/str_reverse.rb
