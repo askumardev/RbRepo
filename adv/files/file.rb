@@ -4,7 +4,7 @@ file = File.open("rough.txt")
 
 file_data = file.read
 file_data = file.readlines.map(&:chomp)
-File.foreach("users.txt") { |line| puts line }
+File.foreach("rough.txt") { |line| puts line }
 file.close
 
 
