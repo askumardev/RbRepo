@@ -1,10 +1,17 @@
 # ruby basics/nil_test.rb
+
 require 'active_support'
 require 'active_support/core_ext/object/blank'
 p "".nil?
 p "".empty?
-p "".blank?
+p "".blank? #undefined method `blank?' for an instance of String (NoMethodError)
 p "--------------------------"
+
+p [].nil?
+
+p [].empty?
+p [].blank? #undefined method `blank?' for an instance of String (NoMethodError)
+p "--------------------------------------"
 students = ["Jeery", "Tom", "Eddie"]
 
 puts students[0] #this will print student at index 0
