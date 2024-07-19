@@ -7,7 +7,7 @@
 # ruby
 # Copy code
 class Example
-  @@class_variable = "I am a class variable"
+  @@class_variable = "I am a Example class variable"
 end
 
 # Accessible within the Class and Subclasses:
@@ -17,7 +17,7 @@ end
 # ruby
 # Copy code
 class Parent
-  @@class_variable = "I am a class variable"
+  @@class_variable = "I am a Parent class variable"
 end
 
 class Child < Parent
@@ -58,7 +58,7 @@ puts obj2.update_class_variable # Output: "Updated value"
 
 # Inheritance and Class Hierarchy:
 
-# Class variables are inherited by subclasses, and changes made in subclasses affect the 
+# Class variables are inherited by subclasses, and changes made in subclasses affect the
 # value in the superclass and vice versa.
 # ruby
 # Copy code
@@ -66,20 +66,20 @@ class Parent
   @@class_variable = "I am a class variable"
 end
 
-class Child < Parent
-end
+# class Child < Parent
+# end
 
-puts Child.class_variable # Output: "I am a class variable"
+# puts Child.class_variable # Output: "I am a class variable"
 
 # Modifying in the subclass affects the superclass
-Child.class_variable = "Modified value"
-puts Parent.class_variable # Output: "Modified value"
+# Child.class_variable = "Modified value"
+# puts Parent.class_variable # Output: "Modified value"
 
 # Caution: Shared State:
 
 # While class variables can be useful for sharing data among instances, they should be used with caution.
 # Shared state can lead to unexpected behavior and can make the code less modular and harder to maintain.
-# It's important to be mindful of the use of class variables and consider alternatives like instance 
-# variables or class methods, depending on the specific requirements of your code. 
-# Understanding the scope of class variables is crucial for writing maintainable and predictable 
+# It's important to be mindful of the use of class variables and consider alternatives like instance
+# variables or class methods, depending on the specific requirements of your code.
+# Understanding the scope of class variables is crucial for writing maintainable and predictable
 # code in object-oriented programming with Ruby.
