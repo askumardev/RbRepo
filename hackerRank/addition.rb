@@ -1,5 +1,10 @@
 # ruby hackerRank/addition.rb
 
+# Complete the function solveMeFirst to compute the sum of two integers.
+# Example
+# a = 7, b = 3
+# Return 10
+# Constraints 1 <= a, b <= 1000
 
 def solveMeFirst (a, b)
   if a >= 1 && b <= 1000
