@@ -1,3 +1,5 @@
+# rspec spec/addition_spec.rb
+
 require 'addition'
 
 describe Addition do

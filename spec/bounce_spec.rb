@@ -1,3 +1,5 @@
+# rspec spec/bounce_spec.rb
+
 require 'bouncer'
 describe 'Bouncer' do
   it "rejects xx from entering the venue" do
@@ -13,7 +15,7 @@ describe 'Bouncer' do
       expect(1).to be(1)
       raise "this is the failure"
     end
-    # 
+    #
   end
 
   it "checks something" do

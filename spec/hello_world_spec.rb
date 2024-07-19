@@ -1,19 +1,21 @@
+# rspec spec/hello_world_spec.rb
+
 class HelloWorld
-  def say_hello 
+  def say_hello
     "Hello World!"
-  end   
+  end
 end
 
-describe 'HelloWorld' do      
-  it "should say 'Hello World' when we call the say_hello method" do 
-    hw = HelloWorld.new 
-    message = hw.say_hello 
+describe 'HelloWorld' do
+  it "should say 'Hello World' when we call the say_hello method" do
+    hw = HelloWorld.new
+    message = hw.say_hello
     expect(message).to eq "Hello World!"
   end
 
-  it "should say 'Hello World' when we call the say_hello method" do 
-    hw = HelloWorld.new 
-    message = hw.say_hello 
+  it "should say 'Hello World' when we call the say_hello method" do
+    hw = HelloWorld.new
+    message = hw.say_hello
     #expect(message).to eq "Hello World...!"
     expect(message).to eq "Hello World!"
   end

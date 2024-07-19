@@ -1,3 +1,5 @@
+# rspec spec/factorial_spec.rb
+
 require 'factorial'
 describe Factorial do
   it "finds the factorial of 5" do
