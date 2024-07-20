@@ -1,3 +1,5 @@
+# rspec spec/no_increase_spec.rb
+
 require 'no_increase'
 
 describe 'no_of_increases' do
