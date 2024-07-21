@@ -1,3 +1,5 @@
+# rspec spec/submarine_spec.rb
+
 require 'submarine'
 
 describe Submarine do

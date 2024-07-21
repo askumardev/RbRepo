@@ -1,6 +1,8 @@
+# rspec spec/string_analyzer_spec.rb
+
 require 'string_analyzer'
 
-describe StringAnalyzer do 
+describe StringAnalyzer do
   context "With valid input" do
 
     it "should detect when a string contains vowels" do
@@ -8,7 +10,7 @@ describe StringAnalyzer do
        test_string = 'uuu'
        #expect(sa.has_vowels? test_string).to be true
        expect(sa.has_vowels? test_string).to be false
-    end 
+    end
 
     it "should detect when a string doesn't contain vowels" do
        sa = StringAnalyzer.new
