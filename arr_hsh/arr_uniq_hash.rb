@@ -7,9 +7,9 @@ def remove_duplicates(arr)
   end
   hsh.values
 end
-
 arr = [1, 2, 2, 3, 4, 4, 5]
 puts remove_duplicates(arr).inspect
+
 p "-------------using Set---------------------"
 p Set.new(arr).to_a
 
