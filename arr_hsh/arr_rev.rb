@@ -4,13 +4,6 @@
 
 array = [1, 2, 3]
 
-p "---------using unshift-----------------"
-reversed = []
-array.each do |x|
-  reversed.unshift x
-end
-p reversed
-
 p "---------using pop-----------------"
 def reverse(array)
   rev = []
@@ -18,6 +11,13 @@ def reverse(array)
   rev
 end
 p reverse(array)
+
+p "---------using unshift-----------------"
+reversed = []
+array.each do |x|
+  reversed.unshift x
+end
+p reversed
 
 # p "---------using insert-----------------"
 # def reverse_arr(array)

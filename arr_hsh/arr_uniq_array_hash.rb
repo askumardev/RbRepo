@@ -8,6 +8,7 @@ def remove_duplicates_using_array(arr)
   new1
 end
 p remove_duplicates_using_array(arr)
+
 p "---------remove_duplicates_using_hash----------------"
 def remove_duplicates_using_hash(arr)
   new1 = {}
