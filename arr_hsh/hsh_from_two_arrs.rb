@@ -1,5 +1,5 @@
-arr1 = ["name","description","rating", :a]
-arr2 = ["Godrej","A godrej brand","5", 1]
+arr1 = ["name","description","rating", :a, :bool_x,'b']
+arr2 = ["Godrej","A godrej brand","5", 1, true]
 
 hsh = {}
 
