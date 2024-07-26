@@ -1,7 +1,10 @@
 # ruby basics/gets_chomp.rb
 
-# gets 
-# gets.chomp
+# "gets" allows user input but a new line will be added after the string 
+#(string means text or a sequence of characters)
+
+#"gets.chomp" allows user input as well just like "gets", but there is not going to 
+#be a new line that is added after the string.
 
 require 'pry'
 print('Enter your fname: ' )
@@ -20,9 +23,5 @@ puts "Sum = #{c}"
 #--------difference--------------
 puts "Difference = #{a.to_i - b.to_i}"
 #-----------multiplication-----------
-
 puts "Product = #{a.to_i * b.to_i}"
-#-------------division---------
 
-puts "Division = #{a.to_i / b.to_i}"
-puts "Modulo Division = #{a.to_f / b.to_i}"
