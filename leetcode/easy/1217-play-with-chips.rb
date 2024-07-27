@@ -25,7 +25,13 @@
 
 def min_cost_to_move_chips(chips)
   [
-    chips.count(&:even?), 
+    chips.count(&:even?),
     chips.count(&:odd?)
   ].min 
 end
+
+chips = [1,2,3]
+p min_cost_to_move_chips(chips)
+
+chips = [2,2,2,3,3]
+p min_cost_to_move_chips(chips)
