@@ -1,5 +1,7 @@
 # ruby arr_hsh/add_digits.rb
+
 require 'pry'
+
 def add_digits(num)
   return num if num.to_s.length < 2
   arr = num.to_s.chars.map{|x| x.to_i}

@@ -23,7 +23,7 @@ Human.new.send(:whisper) "I’m whispering"
 p "--------------------------------------------"
 
 
-arr = [1,1,1,1,2,2,2,3,3,4] #---> find highest frequbt number
+arr = [1,1,1,1,2,2,2,3,3,4] #---> find highest frequent number
 frequency_hash = arr.map { |x| [x, arr.count(x)] }.to_h
 
 # Find the key-value pair with the maximum count
