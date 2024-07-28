@@ -1,10 +1,18 @@
 # ruby basics/yield_demo.rb
 
-# The yield keyword in Ruby is used to execute a block of code that is passed as an argument to a method. 
+# The yield keyword in Ruby is used to execute a block of code that is passed as an argument to a method.
 # This allows you to create flexible and reusable methods that can be customized with different blocks of code as needed.
 
 # When a method containing the yield keyword is called with a block, the block is executed at the point where yield is encountered.
 # The method can also pass arguments to the block, and the block can return a value that is used by the method.
+
+p "------single line block------"
+[1,2,3].each {|num| p num}
+
+p "------multi line block------"
+[4,5,6].each do |num|
+  p num
+end
 
 def custom_greeting(name)
   greeting = yield name

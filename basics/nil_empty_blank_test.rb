@@ -3,22 +3,21 @@
 require 'active_support'
 require 'active_support/core_ext/object/blank'
 
+p "----------empty str test----------------"
 # if we dont declare active support as require the blank method will return the errors
 p "".nil?
 p "".empty?
 p "".blank? #undefined method `blank?' for an instance of String (NoMethodError)
-p "--------------------------"
-
+p "----------empty array test----------------"
 p [].nil?
 p [].empty?
 p [].blank? #undefined method `blank?' for an instance of String (NoMethodError)
-p "--------------------------------------"
+p "--------------nil test------------------------"
 p nil.nil?
 # p nil.empty? #undefined method `empty?' for nil (NoMethodError)
 p nil.blank? #undefined method `blank?' for an instance of String (NoMethodError)
 p "--------------------------------------"
 students = ["Jeery", "Tom", "Eddie"]
-
 puts students[4] #nil  #this will output nothing since index doesnot exist
 puts students[4].class #this will output the class that belongs to nil
 puts students[0] == students[1] #false ->this will output false since both names does not match
