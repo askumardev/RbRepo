@@ -36,5 +36,4 @@ def word_pattern(pattern, str)
 end
 
 word_pattern("abba", "dog cat cat cat")
-
 word_pattern("abba", "dog cat cat fish cow")
