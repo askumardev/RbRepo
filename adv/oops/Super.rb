@@ -1,4 +1,4 @@
-# ruby basics/ObjClsOop/Super.rb
+# ruby adv/oops/Super.rb
 
 class Animal
   def name
@@ -15,3 +15,41 @@ class Cat < Animal
 end
 cat = Cat.new
 puts cat.name
+
+
+class Grandparent
+  def foo
+    "Hello from Grandparent"
+  end
+end
+
+class Parent < Grandparent
+  def foo
+    super
+  end
+end
+
+class Child < Parent
+  def foo
+    super
+  end
+end
+
+child = Child.new
+puts child.foo
+
+
+class Parent
+  def greet(name)
+    "Hello, #{name}!"
+  end
+end
+
+class Child < Parent
+  def greet(name, age)
+    super(name) + " You are #{age} years old."
+  end
+end
+
+child = Child.new
+puts child.greet("Rahul", 25) # Output: "Hello, Rahul! You are 25 years old."
