@@ -15,7 +15,6 @@ class A
 end
 
 a = Abc.new.swim
-
 A.swim
 
 hsh = {x: 1, y: nil, z: 3}
@@ -23,4 +22,5 @@ p hsh.select { |k, v| !v.nil? }
 
 p "satish".object_id
 
-#Emplyee.salary(order: :desc).offset(2).last
+# Employee.order(salary: :desc).offset(1)
+# Employee.order(salary: :desc).limit(2).last
