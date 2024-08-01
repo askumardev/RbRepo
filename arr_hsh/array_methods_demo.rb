@@ -29,6 +29,13 @@ pos = a.select{ |x| x % 2 == 0}
 p pos
 
 
+p "-----shift------"
+sft=[]
+sft = a.shift
+p sft
+p a
+p sft << sft.unshift(a.pop)
+
 
 
 
