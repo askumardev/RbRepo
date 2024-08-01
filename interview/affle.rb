@@ -25,3 +25,9 @@ input_string = "a(bc)de(fg)h"
 p reverse_in_parentheses(input_string)
 input_string = "(u(love)i)"
 p reverse_in_parentheses(input_string)
+
+
+
+# output
+# "acbdegfh"
+# "iloveu"
