@@ -13,8 +13,8 @@ class DTest
 end
 
 d = DTest.new
-p d.methods
-p d.methods.sort
+# p d.methods
+# p d.methods.sort
 
 str = "sample "
 p d.test(str,"test")

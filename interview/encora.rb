@@ -24,3 +24,5 @@ p "satish".object_id
 
 # Employee.order(salary: :desc).offset(1)
 # Employee.order(salary: :desc).limit(2).last
+
+#ducktyping
