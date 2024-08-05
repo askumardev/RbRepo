@@ -11,7 +11,7 @@ class User
     @age = age
   end
 end
-u = User.new("John",22)
+
 #p u.name
 
 class User
@@ -20,7 +20,17 @@ class User
     p "The user age is: #{@age}"
   end
 end
+
+class User
+  def display_user
+    p "The user name is: #{@name}"
+    p "The user age is: #{@age}"
+  end
+end
+
+u = User.new("John",22)
 u.print_user
+u.display_user
 
 
 
