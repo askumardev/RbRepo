@@ -4,8 +4,11 @@ require 'pry'
 
 def add_digits(num)
   return num if num.to_s.length < 2
-  arr = num.to_s.chars.map{|x| x.to_i}
-  #arr = num.to_s.split("").map{|x| x.to_i}  ## Alternative
+  if num.is_a?(String)
+    arr = num.split.map(&:to_i)
+  else
+    arr = num.to_s.chars.map{|x| x.to_i}
+  end
   sum = arr.inject(:+)
   add_digits(sum)
 end
@@ -14,6 +17,9 @@ puts(add_digits(12))
 puts(add_digits(123))
 puts(add_digits(1234))
 puts(add_digits(8))
+
+p add_digits("1234")
+puts(add_digits("12"))
 
 # def add_digits1(num)
 #   if num.to_s.length < 2
