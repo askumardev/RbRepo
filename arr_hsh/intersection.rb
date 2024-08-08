@@ -63,6 +63,7 @@ def intersect(arr1, arr2)
   hash = Hash.new(0)
 
   arr2.each {|num| hash[num] += 1 }
+  p arr2
 
   arr1.each do |num|
     if hash.has_key?(num)

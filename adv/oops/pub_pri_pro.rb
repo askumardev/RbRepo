@@ -32,6 +32,7 @@ class Sample
   def public_method
     puts "Some public text"
     some_private_method
+    some_protected_method
   end
 end
 
