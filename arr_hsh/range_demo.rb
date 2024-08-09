@@ -15,5 +15,5 @@ p c
 odd = (1..10).step(2).to_a
 p odd
 
-even = 2.step(b,2)
+even = 2.step(10, 2).to_a
 p even
