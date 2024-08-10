@@ -21,7 +21,6 @@ end
 #  "Extra tv in living room",
 #  "Extra tv outside the shop"]
 input = %w[helloworld hellokitty hell hello hellojin]
-
 puts substr(input)
 
 string = "abcaaadefdgdhijkl"
