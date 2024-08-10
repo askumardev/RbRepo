@@ -54,7 +54,7 @@ my_proc = Proc.new { |x| puts x }
 #return in proc and lambda
 puts "******return in proc*******"
 def proc_method
-  puts "before proc"
+  puts "---before proc"
   my_proc = Proc.new do
     puts "proc1"
     return
@@ -63,12 +63,11 @@ def proc_method
   my_proc.call
   puts "after proc"
 end
-
 proc_method
 
 puts "******return in lambda*******"
 def lambda_method
-  puts "before lambda"
+  puts "---before lambda"
   lmbd = lambda do
     puts "lambda1"
     return
@@ -77,7 +76,6 @@ def lambda_method
   lmbd.call
   puts "after lambda"
 end
-
 lambda_method
 
 def method_proc
