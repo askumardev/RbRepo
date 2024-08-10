@@ -2,29 +2,29 @@
 
 module MyModule
   def my_method
-    puts 'MyModule method'
+    puts 'Module method'
   end
 end
 
-class MyBaseClass
+class Parent
   include MyModule
 
   def my_method
-    puts 'MyBaseClass method'
+    puts 'Parent method'
   end
 end
 
-class MySubClass < MyBaseClass
+class Child < Parent
   def my_method
-    puts 'MySubClass method'
+    puts 'Child method'
   end
 end
 
-obj = MySubClass.new
+obj = Child.new
 obj.my_method
 
 
-# MySubClass: Ruby finds the my_method in MySubClass and executes it.
-# MyBaseClass: This would be checked if my_method wasn't defined in MySubClass.
-# MyModule: This is checked if neither MySubClass nor MyBaseClass defined my_method.
-# Since MySubClass has its own my_method, it takes precedence over the methods defined in MyBaseClass or MyModule.
+# Child: Ruby finds the my_method in Child and executes it.
+# Parent: This would be checked if my_method wasn't defined in Child.
+# MyModule: This is checked if neither Child nor Parent defined my_method.
+# Since Child has its own my_method, it takes precedence over the methods defined in Parent or MyModule.
