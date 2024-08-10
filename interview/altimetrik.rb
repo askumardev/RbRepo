@@ -36,6 +36,28 @@ class MyController < ApplicationController
     puts options
   end
 end
+#======================================
+class MyController < ApplicationController
+  def update_options
+    available_option_keys = [:first_option, :second_option, :third_option]
+    options_to_update = params.permit(available_option_keys)
+
+    options_to_update.each do |key, value|
+      options[key.to_sym] = value
+    end
+  end
+#============or===============================
+  def update_options
+    available_option_keys = [:first_option, :second_option, :third_option]
+    
+    params.slice(*available_option_keys).each do |key, value|
+      options[key.to_sym] = value
+    end
+  end
+end
+
+
+#====================================
 
 RSpec.define coontroller do
  describe "GET options" do
