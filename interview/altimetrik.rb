@@ -73,9 +73,14 @@ end
 def magic(x, y)
   return true if (x.even? && y.odd?) || (x.odd? && y.even?)
   return false if x == 0 && y == 0
+  magic(0,0) if x == y
   # The last condition always returns true since (x-y) + (y-x) is always 0
   # This part is redundant and can be removed
 end
+
+p magic(2,3)
+p magic(0,0)
+p magic(4,4)
 
 Employee.order(salary: :desc).limit(2).last
 SELECT *
