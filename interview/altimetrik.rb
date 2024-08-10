@@ -58,6 +58,34 @@ end
 
 
 #====================================
+def magic(x, y)
+  if ( x.even? && y.odd?)
+     return true
+  elsif x % 2 == 1 && y % 2 == 0
+     return true
+  elsif x == 0 && y == 0
+     return false
+  elsif (x-y) + (y-x) == 0
+     magic(0,0)
+  end
+end
+
+def magic(x, y)
+  return true if (x.even? && y.odd?) || (x.odd? && y.even?)
+  return false if x == 0 && y == 0
+  # The last condition always returns true since (x-y) + (y-x) is always 0
+  # This part is redundant and can be removed
+end
+
+Employee.order(salary: :desc).limit(2).last
+SELECT *
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+
+users_with_same_email = User.where(email: user.email)
+users_with_same_email.offset(1).destroy_all
+
 
 RSpec.define coontroller do
  describe "GET options" do
