@@ -7,19 +7,24 @@
 # i/p: delhi
 # o/p: delhi=>goa=>bangalore=>chennai
 
-routes = 'mumbai=>delhi=>goa=>bangalore=>chennai'.gsub!('=>', ',').split(',')
-ind = nil
-puts "#{routes.inspect}"
-puts "enter route::"
-inp = gets.chomp.to_s
-abort('no routes available/ mismatched route') if !routes.include?(inp)
-routes.each_with_index.map { |x,i| ind = i if routes[i] == inp }
-res_arr = []
-if routes[ind] && routes[ind + 1]
-  routes.each_with_index.map { |x,i| res_arr << routes[i] if  i >= ind }
+routes = 'mumbai=>delhi=>goa=>bangalore=>chennai'.split('=>')
+puts routes.inspect
+
+puts "Enter route:"
+inp = gets.chomp
+
+unless routes.include?(inp)
+  abort('No routes available or mismatched route')
+end
+
+index = routes.index(inp)
+p index
+res_arr = routes[index..-1]
+
+if res_arr.size > 1
   puts res_arr.join('=>')
 else
-  puts 'no routes available'
+  puts 'No routes available'
 end
 
 #######################Alternate way below################################
