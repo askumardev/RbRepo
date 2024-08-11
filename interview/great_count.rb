@@ -1,8 +1,16 @@
 str = "ggggggggggrrrrrrrrrrrrreeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaattttttttttttttttttttttttttttt"
 puts "*****using map******"
 arr = str.chars
+vowels = %w(a e i o u)
 hsh = arr.map{|x| [x,arr.count(x)]}.to_h
-puts hsh
+vowels_arr = hsh.keys.select{|v| vowels.include?(v)}
+p vowels_arr
+
+conso_arr = hsh.keys.select{|v| !vowels.include?(v)}
+p conso_arr
+
+vowels_count = hsh.select{|k,v| vowels.include?(k)}
+p vowels_count
 
 puts "*****using tally******"
 hsh = arr.tally

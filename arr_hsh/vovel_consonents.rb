@@ -1,3 +1,5 @@
+# ruby arr_hsh/vowel_consonents.rb
+
 str = "satish Kumar"
 arr = str.chars
 vowel_arr = %w(a e i o u)
