@@ -8,7 +8,7 @@
 # o/p: delhi=>goa=>bangalore=>chennai
 
 routes = 'mumbai=>delhi=>goa=>bangalore=>chennai'.split('=>')
-puts routes.inspect
+p routes
 
 puts "Enter route:"
 inp = gets.chomp
@@ -22,7 +22,7 @@ p index
 res_arr = routes[index..-1]
 
 if res_arr.size > 1
-  puts res_arr.join('=>')
+  p res_arr.join('=>')
 else
   puts 'No routes available'
 end
