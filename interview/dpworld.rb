@@ -31,6 +31,22 @@ p("-------------2nd round---------")
 #  p x.first if x.inject(:+) == target 
 # end
 p"-------------------------------------"
+arr = [3, 3, 5, 5, 5, 10, 4, 6, 6]
+target = 10
+
+combinations = []
+
+for i in 0...(arr.length - 1)  # Outer loop
+  for j in (i + 1)...arr.length  # Inner loop
+    if arr[i] + arr[j] == target
+      combination = [arr[i], arr[j]].sort
+      combinations << combination unless combinations.include?(combination)
+    end
+  end
+end
+
+p combinations
+
 arr = [1,2,5,7,13,11,-2]
 target = 9
 new = []

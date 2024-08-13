@@ -2,6 +2,10 @@ class Documet < ApplicationRecord
   belongs_to :documaentable, polymorphic: true
  end
 
+ class RegistrationDocumet < ApplicationRecord
+  has_any :documents, as : documentable
+ end
+
 Class LoginDocuments
 end
 
