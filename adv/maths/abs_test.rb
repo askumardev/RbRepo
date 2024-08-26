@@ -1,4 +1,4 @@
-# ruby basics/maths/abs_test.rb
+# ruby adv/maths/abs_test.rb
 
 require 'minitest/autorun'
 require_relative './abs'

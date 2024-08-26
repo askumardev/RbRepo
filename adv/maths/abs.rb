@@ -1,4 +1,4 @@
-# ruby basics/maths/abs.rb
+# ruby adv/maths/abs.rb
 
 # Calculates the absolute value of a number
 class Abs
