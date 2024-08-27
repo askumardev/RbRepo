@@ -42,4 +42,25 @@ num1 = [1,4,7]
 num2 = [2,3]
 p median(num1, num2)
 
+
+# class CsvReader
+#   def call(input)
+#     input.each do |i|
+#     Student.create(fname: i[:fname], lname: i[:lname] )
+#     end
+#   end
+# end
+
+
+# class ExportController < ApplicationController
+# include CsvReader
+#   input   = File.read(params[:file])
+#   reader = CsvReader.call(input)
+# end
+
+
+# class Student < ApplicationRecord
+#   validate_presence_of :fname, :lname
+# end
+
 # ruby interview/josys.rb
