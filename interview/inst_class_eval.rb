@@ -22,6 +22,13 @@ end
 
 p Person.human? # true
 
+Person.instance_eval do
+  def say_hello
+    "Hello...!"
+  end
+end
+p Person.say_hello
+
 # This example of instance_eval is similar, but evaluates the code in the context of an instance instead of a class.
 # This is confusing at first, because in these examples class_eval creates instance methods and instance_eval creates class methods.
 # There is reason behind the madness, however.
