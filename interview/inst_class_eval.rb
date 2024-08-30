@@ -1,33 +1,56 @@
 # ruby interview/inst_class_eval.rb
 
-class Person
+p "--------------------class_eval---------------------------------"
+# class_eval
+# Context: Evaluates the code in the context of a class.
+# Usage: Modifies the class itself, like adding methods or constants.
+# Alias: Also known as module_eval when used with modules.
+class MyClass1
 end
 
-Person.class_eval do
-  def say_hello
-   "Hello!"
+# Adding methods to MyClass1 using class_eval
+MyClass1.class_eval do
+  def hello1
+    "Hello1!"
+  end
+
+  def hello2
+    "Hello2!"
+  end
+end
+# class_eval is used to add a method hello to MyClass. This method becomes available to all instances of MyClass.
+
+p "--------------------instance_eval---------------------------------"
+# instance_eval
+# Context: Evaluates the code in the context of an instance.
+# Usage: Modifies a specific instance, like adding singleton methods or accessing instance variables.
+# Scope: Within the block, self refers to the instance, not the class.
+
+class MyClass2
+end
+
+obj2 = MyClass2.new
+# Adding methods to MyClass2 using instance_eval
+obj2.instance_eval do
+  def hello3
+    "Hello3!"
+  end
+
+  def hello4
+    "Hello4!"
   end
 end
 
-jimmy = Person.new
-p jimmy.say_hello # "Hello!"
-# In this example, class_eval allows us to define a method within the Person class outside of its original definition and without reopening the class with the standard syntax. This could be useful when the class you want to add this method to is not known until runtime.
+# Creating instances
+obj1 = MyClass1.new
 
 
-Person.instance_eval do
-  def human?
-    true
-  end
-end
+# Testing methods
+puts obj1.hello1  # Output: Hello1!
+puts obj1.hello2  # Output: Hello2!
 
-p Person.human? # true
-
-Person.instance_eval do
-  def say_hello
-    "Hello...!"
-  end
-end
-p Person.say_hello
+puts obj2.hello3  # Output: Hello3!
+puts obj2.hello4
 
 # This example of instance_eval is similar, but evaluates the code in the context of an instance instead of a class.
 # This is confusing at first, because in these examples class_eval creates instance methods and instance_eval creates class methods.
