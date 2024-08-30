@@ -1,4 +1,4 @@
-# ruby arr_hsh/find_vowels.rb
+# ruby arr_hsh/find_vowels_consonents_count.rb
 
 str = "ggggrrreeeeeeaaaaaaatttttttttttttt"
 vowel_arr = %w(a e i o u)
