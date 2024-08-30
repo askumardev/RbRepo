@@ -13,3 +13,6 @@ p hsh.keys.select{|x| vowel_arr.include?(x)}
 
 p "-------vowels count-------------"
 p hsh.select { |k, v| vowel_arr.include?(k) }
+
+p "-------consonents count-------------"
+p hsh.select { |k, v| !vowel_arr.include?(k) }
