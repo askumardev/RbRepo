@@ -1,23 +1,29 @@
-class User
-  def name
-    "Alice"
-  end
-
-  def greet
-    "Hello, #{name}"
+class Calculator
+  def add(a, b)
+    a + b
   end
 end
 
-RSpec.describe User do
-  it 'greets the user with their name' do
-    user = User.new
+describe Calculator do
+  it 'returns the sum of two numbers using the calculator' do
+    calculator = Calculator.new
 
-    # Stub the name method
-    allow(user).to receive(:name).and_return("Bob")
+    # Stubbing the add method of Calculator
+    allow(calculator).to receive(:add).with(2, 3).and_return(5)
 
-    # Expect the name method to be called
-    expect(user).to receive(:name)
+    result = calculator.add(2, 3)
+    expect(result).to eq(5)
+  end
+end
 
-    expect(user.greet).to eq("Hello, Bob")
+describe Calculator do
+  it 'calls the add method on the calculator with the correct arguments' do
+    calculator = double("Calculator")
+
+    # Mocking the add method
+    expect(calculator).to receive(:add).with(2, 3).and_return(5)
+
+    result = calculator.add(2, 3)
+    expect(result).to eq(5)
   end
 end
