@@ -23,7 +23,7 @@ def find_duplicates(array)
 
   # Count occurrences of each element
   array.each do |element|
-    counts[element] = 0 unless counts.key?(element) # not needed if commeted `counts` is used
+    counts[element] = 0 unless counts.key?(element) # this line is not needed if commeted `counts` is used
     counts[element] += 1
   end
   p counts
