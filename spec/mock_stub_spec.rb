@@ -1,3 +1,5 @@
+# rspec spec/mock_stub_spec.rb
+
 class Calculator
   def add(a, b)
     a + b
