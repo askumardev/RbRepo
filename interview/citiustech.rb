@@ -1,9 +1,9 @@
 class Documet < ApplicationRecord
-  belongs_to :documaentable, polymorphic: true
+  belongs_to :documentable, polymorphic: true
  end
 
- class RegistrationDocumet < ApplicationRecord
-  has_any :documents, as : documentable
+ class RegistrationDocument < ApplicationRecord
+  has_many :documents, as : documentable
  end
 
 Class LoginDocuments
