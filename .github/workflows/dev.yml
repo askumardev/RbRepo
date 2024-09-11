@@ -17,9 +17,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2' # Adjust as needed
+        ruby-version: [3.2, 3.3] # Adjust as needed
 
     - name: Install dependencies
       run: bundle install
