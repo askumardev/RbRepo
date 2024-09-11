@@ -19,3 +19,5 @@ consumer = Thread.new do
 end
 
 consumer.join
+
+# ruby adv/producer_consumer.rb

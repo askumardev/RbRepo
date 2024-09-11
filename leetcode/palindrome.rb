@@ -11,4 +11,6 @@ def is_palindrome(x)
   puts x
 end
 
-is_palindrome(122)
+is_palindrome(121)
+
+# ruby leetcode/palindrome.rb

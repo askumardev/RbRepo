@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby adv/class_module.rb
 
 module C
   def name
@@ -40,6 +40,7 @@ end
 
 B.new.name1
 puts B.ancestors
-# obj = B.new.name
+obj = B.new.name
+p obj
 # puts obj.methods
 # puts obj.methods.count

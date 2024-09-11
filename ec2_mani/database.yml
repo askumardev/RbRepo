@@ -1,0 +1,8 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: urlshortner_production
+  username: urlshortner
+  password: urlshortner
+  host: localhost
+  port: 5432

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# ruby interview/paranthesis_balance.rb
 
 require 'pry'
 def check_balanced_parentheses?(entered_string)

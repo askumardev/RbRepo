@@ -1,4 +1,16 @@
-# frozen_string_literal: true
+# ruby adv/splatter.rb
+
+prime = [3,5,7]
+
+arr = [1,2,*prime,4]
+p arr
+
+def dubSplat(a, *b, **c)
+  p a
+  p b
+  p c
+end
+dubSplat(1,2,3, 4, a: 40, b: 50)
 
 # def meth *players
 # 	puts players
@@ -16,15 +28,6 @@
 # 	"Sachin": "2",
 # 	"Kohli": "3",
 # 	"Dhoni": 4
-
 # }
 # meth data
 ############################################
-def invoice(options = {})
-  puts options[:company]
-  puts options[:total]
-  puts options[:state]
-  puts options[:country]
-end
-
-invoice company: 'Google', total: 100, state: 'Hyd'

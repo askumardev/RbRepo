@@ -1,9 +1,9 @@
-# frozen_string_literal: true
+# ruby adv/singleton.rb
 
 # Class A
-#     def self.hi
-#         puts "hi"
-#     end
+#   def self.hi
+#     puts "hi"
+#   end
 # end
 
 # A.hi

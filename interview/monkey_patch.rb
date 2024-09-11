@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Feature to add new method to existing class in runtime
 
 class Object
@@ -9,3 +7,5 @@ class Object
 end
 
 'satish'.sample_method
+
+# ruby interview/monkey_patch.rb
