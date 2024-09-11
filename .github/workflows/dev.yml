@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: [3.2, 3.3] # Test against multiple Ruby versions
 
     steps:
     - name: Checkout code
@@ -19,7 +22,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: [3.2, 3.3] # Adjust as needed
+        ruby-version: ${{ matrix.ruby-version }}
 
     - name: Install dependencies
       run: bundle install
