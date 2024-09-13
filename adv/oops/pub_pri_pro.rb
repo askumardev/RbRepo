@@ -1,4 +1,4 @@
-# ruby basics/ObjClsOop/pub_pri_pro.rb
+# ruby adv/oops/pub_pri_pro.rb
 
 #By default, all the methods you define will be public
 
@@ -36,6 +36,13 @@ class Sample
   end
 end
 
+class Test < Sample
+  def test
+    some_private_method
+    some_protected_method
+  end
+end
+
 obj = Sample.new
 obj.some_public_method
 obj.public_method
@@ -45,3 +52,6 @@ obj.public_method
 Sample.new.send :some_private_method
 Sample.new.send :some_protected_method
 Sample.new.public_method
+p "-------------------------"
+t = Test.new
+t.test
