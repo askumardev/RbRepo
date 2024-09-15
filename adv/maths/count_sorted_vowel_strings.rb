@@ -1,4 +1,4 @@
-# ruby basics/maths/count_sorted_vowel_strings.rb
+# ruby adv/maths/count_sorted_vowel_strings.rb
 
 # Challenge name: Count Sorted Vowel Strings
 #

@@ -1,4 +1,4 @@
-# ruby basics/maths/factorial.rb
+# ruby adv/maths/factorial.rb
 
 =begin
 A ruby program calculate factorial of a given number.

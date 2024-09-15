@@ -1,4 +1,4 @@
-# ruby basics/maths/add.rb
+# ruby adv/maths/add.rb
 
 # A ruby program to add numbers
 # Addition or sum of numbers means adding each and every element of the inputs

@@ -1,4 +1,4 @@
-# ruby basics/maths/find_max.rb
+# ruby adv/maths/find_max.rb
 
 # A ruby program to find max from a set of elements
 

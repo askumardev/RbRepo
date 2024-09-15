@@ -1,4 +1,4 @@
-# ruby basics/maths/prime_number.rb
+# ruby adv/maths/prime_number.rb
 
 # A ruby program to check a given number is prime or not
 # Mathematical explanation: A number which has only 2 factors i.e., 1 (one) and itself

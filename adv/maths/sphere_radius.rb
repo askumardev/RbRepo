@@ -1,4 +1,4 @@
-# ruby basics/maths/sphere_radius.rb
+# ruby adv/maths/sphere_radius.rb
 
 r = 5.0
 v = 0.0

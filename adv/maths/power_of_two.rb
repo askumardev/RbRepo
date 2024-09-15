@@ -1,4 +1,4 @@
-# ruby basics/maths/power_of_two.rb
+# ruby adv/maths/power_of_two.rb
 
 # Power of 2
 #

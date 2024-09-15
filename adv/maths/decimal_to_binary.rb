@@ -1,4 +1,4 @@
-# ruby basics/maths/decimal_to_binary.rb
+# ruby adv/maths/decimal_to_binary.rb
 
 # Convert a given decimal number into binary.
 #

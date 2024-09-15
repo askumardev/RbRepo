@@ -1,4 +1,4 @@
-# ruby basics/maths/average_median.rb
+# ruby adv/maths/average_median.rb
 
 # A ruby program to find average median
 # Reference: https://dev.to/colerau/how-to-find-the-median-and-mean-of-an-array-in-ruby-4f04

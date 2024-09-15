@@ -1,4 +1,4 @@
-# ruby basics/maths/aliquot_sum_test.rb
+# ruby adv/maths/aliquot_sum_test.rb
 
 require 'minitest/autorun'
 require_relative './aliquot_sum'

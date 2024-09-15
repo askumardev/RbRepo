@@ -1,4 +1,4 @@
-# ruby basics/maths/fibonacci.rb
+# ruby adv/maths/fibonacci.rb
 
 # The Fibonacci numbers, commonly denoted F(n) form a sequence,
 # called the Fibonacci sequence, such that each number is the sum
