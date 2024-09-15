@@ -1,4 +1,4 @@
-# ruby basics/maths/lucas_series.rb
+# ruby adv/maths/lucas_series.rb
 
 # A ruby program for Lucas series
 #

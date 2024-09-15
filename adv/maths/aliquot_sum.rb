@@ -1,4 +1,4 @@
-# ruby basics/maths/aliquot_sum.rb
+# ruby adv/maths/aliquot_sum.rb
 
 require_relative './square_root'
 require_relative './ceil'

@@ -1,4 +1,4 @@
-# ruby basics/maths/average_mean.rb
+# ruby adv/maths/average_mean.rb
 
 # A ruby program for finding average mean
 

@@ -1,4 +1,4 @@
-# ruby basics/maths/armstrong_number.rb
+# ruby adv/maths/armstrong_number.rb
 
 # A ruby program to determine whether a given number is an Armstrong number
 # Wiki url: https://en.wikipedia.org/wiki/Narcissistic_number

@@ -1,4 +1,4 @@
-# ruby basics/maths/binary_to_decimal.rb
+# ruby adv/maths/binary_to_decimal.rb
 
 # For any binary number of n digits i.e dn-1 ... d3 d2 d1 d0
 # The equivalent decimal number is equal to the sum of binary digits (dn) times their power of 2 (2n):

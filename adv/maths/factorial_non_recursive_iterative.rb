@@ -1,4 +1,4 @@
-# ruby basics/maths/factorial_non_recursive_iterative.rb
+# ruby adv/maths/factorial_non_recursive_iterative.rb
 
 # A ruby program to find factorial of a given integer
 # Factorial of a given integer is defined as the product of all the positive integers less than or equal to the given integer
