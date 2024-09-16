@@ -1,5 +1,5 @@
 # ruby interview/dictionary.rb
-
+require 'pry'
 def valid_sentence(str, dictionary)
   hash = {}
   dictionary.each { |w| hash[w.downcase] = true }
@@ -14,8 +14,8 @@ end
 
 str = 'Practice makes perfect.'
 dictionary = %w[practice perfect makes]
-puts valid_sentence(str, dictionary) == true
+puts valid_sentence(str, dictionary)# == true
 p "--------------------------------"
 str = 'Practice makes perfect.'
 dictionary = %w[practice perfect]
-puts valid_sentence(str, dictionary) == false
+puts valid_sentence(str, dictionary)# == false
