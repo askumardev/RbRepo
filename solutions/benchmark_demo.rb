@@ -1,4 +1,4 @@
-# ruby solutions/benchmark1.rb
+# ruby solutions/benchmark_demo.rb
 
 require 'benchmark'
 
