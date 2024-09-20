@@ -1,4 +1,4 @@
-# ruby basics/maths/add_digits.rb
+# ruby adv/maths/add_digits.rb
 
 # Challenge name: Add Digits
 #

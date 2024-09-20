@@ -1,4 +1,4 @@
-# ruby basics/maths/abs_max.rb
+# ruby adv/maths/abs_max.rb
 
 # A ruby program to find absolute maximum
 # Mathematical representation of abs max = ((a + b + absoulte(a - b)) / 2)

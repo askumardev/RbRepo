@@ -1,4 +1,4 @@
-# ruby basics/maths/roman_to_integer.rb
+# ruby adv/maths/roman_to_integer.rb
 
 # Challenge name: Roman to Integer
 #

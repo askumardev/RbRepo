@@ -3,8 +3,6 @@
 # Duck typing is a concept in programming languages like Ruby that relies on the principle that the suitability of an object is
 # determined by the presence of certain methods and properties, rather than the object's class itself.
 
-
-
 class Car
   def drive
     p "Driving Car..."

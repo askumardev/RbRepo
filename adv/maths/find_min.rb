@@ -1,4 +1,4 @@
-# ruby basics/maths/find_min.rb
+# ruby adv/maths/find_min.rb
 
 # A ruby program to find min from a set of elements
 

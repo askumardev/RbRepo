@@ -1,4 +1,4 @@
-# ruby basics/maths/circle_radius.rb
+# ruby adv/maths/circle_radius.rb
 
 radius = 5.0
 perimeter = 0.0

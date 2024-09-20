@@ -1,4 +1,4 @@
-# ruby basics/maths/pascal_triangle.rb
+# ruby adv/maths/pascal_triangle.rb
 
 # Given an integer row_index, return the rowIndexth (0-indexed) row of the Pascal's triangle. 
 

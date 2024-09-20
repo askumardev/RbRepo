@@ -1,4 +1,4 @@
-# ruby basics/maths/abs_min.rb
+# ruby adv/maths/abs_min.rb
 
 # A ruby program to find absolute minimum
 # Mathematical representation of abs min = ((a + b - absoulte(a - b)) / 2)

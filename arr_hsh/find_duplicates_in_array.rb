@@ -17,19 +17,19 @@
 # [2,3]
 
 def find_duplicates(array)
-  counts = {} # here the default value is nil
-  # counts = Hash.new(0) ## Here the default value is 0
+  # hsh = {} # here the default value is nil
+  hsh = Hash.new(0) ## Here the default value is 0
   dup = []
 
   # Count occurrences of each element
   array.each do |element|
-    counts[element] = 0 unless counts.key?(element) # not needed if commeted `counts` is used
-    counts[element] += 1
+    #counts[element] = 0 unless counts.key?(element) # this line is not needed if commeted `counts` is used
+    hsh[element] += 1
   end
-  p counts
+  p hsh
 
   # Collect elements that appear more than once
-  counts.each do |element, count|
+  hsh.each do |element, count|
     dup << element if count > 1
   end
   dup

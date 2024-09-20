@@ -1,4 +1,4 @@
-# ruby basics/maths/square_root.rb
+# ruby adv/maths/square_root.rb
 
 # Calculates the square root of a number
 class SquareRoot

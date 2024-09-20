@@ -1,4 +1,4 @@
-# ruby basics/maths/count_digits.rb
+# ruby adv/maths/count_digits.rb
 
 # Given a number, find number of digits in it.
 
