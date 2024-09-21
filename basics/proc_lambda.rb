@@ -57,10 +57,10 @@ def proc_method
   puts "---before proc"
   my_proc = Proc.new do
     puts "proc1"
-    return
+    return  # This will return from the entire method `proc_method`
     puts "proc2"
   end
-  my_proc.call
+  my_proc.call  # This line will never be executed
   puts "after proc"
 end
 proc_method
@@ -70,11 +70,11 @@ def lambda_method
   puts "---before lambda"
   lmbd = lambda do
     puts "lambda1"
-    return
+    return  # This only returns from the lambda block, not the method
     puts "lambda2"
   end
   lmbd.call
-  puts "after lambda"
+  puts "after lambda"  # This line will be executed
 end
 lambda_method
 
@@ -83,10 +83,13 @@ def method_proc
   thing.call
   return 2
 end
+
 def method_lambda
-  thing  = lambda { return 1}
-  thing.call
+  thing1  = lambda { return 1}
+  thing1.call
   return 2
 end
+puts "******=======method_proc=============****"
 puts method_proc # => 1
+puts "******=======method_lambda=============****"
 puts method_lambda # => 2

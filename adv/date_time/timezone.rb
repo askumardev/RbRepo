@@ -9,4 +9,4 @@ zone  = date_time.zone();
 
 print "Current time zone is: ",zone;
 
-# ruby date_time/timezone.rb
+# ruby adv/date_time/timezone.rb

@@ -10,4 +10,4 @@ weeknum  = date_time.wday();
 
 print "Weekday is: ",Weekday[weeknum];
 
-# ruby date_time/weekday.rb
+# ruby adv/date_time/weekday.rb

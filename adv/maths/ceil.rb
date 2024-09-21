@@ -1,4 +1,4 @@
-# ruby basics/maths/ceil.rb
+# ruby adv/maths/ceil.rb
 
 class Ceil
   class << self

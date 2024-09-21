@@ -1,4 +1,4 @@
-# ruby basics/maths/sum_of_digits.rb
+# ruby adv/maths/sum_of_digits.rb
 
 # Given a number, find sum of its digits.
 

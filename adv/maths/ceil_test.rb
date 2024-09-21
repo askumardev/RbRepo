@@ -1,4 +1,4 @@
-# ruby basics/maths/ceil_test.rb
+# ruby adv/maths/ceil_test.rb
 
 require 'minitest/autorun'
 require_relative './ceil'

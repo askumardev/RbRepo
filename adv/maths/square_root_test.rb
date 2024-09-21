@@ -1,4 +1,4 @@
-# ruby basics/maths/square_root_test.rb
+# ruby adv/maths/square_root_test.rb
 
 require 'minitest/autorun'
 require_relative './square_root'

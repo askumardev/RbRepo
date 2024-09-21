@@ -1,4 +1,20 @@
 arr = [1,2,2,3,3,3,4,5,5]
+
+# arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5]
+uniq_arr = []
+dup = []
+
+arr.each do |x|
+  if uniq_arr.include?(x)
+    dup << x unless dup.include?(x)
+  else
+    uniq_arr << x
+  end
+end
+
+p uniq_arr  # => [1, 2, 3, 4, 5]
+p dup       # => [2, 3, 4]
+
 p "---------remove_duplicates_using_array----------------"
 def remove_duplicates_using_array(arr)
   new1 = []
