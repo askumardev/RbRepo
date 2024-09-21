@@ -1,13 +1,13 @@
 Address = Struct.new(:street, :city, :zip)
 
-class Address
-  def full_address
-    p "#{street} #{city} #{zip}"
-  end
-end
+# class Address
+#   def full_address
+#     p "#{street} #{city} #{zip}"
+#   end
+# end
 
 home = Address.new('Broadway', 'NYC', 10040)
-home.full_address # => "Broadway NYC 10040"
+# home.full_address # => "Broadway NYC 10040"
 
 p("-----------alternate way------")
 
