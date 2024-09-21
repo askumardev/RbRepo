@@ -7,6 +7,7 @@ Address = Struct.new(:street, :city, :zip)
 # end
 
 home = Address.new('Broadway', 'NYC', 10040)
+p home
 # home.full_address # => "Broadway NYC 10040"
 
 p("-----------alternate way------")
