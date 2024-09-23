@@ -20,7 +20,7 @@ end
 x = "#{a}#{b}"
 p x
 
-a||= b
+a ||= b
 
 
 hsh = [
