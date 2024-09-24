@@ -19,9 +19,17 @@ end
 
 x = "#{a}#{b}"
 p x
-
+--------------------------------------------
 a ||= b
+# The expression a ||= b in Ruby is a shorthand for:
+# a = a || b
 
+# Explanation:
+# ||= is known as a conditional assignment operator.
+# It assigns the value of b to a only if a is nil or false.
+# If a already has a truthy value (anything that isn't nil or false),
+# it remains unchanged.
+-----------------------------------------------
 
 hsh = [
   { "a" => 1, "b" => 2 },
