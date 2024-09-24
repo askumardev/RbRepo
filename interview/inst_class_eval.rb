@@ -18,6 +18,13 @@ MyClass1.class_eval do
     "Hello2!"
   end
 end
+
+# Creating instances
+obj1 = MyClass1.new
+
+# Testing methods
+puts obj1.hello1  # Output: Hello1!
+puts obj1.hello2  # Output: Hello2!
 # class_eval is used to add a method hello to MyClass. This method becomes available to all instances of MyClass.
 
 p "--------------------instance_eval---------------------------------"
@@ -41,13 +48,7 @@ obj2.instance_eval do
   end
 end
 
-# Creating instances
-obj1 = MyClass1.new
 
-
-# Testing methods
-puts obj1.hello1  # Output: Hello1!
-puts obj1.hello2  # Output: Hello2!
 
 puts obj2.hello3  # Output: Hello3!
 puts obj2.hello4
