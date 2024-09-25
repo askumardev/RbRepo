@@ -17,12 +17,13 @@ class LinkedList
   end
 
   def append(value)
+    new_node = Node.new(value)
     if @head.nil?
-      @head = Node.new(value)
+      @head = new_node
     else
       current = @head
-      current = current.next_node until current.next_node.nil?
-      current.next_node = Node.new(value)
+      current = current.next_node while current.next_node
+      current.next_node = new_node
     end
   end
 
@@ -35,11 +36,18 @@ class LinkedList
 
     if @head.value == value
       @head = @head.next_node
-    else
-      current = @head
-      current = current.next_node until current.next_node.nil? || current.next_node.value == value
-      current.next_node = current.next_node.next_node unless current.next_node.nil?
+      return true
     end
+
+    current = @head
+    while current.next_node
+      if current.next_node.value == value
+        current.next_node = current.next_node.next_node
+        return true
+      end
+      current = current.next_node
+    end
+    false
   end
 
   def find_position(value)
@@ -74,8 +82,11 @@ list.prepend(5)
 puts "List: #{list}"
 # Output: List: 5 -> 10 -> 20 -> 30
 
-list.delete(20)
-puts "List after deleting 20: #{list}"
+if list.delete(20)
+  puts "List after deleting 20: #{list}"
+else
+  puts "Value 20 not found for deletion."
+end
 # Output: List after deleting 20: 5 -> 10 -> 30
 
 position = list.find_position(10)
