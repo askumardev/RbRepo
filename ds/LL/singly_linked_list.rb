@@ -1,4 +1,4 @@
-# ruby ds/LinkedList/singly_linked_list.rb
+# ruby ds/LL/singly_linked_list.rb
 
 # Define a node in the list
 class Node
