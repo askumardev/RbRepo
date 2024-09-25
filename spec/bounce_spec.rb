@@ -1,6 +1,7 @@
 # rspec spec/bounce_spec.rb
 
-require 'bouncer'
+# require 'bouncer'
+load './lib/bouncer.rb'
 describe 'Bouncer' do
   it "rejects xx from entering the venue" do
     b = Bouncer.new

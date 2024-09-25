@@ -1,7 +1,5 @@
 # ruby interview/longest_substr.rb
 
-
-puts substr(input)
 def substr(a)
   return '' unless a.length.positive?
 
