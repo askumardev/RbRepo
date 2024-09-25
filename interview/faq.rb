@@ -52,6 +52,10 @@ str = "hi patrick this is patrick"
 arr = str.split
 p arr
 p arr.map{|x| x=="patrick" ? "satish" : x}.join(" ")
+
+str = "hi patrick this is patrick"
+p str.gsub("patrick", "satish")
+p str
 p "-------------------------------------------------------"
 class Array
   def mul10
