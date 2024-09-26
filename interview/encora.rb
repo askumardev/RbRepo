@@ -39,3 +39,38 @@ p "satish".object_id
 # Employee.order(salary: :desc).limit(2).last
 
 #ducktyping
+
+----------------------------------------
+
+def anagrams?(str1, str2)
+  # Remove spaces and convert to lowercase for accurate comparison
+  str1 = str1.gsub(/\s+/, "").downcase
+  str2 = str2.gsub(/\s+/, "").downcase
+
+  # Sort the characters of both strings
+  str1.chars.sort == str2.chars.sort
+end
+
+# Example usage
+string1 = "Clint Eastwood"
+string2 = "Old West Action"
+
+if anagrams?(string1, string2)
+  puts "\"#{string1}\" and \"#{string2}\" are anagrams."
+else
+  puts "\"#{string1}\" and \"#{string2}\" are not anagrams."
+end
+
+check_anagram(string1, string2) # returns true
+
+[3:40 PM] Abhinav Nain
+- expect("").to be_falsey
+- expect("").to be false
+- expect(false).to be_falsey
+- expect(false).to be false
+[3:41 PM] Abhinav Nain
+- nil.present?
+- nil.empty?
+- nil.blank?
+- false.present?
+- false.blank?
