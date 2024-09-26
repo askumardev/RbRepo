@@ -24,11 +24,11 @@ require 'pry'
 
 p("-------------2nd round---------")
 # arr = [0,-1,2,-3,1]
-# target = 2 
+# target = 2
 
 # arr.permutation(2) do |x|
 # #[[0,2],[2,0]]
-#  p x.first if x.inject(:+) == target 
+#  p x.first if x.inject(:+) == target
 # end
 p"-------------------------------------"
 arr = [3, 3, 5, 5, 5, 10, 4, 6, 6]
@@ -67,7 +67,7 @@ arr.each_with_index do |num1, i|
   arr.each_with_index do |num2, j|
     # Make sure we don't use the same element twice
     if i != j && num1 + num2 == target
-      
+
       pair = [num1, num2].sort
       new_pairs << pair unless new_pairs.include?(pair)
     end
