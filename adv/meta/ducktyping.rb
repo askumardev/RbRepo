@@ -1,4 +1,4 @@
-# ruby adv/ducktyping.rb
+# ruby adv/meta/ducktyping.rb
 
 # Duck typing is a concept in programming languages like Ruby that relies on the principle that the suitability of an object is
 # determined by the presence of certain methods and properties, rather than the object's class itself.
@@ -23,22 +23,23 @@ test_drive(Car.new) #=> "Driving Car..."
 test_drive(MotorCycle.new)  # "Driving MotorCycle..."
 
 
-# class DTest
-#   def test(a, b)
-#     a << b
-#   end
-# end
+class DTest
+  def test(a, b)
+    a << b
+  end
+end
 
-# d = DTest.new
-# # p d.methods
-# # p d.methods.sort
+d = DTest.new
+# p d.methods
+# p d.methods.sort
 
-# str = "sample "
-# p d.test(str,"test")
+str = "sample "
+p d.test(str,"test")
+p d.test(str,1)
 
-# arr = [1, 2, 3, 4]
-# p d.test(arr, 5)
-# p d.test(arr, str)
+arr = [1, 2, 3, 4]
+p d.test(arr, 5)
+p d.test(arr, str)
 
 # The << operator in Ruby is polymorphic: it works with strings and arrays, demonstrating duck typing.
 # The method test works as long as the first argument responds to the << method, regardless of its specific class.
