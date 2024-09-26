@@ -1,13 +1,9 @@
-parameter&.map
-------------------------------
+
 params['Action'] = input['Action'] unless input['Action'].nil?
 ---------------------------------
 ["1","2","3"]
 [[l, "1"],[l,"2"],[l,"3"]]
 result.sort_by { |v| v[:name] }.map { |k| [k[:name].labelize, k[:name]] }
-
-
-params['Action'] = input['Action'] unless input['Action'].nil?
 
 
 getArray: lambda do |_a,b|

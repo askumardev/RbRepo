@@ -1,4 +1,4 @@
-# ruby ds/LinkedList/single_list.rb
+# ruby ds/LL/single_list.rb
 
 a = [1, 2, 3, 4, 5, 6, 7, 8]
 def insert(arr, item, pos)
