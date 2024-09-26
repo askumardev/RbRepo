@@ -3,7 +3,7 @@
 require 'active_support'
 require 'active_support/core_ext/object/blank'
 
-p "----------empty str test----------------"
+p "----------nil str test----------------"
 # if we dont declare active support as require the blank method will return the errors
 p "".nil?
 p "".empty?
