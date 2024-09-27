@@ -25,8 +25,11 @@ puts "Savings: #{savings}"
 # item_discounts = {"bread" => { "3" => 150}, "eggs" => { "2" => 70}}
 # total_by_items ={}
 # items_ordered = inp.split(",").group_by(&:itself).map { |w, ws| [w, ws.length] }.to_h
+# p items_ordered
 # total_by_items = items_ordered.merge(price) {|key,val1,val2| val1*val2}
+# p total_by_items
 # total_price = total_by_items.values.inject { |a, b| a + b }
+# p total_price
 # puts "Items Ordered are: #{items_ordered}"
 # puts "Total Price of all items: #{total_by_items}"
 # puts "Total price is : #{total_price}"
