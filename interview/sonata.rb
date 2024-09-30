@@ -1,4 +1,4 @@
-
+----------------Round 1--------------------------
 params['Action'] = input['Action'] unless input['Action'].nil?
 ---------------------------------
 ["1","2","3"]
@@ -38,3 +38,33 @@ hsh.each do |hash|
 end
 
 p arr  # Output: [2, 4]
+
+
+--------------Round 2-------------------------------------
+# add_error_handling: lambda do |request|
+#       request.after_error_response(//) do |_code, body, _headers, message|
+#         error_message = nil
+
+#         if body&.match?(/\A\{/)
+#           body = parse_json(body)
+
+#           error_message = body['ErrorMessage']
+#           error_message = [body.dig('error', 'message'), body.dig('error', 'innererror', 'message')].smart_join("\r\n") if error_message.blank?
+#         else
+#           error_message = body
+#         end
+
+#         error_message = message if error_message.blank?
+
+#         error(error_message)
+#       end
+#     end,
+
+def custom_sort(arr)
+  # Your implementation here
+  p arr.sort
+ p arr.sort_by{|x| x.length}
+end
+
+puts custom_sort(["apple", "dog", "banana", "cat", "car"]).inspect
+# Expected output: ["car", "cat", "dog", "apple", "banana"]
