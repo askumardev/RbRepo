@@ -11,3 +11,4 @@ gem 'httparty'
 
 gem 'benchmark'
 gem 'coderay', '~> 1.1', '>= 1.1.3'
+gem 'humanize'
