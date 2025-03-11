@@ -1,24 +1,30 @@
-# ruby adv/openssl/encrypt_decrypt_data.rb
-
+# ruby adv/cryptography/encrypt_decrypt_data.rb
+require 'dotenv'
 require 'openssl'
 require 'base64'
 require 'json'
+require 'pry'
+Dotenv.load
 
 # Sample JSON payload
-data = {
-  name: "Satish Kumar",
-  email: "abc123@example.com",
-  phone: "123456789"
-}.to_json
+# data = {
+#   name: "Satish Kumar",
+#   email: "abc123@example.com",
+#   phone: "123456789"
+# }.to_json
+
+data = JSON.parse(ENV['SAMPLE_JSON'])
 
 # AES Encryption method
 def encrypt_json(json_data, key, iv)
+
+
   cipher = OpenSSL::Cipher.new('aes-256-cbc')
   cipher.encrypt
   cipher.key = key
   cipher.iv = iv
-
-  encrypted = cipher.update(json_data) + cipher.final
+  binding.pry
+  encrypted = cipher.update(json_data.to_json) + cipher.final
   Base64.strict_encode64(encrypted) # Encode in Base64 for safe storage/transmission
 end
 
