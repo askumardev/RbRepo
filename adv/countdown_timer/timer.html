@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown Timer</title>
+
+<style>
+body{
+  font-family: Arial;
+  text-align:center;
+  margin-top:100px;
+}
+
+#timer{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+input{
+  width:60px;
+  padding:5px;
+}
+
+button{
+  padding:8px 20px;
+  margin:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="timer">00:00:000</div>
+
+<input id="min" placeholder="Min">
+<input id="sec" placeholder="Sec">
+<input id="ms" placeholder="Ms">
+
+<br>
+
+<button onclick="start()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+
+<script>
+
+let interval
+let remaining = 0
+
+function start(){
+
+let min = parseInt(document.getElementById("min").value)||0
+let sec = parseInt(document.getElementById("sec").value)||0
+let ms = parseInt(document.getElementById("ms").value)||0
+
+remaining = (min*60000)+(sec*1000)+ms
+
+interval = setInterval(function(){
+
+if(remaining<=0){
+clearInterval(interval)
+return
+}
+
+let m = Math.floor(remaining/60000)
+let s = Math.floor((remaining%60000)/1000)
+let milli = remaining%1000
+
+document.getElementById("timer").innerHTML =
+String(m).padStart(2,'0') + ":" +
+String(s).padStart(2,'0') + ":" +
+String(milli).padStart(3,'0')
+
+remaining -= 10
+
+},10)
+
+}
+
+function stopTimer(){
+clearInterval(interval)
+}
+
+</script>
+
+</body>
+</html>
