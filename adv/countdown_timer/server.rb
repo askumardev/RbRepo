@@ -1,5 +1,7 @@
 # ruby adv/countdown_timer/server.rb
 
+# http://localhost:4567/ in the browser
+
 require 'webrick'
 
 server = WEBrick::HTTPServer.new(Port: 4567)
