@@ -28,10 +28,15 @@ https://www.includehelp.com/ruby
 https://www.includehelp.com/ruby/programs.aspx
 
 # rspecTut
+```bash
+bundle exec rspec
+```
+
 * bundle init to create Gemfile
 * add rspec gem from rubygems in Gemfile
 * type rspec in terminal to run all specs
 * bundle binstubs rspec-core --> execute this command to create bin dependencies
+* 
 * bin/rspec --init -->execute this command to create rspec dependency files
 * bin/rspec --> execute this command to run rspecs
 
