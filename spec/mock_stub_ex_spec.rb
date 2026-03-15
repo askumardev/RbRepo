@@ -4,17 +4,25 @@ class StrGenerator
   end
 end
 
-RSpec.describe "Random" do
-  it "generates random string" do
-    str = StrGenerator.new
-    allow(str).to receive(:rand).and_return(5)
-    #expect(str.random_str).to eq("AAA")
+RSpec.describe "StrGenerator" do
+  let(:generator) { StrGenerator.new }
 
-    result = str.random_str
-    #p result
-    # Verify that the length of the result is 5
-    expect(result.length).to eq(5)
-    # Verify that the result is a string of "A"s
-    expect(result).to eq('A' * 5)
-  end
+  # Example 1
+  it "uses a stub" do
+    allow(generator).to receive(:rand).and_return(5)
+    expect(generator.random_str).to eq("AAAAA")
+  end # <-- Close 1
+
+  # Example 2
+  it "uses a mock" do
+    expect(generator).to receive(:rand).and_return(3)
+    generator.random_str
+  end # <-- Close 2
+
+  # Example 3 (The one that was likely missing)
+  it "uses a double with allow" do
+    fake = double("Fake")
+    allow(fake).to receive(:random_str).and_return("AAA")
+    expect(fake.random_str).to eq("AAA")
+  end # <-- Close 3
 end
