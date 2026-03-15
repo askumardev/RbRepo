@@ -1,6 +1,6 @@
 # rspec spec/string_analyzer_spec.rb
 
-require 'string_analyzer'
+require 'services/string_analyzer'
 
 describe StringAnalyzer do
   context "With valid input" do
