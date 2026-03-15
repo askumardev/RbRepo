@@ -15,7 +15,6 @@ https://www.includehelp.com/ruby
 
 https://www.includehelp.com/ruby/programs.aspx
 
-
 # rspecTut
 ```bash
 bundle exec rspec
@@ -57,4 +56,3 @@ Rspec.describe "xxx", type: :request do
 ## imp commands
 * rails new --devcontainer myapp -d postgresql
 * rails devcontainer(use on old rails application)
-
