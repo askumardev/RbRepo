@@ -17,6 +17,22 @@
 # pig_latin("happy") == "appyhay"
 
 def pig_latin(word)
+  vowels = "aeiou"
+
+  if vowels.include?(word[0].downcase)
+    # Rule 1: Starts with a vowel
+    word + "ay"
+  else
+    # Rule 2: Starts with one or more consonants
+    # Find the index of the first vowel
+    first_vowel_index = word.chars.find_index { |char| vowels.include?(char.downcase) }
+
+    # Split the word at the first vowel
+    consonants = word[0...first_vowel_index]
+    rest_of_word = word[first_vowel_index..-1]
+
+    rest_of_word + consonants + "ay"
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
