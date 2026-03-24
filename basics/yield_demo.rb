@@ -13,7 +13,7 @@ p "------multi line block------"
 [4,5,6].each do |num|
   p num
 end
-
+puts "------------------------"
 def custom_greeting(name)
   greeting = yield name
   puts "#{greeting}, #{name}!"
@@ -30,7 +30,7 @@ end
 # we define a custom_greeting method that takes a name as a parameter and uses the yield keyword to execute the provided block of code.
 #  The block is responsible for generating a greeting based on the name, and the method prints the final greeting message.
 # When we call the method with different blocks, we get different greeting messages for different names.
-
+puts "------------------------"
 
 def greet(name)
   puts "Hello, #{name}!"
@@ -41,3 +41,12 @@ end
 greet("Alice") do
   puts "How are you today?"
 end
+
+puts "------------------------"
+def print_num
+  yield "1"
+  yield "2"
+  yield "3"
+end
+
+print_num { |num| puts "Printing #{num}"}
