@@ -41,27 +41,3 @@ end
 greet("Alice") do
   puts "How are you today?"
 end
-
-puts "------------------------"
-def print_num
-  yield "1"
-  yield "2"
-  yield "3"
-end
-
-print_num { |num| puts "Printing #{num}"}
-
-
-puts "------------------------"
-def greet(&block)
-  block.call
-end
-
-greet { puts "Hello!....." }
-
-puts "--------------------------"
-def greet(&block)
-  block.call("Satish")
-end
-
-greet { |name| puts "Hello, #{name}" }
