@@ -1,5 +1,13 @@
 # ruby adv/oops/Super.rb
 
+# There are three primary ways to use it:
+
+# super (no parentheses): Automatically passes all arguments from the current method to the parent method.
+
+# super() (empty parentheses): Calls the parent method with zero arguments, regardless of what the current method received.
+
+# super(arg1, arg2): Passes specific, explicit arguments to the parent method.
+
 class Animal
   def name
     puts 'Animal'
@@ -25,13 +33,13 @@ end
 
 class Parent < Grandparent
   def foo
-    super
+    super()
   end
 end
 
 class Child < Parent
   def foo
-    super
+    super()
   end
 end
 
