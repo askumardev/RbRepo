@@ -50,3 +50,18 @@ def print_num
 end
 
 print_num { |num| puts "Printing #{num}"}
+
+
+puts "------------------------"
+def greet(&block)
+  block.call
+end
+
+greet { puts "Hello!....." }
+
+puts "--------------------------"
+def greet(&block)
+  block.call("Satish")
+end
+
+greet { |name| puts "Hello, #{name}" }
