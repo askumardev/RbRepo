@@ -19,3 +19,9 @@ end
 
 my_car = Car.new
 my_car.start
+
+puts "--------------------------"
+
+
+
+# ruby basics/instanceVarDemo.rb
