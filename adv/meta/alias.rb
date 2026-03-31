@@ -1,6 +1,10 @@
 class Hello
   def greet
+<<<<<<< HEAD
     "Hello.....!"
+=======
+    "Hello"
+>>>>>>> c1d2aa1 (meta updates)
   end
 
   alias_method :original_greet, :greet
