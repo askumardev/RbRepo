@@ -1,6 +1,6 @@
 class Hello
   def greet
-    "Hello"
+    "Hello.....!"
   end
 
   alias_method :original_greet, :greet
