@@ -10,4 +10,4 @@ end
 input = Array.new([1,2,3,4,5,6,7,8,9,10])
 puts input.filter_even.multiply_ten
 
-# ruby adv/obj_chain.rb
+# ruby interview/obj_chain.rb
