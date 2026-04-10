@@ -21,35 +21,35 @@
 
 class InvoiceReport
   def initialize(order, klass)
-   @order = order
-   @klass = klass
+    @order = order
+    @klass = klass
   end
 
   def generate
-   @klass.new(@order).generate
+    @klass.new(@order).generate
   end
 end
 
 class PdfGenerator
   def initialize(order)
-   @order = order
+    @order = order
   end
 
   def generate
-   # Generate PDF Report
+    # Generate PDF Report
   end
 end
 
 class CsvGenerator
   def initialize(order)
-   @order = order
+    @order = order
   end
 
   def generate
-   # Generate CSV Report
+    # Generate CSV Report
   end
 end
- 
+
  report_pdf = InvoiceReport.new(order, PdfGenerator).generate
  report_csv = InvoiceReport.new(order, CsvGenerator).generate
 
@@ -57,5 +57,5 @@ end
 
 # Software entities such as classes, modules, methods, etc should be open for extension but close for modification
 
-# This principal’s primary goal is to design the code’s architecture in such a way that functionality 
+# This principal’s primary goal is to design the code’s architecture in such a way that functionality
 # can be extended rather than modified or refactored.
