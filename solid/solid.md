@@ -8,6 +8,7 @@ DIP → Use dependency injection (e.g., services, adapters)
 
 ## Principles Overview
 
+
 | Principle | Meaning                |
 | --------- | ---------------------- |
 | **S**     | Single responsibility  |

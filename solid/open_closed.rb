@@ -22,6 +22,21 @@ end
 payment = Payment.new
 payment.pay(CreditCardPayment.new)
 
+payment.pay(PaypalPayment.new)
+
+#   def generate
+#     case @type
+#     when :csv
+#      # Generate CSV report
+#     when :pdf
+#      # Generate PDF report
+#     else
+#      raise NotImplementedError
+#     end
+#   end
+# end
+
+# report = InvoiceReport.new(order, :pdf).generate
 
 
 class InvoiceReport
