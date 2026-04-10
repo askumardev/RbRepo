@@ -19,21 +19,30 @@
 
 def word_pattern(pattern, str)
   pattern = pattern.chars
-  str = str.split(' ')
-  if pattern.size != str.size
-    puts("F")
-    return false 
+  words = str.split(' ')
+
+  if pattern.size != words.size
+    puts "F"
+    return false
   end
 
   p2s, s2p = {}, {}
-  pattern.zip(str) do |p, s|
-    return false if p2s.key?(p) && p2s[p] != s
-    return false if s2p.key?(s) && s2p[s] != p
-    p2s[p], s2p[s] = s, p
+
+  pattern.zip(words) do |p, w|
+    if (p2s[p] && p2s[p] != w) || (s2p[w] && s2p[w] != p)
+      puts "F"
+      return false
+    end
+
+    p2s[p] = w
+    s2p[w] = p
   end
-  puts("T")
-  return true
+
+  puts "T"
+  true
 end
 
-word_pattern("abba", "dog cat cat cat")
-word_pattern("abba", "dog cat cat fish cow")
+word_pattern("abba", "dog cat cat dog")   # T
+word_pattern("abba", "dog cat cat fish")  # F
+word_pattern("aaaa", "dog dog dog dog")   # T
+word_pattern("abba", "dog dog dog dog")   # F
