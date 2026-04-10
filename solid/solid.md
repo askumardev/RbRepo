@@ -12,6 +12,7 @@
 
 ## Principles Overview
 
+
 | Principle | Meaning                |
 | --------- | ---------------------- |
 | **S**     | Single responsibility  |
@@ -61,4 +62,3 @@
 **Explanation:** This principle promotes loose coupling between classes by ensuring that dependencies are on abstractions (interfaces or abstract classes) rather than concrete implementations. This makes the code more flexible, testable, and easier to maintain, as you can swap implementations without changing the dependent code.
 
 **Example in Ruby/Rails:** Instead of a controller directly instantiating a database adapter, inject an abstraction (like a Repository interface) that can be implemented by different adapters (SQL, NoSQL, etc.). Use dependency injection to provide the concrete implementation at runtime.
-
