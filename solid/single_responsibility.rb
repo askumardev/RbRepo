@@ -1,43 +1,29 @@
-# class InvoiceMailer
-#   def initialize(order)
-#     @order = order
-#   end
-#   def generate_report
-#     # Used order object to generate report
-#   end
-#   def send_mail
-#     # send email to @order.user
-#   end
-# end
+# ruby solid/single_responsibility.rb
 
-# InvoiceMailer.new(order).generate_report
-# InvoiceMailer.new(order).send_mail
+class User
+  attr_reader :name, :email
 
-class InvoiceReport
-   def initialize(order)
-     @order = order
-   end
-   def generate
-     # Used order object to generate report
-   end
- end
- 
- class InvoiceMailer
-   def initialize(order, report)
-     @order = order
-     @report = report
-   end
-   def send_mail
-     # send email to @order.user
-   end
- end
- 
- report = InvoiceReport.new(order).generate
- InvoiceMailer.new(order, report)
+  def initialize(name, email)
+    @name = name
+    @email = email
+  end
+end
 
-#  Here, we have a class called InvoiceMailer, and within it, we carry out two distinct functions, 
-#  the first is to generate reports and the second is send email to users. 
+class UserRepository
+  def save(user)
+    puts "Saving #{user.name} to DB"
+  end
+end
+
+class UserMailer
+  def send_email(user)
+    puts "Sending email to #{user.email}"
+  end
+end
+
+#  Here, we have a class called InvoiceMailer, and within it, we carry out two distinct functions,
+#  the first is to generate reports and the second is send email to users.
 #  As mailer is the name of the class, it shouldn’t perform tasks that are not meant for it.
 
-# According to the single responsibility concept, each class, module, method, etc. 
+# According to the single responsibility concept, each class, module, method, etc.
 # should only be responsible for one aspect of a program’s functionality. In order to separate them out.

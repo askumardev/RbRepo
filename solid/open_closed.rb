@@ -1,57 +1,27 @@
-# class InvoiceReport
-#   def initialize(order, type)
-#     @order = order
-#     @type = type
-#   end
+# ruby solid/open_closed.rb
 
-#   def generate
-#     case @type
-#     when :csv
-#      # Generate CSV report
-#     when :pdf
-#      # Generate PDF report
-#     else
-#      raise NotImplementedError
-#     end
-#   end
-# end
-
-# report = InvoiceReport.new(order, :pdf).generate
-
-
-class InvoiceReport
-  def initialize(order, klass)
-    @order = order
-    @klass = klass
-  end
-
-  def generate
-    @klass.new(@order).generate
+class Payment
+  def pay(strategy)
+    strategy.pay
   end
 end
 
-class PdfGenerator
-  def initialize(order)
-    @order = order
-  end
-
-  def generate
-    # Generate PDF Report
+class CreditCardPayment
+  def pay
+    puts "Pay via credit card"
   end
 end
 
-class CsvGenerator
-  def initialize(order)
-    @order = order
-  end
-
-  def generate
-    # Generate CSV Report
+class PaypalPayment
+  def pay
+    puts "Pay via PayPal"
   end
 end
 
- report_pdf = InvoiceReport.new(order, PdfGenerator).generate
- report_csv = InvoiceReport.new(order, CsvGenerator).generate
+payment = Payment.new
+payment.pay(CreditCardPayment.new)
+
+payment.pay(PaypalPayment.new)
 
 
 
