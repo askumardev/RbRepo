@@ -43,6 +43,13 @@ puts str
 #Alternate method
 puts "***5***"
 puts str.chars.inject{|x,y| y + x}
+# Ex: if str = "Ruby"
+# | Step    | Current Element (y) | Accumulator (x) | Operation (y + x)     | Result (New x) |
+# |---------|----------------------|------------------|------------------------|----------------|
+# | Initial | —                    | "R"              | —                      | "R"            |
+# | 1       | "u"                  | "R"              | "u" + "R"              | "uR"           |
+# | 2       | "b"                  | "uR"             | "b" + "uR"             | "buR"          |
+# | 3       | "y"                  | "buR"            | "y" + "buR"            | "ybuR"         |
 
 #
 original_string = "Hello, World!"
@@ -70,5 +77,3 @@ end
 
 str = "hello"
 puts reverse_string(str)  # Output: "olleh"
-
-

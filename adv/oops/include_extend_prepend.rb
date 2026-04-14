@@ -1,4 +1,4 @@
-# ruby basics/ObjClsOop/include_extend_prepend.rb
+# ruby adv/oops/include_extend_prepend.rb
 
 module Greet
   def say
