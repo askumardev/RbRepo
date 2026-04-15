@@ -1,86 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Countdown Timer</title>
+  <head>
+    <title>Countdown Timer</title>
+    <style>
+      body{
+        font-family: Arial;
+        text-align:center;
+        margin-top:100px;
+      }
 
-<style>
-body{
-  font-family: Arial;
-  text-align:center;
-  margin-top:100px;
-}
+      #timer{
+        font-size:40px;
+        margin-bottom:20px;
+      }
 
-#timer{
-  font-size:40px;
-  margin-bottom:20px;
-}
+      input{
+        width:60px;
+        padding:5px;
+      }
 
-input{
-  width:60px;
-  padding:5px;
-}
+      button{
+        padding:8px 20px;
+        margin:10px;
+      }
+    </style>
+  </head>
 
-button{
-  padding:8px 20px;
-  margin:10px;
-}
-</style>
+  <body>
+    <div id="timer">00:00:000</div>
 
-</head>
+    <input id="min" placeholder="Min">
+    <input id="sec" placeholder="Sec">
+    <input id="ms" placeholder="Ms">
 
-<body>
+    <br>
 
-<div id="timer">00:00:000</div>
+    <button onclick="start()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
 
-<input id="min" placeholder="Min">
-<input id="sec" placeholder="Sec">
-<input id="ms" placeholder="Ms">
+    <script>
+      let interval
+      let remaining = 0
 
-<br>
+      function start(){
 
-<button onclick="start()">Start</button>
-<button onclick="stopTimer()">Stop</button>
+        let min = parseInt(document.getElementById("min").value)||0
+        let sec = parseInt(document.getElementById("sec").value)||0
+        let ms = parseInt(document.getElementById("ms").value)||0
 
-<script>
+        remaining = (min*60000)+(sec*1000)+ms
 
-let interval
-let remaining = 0
+        interval = setInterval(function(){
 
-function start(){
+          if(remaining<=0){
+            clearInterval(interval)
+          return
+        }
 
-let min = parseInt(document.getElementById("min").value)||0
-let sec = parseInt(document.getElementById("sec").value)||0
-let ms = parseInt(document.getElementById("ms").value)||0
+        let m = Math.floor(remaining/60000)
+        let s = Math.floor((remaining%60000)/1000)
+        let milli = remaining%1000
 
-remaining = (min*60000)+(sec*1000)+ms
+        document.getElementById("timer").innerHTML =
+        String(m).padStart(2,'0') + ":" +
+        String(s).padStart(2,'0') + ":" +
+        String(milli).padStart(3,'0')
+        remaining -= 10
+      },10)
 
-interval = setInterval(function(){
+      }
 
-if(remaining<=0){
-clearInterval(interval)
-return
-}
+      function stopTimer(){
+        clearInterval(interval)
+      }
 
-let m = Math.floor(remaining/60000)
-let s = Math.floor((remaining%60000)/1000)
-let milli = remaining%1000
+    </script>
 
-document.getElementById("timer").innerHTML =
-String(m).padStart(2,'0') + ":" +
-String(s).padStart(2,'0') + ":" +
-String(milli).padStart(3,'0')
-
-remaining -= 10
-
-},10)
-
-}
-
-function stopTimer(){
-clearInterval(interval)
-}
-
-</script>
-
-</body>
+  </body>
 </html>
