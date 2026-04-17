@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SOLID Principles
 
 ## Rails Perspective
@@ -11,28 +10,8 @@
 - **Interface Segregation Principle (ISP)** → Use modules instead of fat classes
 - **Dependency Inversion Principle (DIP)** → Use dependency injection (e.g., services, adapters)
 
-## Principles Overview
-
-## Rails Perspective
-
-*Important for you*
-
-- **SRP** → Keep models thin, use services
-- **OCP** → Use strategy pattern / concerns
-- **LSP** → STI & inheritance carefully
-- **ISP** → Use modules instead of fat classes
-- **DIP** → Use dependency injection (e.g., services, adapters)
 
 ## Principles Overview
-=======
-Rails Perspective (Important for you)
-SRP → Keep models thin, use services
-OCP → Use strategy pattern / concerns
-LSP → STI & inheritance carefully
-ISP → Use modules instead of fat classes
-DIP → Use dependency injection (e.g., services, adapters)
-
->>>>>>> 1f42477 (SOLID)
 
 | Principle | Meaning                |
 | --------- | ---------------------- |
@@ -41,7 +20,6 @@ DIP → Use dependency injection (e.g., services, adapters)
 | **L**     | Replaceable subclasses |
 | **I**     | Small interfaces       |
 | **D**     | Depend on abstraction  |
-<<<<<<< HEAD
 
 # SOLID Principles Detailed Explanations
 
@@ -84,4 +62,7 @@ DIP → Use dependency injection (e.g., services, adapters)
 **Explanation:** This principle promotes loose coupling between classes by ensuring that dependencies are on abstractions (interfaces or abstract classes) rather than concrete implementations. This makes the code more flexible, testable, and easier to maintain, as you can swap implementations without changing the dependent code.
 
 **Example in Ruby/Rails:** Instead of a controller directly instantiating a database adapter, inject an abstraction (like a Repository interface) that can be implemented by different adapters (SQL, NoSQL, etc.). Use dependency injection to provide the concrete implementation at runtime.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b172b0 (solid principles)
