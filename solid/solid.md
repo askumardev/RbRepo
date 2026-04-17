@@ -1,10 +1,16 @@
-Rails Perspective (Important for you)
-SRP → Keep models thin, use services
-OCP → Use strategy pattern / concerns
-LSP → STI & inheritance carefully
-ISP → Use modules instead of fat classes
-DIP → Use dependency injection (e.g., services, adapters)
+# SOLID Principles
 
+## Rails Perspective
+
+*Important for you*
+
+- **SRP** → Keep models thin, use services
+- **OCP** → Use strategy pattern / concerns
+- **LSP** → STI & inheritance carefully
+- **ISP** → Use modules instead of fat classes
+- **DIP** → Use dependency injection (e.g., services, adapters)
+
+## Principles Overview
 
 | Principle | Meaning                |
 | --------- | ---------------------- |
