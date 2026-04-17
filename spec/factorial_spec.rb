@@ -1,6 +1,6 @@
 # rspec spec/factorial_spec.rb
 
-require 'factorial'
+require 'factorial' # lib/factorial.rb
 describe Factorial do
   it "finds the factorial of 5" do
     calculator = Factorial.new

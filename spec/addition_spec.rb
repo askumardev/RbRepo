@@ -1,6 +1,6 @@
 # rspec spec/addition_spec.rb
 
-require 'addition'
+require 'addition' # lib/addition.rb
 
 describe Addition do
   context "With blank input" do
