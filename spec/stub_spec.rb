@@ -13,6 +13,6 @@ describe ClassRoom do
     allow(student2).to receive(:name) { 'Jill Smith'}
 
     cr = ClassRoom.new [student1,student2]
-    expect(cr.list_student_names).to eq('John Smith,Jill Smith')
+    expect(cr.list_student_names).to eq('John Smith, Jill Smith')
   end
 end
