@@ -4,6 +4,6 @@ def staircase(n)
   end
 end
 
-staircase(n)
+staircase(5)
 
 # ruby hackerRank/staircase.rb
