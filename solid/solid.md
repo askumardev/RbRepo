@@ -4,11 +4,11 @@
 
 *Important for you*
 
-- **SRP** → Keep models thin, use services
-- **OCP** → Use strategy pattern / concerns
-- **LSP** → STI & inheritance carefully
-- **ISP** → Use modules instead of fat classes
-- **DIP** → Use dependency injection (e.g., services, adapters)
+- **Single Responsibility Principle (SRP)** → Keep models thin, use services
+- **Open-Closed Principle (OCP)** → Use strategy pattern / concerns
+- **Liskov Substitution Principle (LSP)** → STI & inheritance carefully
+- **Interface Segregation Principle (ISP)** → Use modules instead of fat classes
+- **Dependency Inversion Principle (DIP)** → Use dependency injection (e.g., services, adapters)
 
 ## Principles Overview
 
