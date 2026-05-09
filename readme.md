@@ -11,6 +11,11 @@
   * Ruby, Ruby Runner, Ruby Solargraph, VSCode Ruby, Code Runner
 
 
+sudo gem install bundler  
+bundle config set --local path 'vendor/bundle'
+bundle install
+
+
 https://www.includehelp.com/ruby
 
 https://www.includehelp.com/ruby/programs.aspx
