@@ -20,6 +20,18 @@ https://www.includehelp.com/ruby
 
 https://www.includehelp.com/ruby/programs.aspx
 
+# interview QnA
+```bash
+https://github.com/DopplerHQ/awesome-interview-questions#ruby
+
+https://www.toptal.com/developers/ruby/interview-questions
+
+https://gist.github.com/ryansobol/5252653
+
+https://github.com/undr/ruby-trivia
+
+
+```
 
 # rspecTut
 ```bash
