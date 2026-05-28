@@ -13,3 +13,5 @@ end
 
 arr = [1,2,2,3,3,3,4,4,4,4,5]
 find_dup_uniq(arr)
+
+# ruby arr_hsh/arr_dup_uniq.rb
