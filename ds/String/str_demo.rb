@@ -59,6 +59,7 @@ loop do
 
   when 3
     obj.palindrome?
+
   when 4
     obj.count_characters
 
