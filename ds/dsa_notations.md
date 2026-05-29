@@ -46,6 +46,20 @@ It answers:
 | O(n²) | Quadratic Time |
 | O(2ⁿ) | Exponential Time |
 
+
+
+| Complexity | Name              | Meaning                                                  | Growth Rate           | Example Operations                                 | Real-World Analogy                             | Performance    |
+| ---------- | ----------------- | -------------------------------------------------------- | --------------------- | -------------------------------------------------- | ---------------------------------------------- | -------------- |
+| O(1)       | Constant Time     | Execution time remains constant regardless of input size | Very Slow Growth      | Array index access, Stack push/pop, HashMap lookup | Picking first book from shelf                  | Excellent      |
+| O(log n)   | Logarithmic Time  | Input size reduces by half each step                     | Slow Growth           | Binary Search, Heap operations                     | Searching word in dictionary                   | Very Fast      |
+| O(n)       | Linear Time       | Time grows proportionally with input size                | Linear Growth         | Array traversal, Linear Search                     | Reading every name in list                     | Good           |
+| O(n log n) | Linearithmic Time | Combination of linear traversal and logarithmic division | Moderate Growth       | Merge Sort, Heap Sort, Quick Sort                  | Sorting books efficiently                      | Efficient      |
+| O(n²)      | Quadratic Time    | Nested iterations over input                             | Fast Growth           | Bubble Sort, Comparing every pair                  | Every student shaking hands with every student | Slow           |
+| O(n³)      | Cubic Time        | Three nested loops                                       | Very Fast Growth      | Matrix multiplication                              | Comparing every 3-person combination           | Very Slow      |
+| O(2ⁿ)      | Exponential Time  | Operations double with each added input                  | Explosive Growth      | Recursive Fibonacci, Subset generation             | Trying every switch combination                | Extremely Slow |
+| O(n!)      | Factorial Time    | All possible arrangements are generated                  | Worst Possible Growth | Permutations, Traveling Salesman brute force       | Trying all seating arrangements                | Worst          |
+
+
 ---
 
 # Array Complexity Table
