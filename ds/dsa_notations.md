@@ -37,17 +37,6 @@ It answers:
 
 # Common Complexity Values
 
-| Complexity | Meaning |
-|---|---|
-| O(1) | Constant Time |
-| O(log n) | Logarithmic Time |
-| O(n) | Linear Time |
-| O(n log n) | Linearithmic Time |
-| O(n²) | Quadratic Time |
-| O(2ⁿ) | Exponential Time |
-
-
-
 | Complexity | Name              | Meaning                                                  | Growth Rate           | Example Operations                                 | Real-World Analogy                             | Performance    |
 | ---------- | ----------------- | -------------------------------------------------------- | --------------------- | -------------------------------------------------- | ---------------------------------------------- | -------------- |
 | O(1)       | Constant Time     | Execution time remains constant regardless of input size | Very Slow Growth      | Array index access, Stack push/pop, HashMap lookup | Picking first book from shelf                  | Excellent      |
