@@ -1,5 +1,5 @@
 class MyClass
-  puts self       
+  puts self
   puts self.class
   p "--------------------------"
   def self.class_method
@@ -25,6 +25,7 @@ class MyClass
   end
 end
 
+p "--------------------------"
 # Calling class methods
 MyClass.class_method      # Output: This is a class method
 MyClass.another_class_method  # Output: This is another class method
@@ -32,4 +33,3 @@ MyClass.hello
 puts self, self.class
 
 # ruby adv/class_self.rb
-  
