@@ -62,9 +62,11 @@ p arr  # Output: [2, 4]
 
 def custom_sort(arr)
   # Your implementation here
-  p arr.sort
- p arr.sort_by{|x| x.length}
+  #p arr.sort
+  p arr.sort_by{|x| [x.length, x]}
 end
 
 puts custom_sort(["apple", "dog", "banana", "cat", "car"]).inspect
 # Expected output: ["car", "cat", "dog", "apple", "banana"]
+
+# ruby interview/sonata.rb

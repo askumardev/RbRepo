@@ -27,23 +27,23 @@ puts students[4].class #this will output the class that belongs to nil
 puts students[0] == students[1] #false ->this will output false since both names does not match
 puts (students[0] == students[1]).class #this will output the class that belongs to false
 
-p "-------------conditionals-------------------------"
-#special case
-#nil treated as false
-Jeery = nil
-if Jeery
-  puts "Jeery is present"
-else
-  puts "Jeery is absent"
-end
-# Jeery is absent
+# p "-------------conditionals-------------------------"
+# #special case
+# #nil treated as false
+# Jeery = nil
+# if Jeery
+#   puts "Jeery is present"
+# else
+#   puts "Jeery is absent"
+# end
+# # Jeery is absent
 
 
-#false treated as false
-Tom = false
-if Tom
-  puts "Tom is present"
-else
-  puts "Tom is absent"
-end
-# Tom is absent
+# #false treated as false
+# Tom = false
+# if Tom
+#   puts "Tom is present"
+# else
+#   puts "Tom is absent"
+# end
+# # Tom is absent

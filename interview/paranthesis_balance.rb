@@ -1,22 +1,29 @@
 # ruby interview/paranthesis_balance.rb
 
-require 'pry'
-def check_balanced_parentheses?(entered_string)
+# require 'pry'
+def check_balanced_parentheses?(str)
   stack = []
-  entered_string.chars.each do |token|
-    case token
-    when '('
-      stack.push '('
-    when ')'
-      return 0 if stack.empty? || stack.pop != '('
+
+  str.each_char do |char|
+    if char == '('
+      stack << char
+    elsif char == ')'
+      return false if stack.empty?
+      stack.pop
     end
   end
-  return 1 if stack.empty?
+  p stack
+  stack.empty?
 end
 
-puts 'Enter string :'
-entered_string = gets
-puts check_balanced_parentheses?(entered_string)
+# puts 'Enter string :'
+# entered_string = gets
+p check_balanced_parentheses?("(())") # true
+p check_balanced_parentheses?("(()")  # false
+p check_balanced_parentheses?("())")  # false
+p check_balanced_parentheses?("()()")
+p check_balanced_parentheses?("((((")
+#puts check_balanced_parentheses?(entered_string)
 
 # require 'pry'
 # def check_balanced_parentheses?(str)
