@@ -131,9 +131,7 @@ class OrderCheckoutService
       apply_discount
       update_inventory
 
-      UserMailer.confirmation(@user, @order)
-                .deliver_later
-
+      UserMailer.confirmation(@user, @order).deliver_later
       @order
     end
   end
@@ -186,6 +184,7 @@ class OrderCheckoutService
     end
   end
 end
+
 Order Model
 class Order < ApplicationRecord
   belongs_to :user
@@ -200,6 +199,7 @@ class Order < ApplicationRecord
               greater_than_or_equal_to: 0
             }
 end
+
 OrderItem Model
 class OrderItem < ApplicationRecord
   belongs_to :order
@@ -210,6 +210,7 @@ class OrderItem < ApplicationRecord
               greater_than: 0
             }
 end
+
 Product Model
 class Product < ApplicationRecord
   has_many :order_items
@@ -224,6 +225,7 @@ class Product < ApplicationRecord
               greater_than: 0
             }
 end
+
 Discount Model
 class Discount < ApplicationRecord
   validates :code, presence: true
@@ -233,6 +235,7 @@ class Discount < ApplicationRecord
       (expires_at.nil? || expires_at.future?)
   end
 end
+
 UserMailer
 class UserMailer < ApplicationMailer
   def confirmation(user, order)
