@@ -85,6 +85,167 @@ Person.new.bye
 #    end
 # end
 
+#---------------final code------------------------------
+OrdersController
+class OrdersController < ApplicationController
+  before_action :authenticate_user!
+
+  def checkout
+    @order = OrderCheckoutService.new(
+      current_user,
+      order_params,
+      params[:discount_code]
+    ).call
+
+    redirect_to order_path(@order),
+                notice: "Order placed successfully"
+  rescue StandardError => e
+    flash[:alert] = e.message
+    render :new, status: :unprocessable_entity
+  end
+
+  private
+
+  def order_params
+    params.require(:order)
+          .permit(
+            order_items_attributes: [
+              :product_id,
+              :quantity
+            ]
+          )
+  end
+end
+
+OrderCheckoutService
+class OrderCheckoutService
+  def initialize(user, order_params, discount_code)
+    @user = user
+    @order_params = order_params
+    @discount_code = discount_code
+  end
+
+  def call
+    Order.transaction do
+      create_order
+      apply_discount
+      update_inventory
+
+      UserMailer.confirmation(@user, @order)
+                .deliver_later
+
+      @order
+    end
+  end
+
+  private
+
+  attr_reader :user,
+              :order_params,
+              :discount_code
+
+  def create_order
+    @order = user.orders.create!(order_params)
+
+    total_price =
+      @order.order_items.sum do |item|
+        item.product.price * item.quantity
+      end
+
+    @order.update!(total_price: total_price)
+  end
+
+  def apply_discount
+    return if discount_code.blank?
+
+    discount = Discount.find_by(code: discount_code)
+
+    raise "Invalid discount code" unless discount
+    raise "Discount is inactive" unless discount.active?
+
+    discounted_price =
+      @order.total_price -
+      (@order.total_price * discount.percent / 100.0)
+
+    @order.update!(total_price: discounted_price)
+  end
+
+  def update_inventory
+    @order.order_items.includes(:product).each do |item|
+      product = item.product
+
+      product.with_lock do
+        if product.stock < item.quantity
+          raise "#{product.name} is out of stock"
+        end
+
+        product.update!(
+          stock: product.stock - item.quantity
+        )
+      end
+    end
+  end
+end
+Order Model
+class Order < ApplicationRecord
+  belongs_to :user
+
+  has_many :order_items,
+           dependent: :destroy
+
+  accepts_nested_attributes_for :order_items
+
+  validates :total_price,
+            numericality: {
+              greater_than_or_equal_to: 0
+            }
+end
+OrderItem Model
+class OrderItem < ApplicationRecord
+  belongs_to :order
+  belongs_to :product
+
+  validates :quantity,
+            numericality: {
+              greater_than: 0
+            }
+end
+Product Model
+class Product < ApplicationRecord
+  has_many :order_items
+
+  validates :stock,
+            numericality: {
+              greater_than_or_equal_to: 0
+            }
+
+  validates :price,
+            numericality: {
+              greater_than: 0
+            }
+end
+Discount Model
+class Discount < ApplicationRecord
+  validates :code, presence: true
+
+  def active?
+    is_active &&
+      (expires_at.nil? || expires_at.future?)
+  end
+end
+UserMailer
+class UserMailer < ApplicationMailer
+  def confirmation(user, order)
+    @user = user
+    @order = order
+
+    mail(
+      to: @user.email,
+      subject: "Order Confirmation"
+    )
+  end
+end
+#-------------------------------------------------------
 
 # Here are concise bullet points you can mention during a Rails code review or interview when asked how to improve the OrdersController:
 
