@@ -1,6 +1,6 @@
 # ruby interview/valid_peranthesis.rb
 
-require 'pry'
+# require 'pry'
 PARENS = {
   "(" => ")",
   "{" => "}",
