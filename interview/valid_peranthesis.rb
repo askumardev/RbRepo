@@ -26,3 +26,6 @@ end
 p valid_parentheses("(){}[]") # true
 p valid_parentheses("[(])")   # false
 p valid_parentheses("1 + (4 + 6 * 2") #false
+p valid_parentheses("({}[])") # true
+p valid_parentheses("{}([])") # true
+p valid_parentheses("{(}[])") # false
