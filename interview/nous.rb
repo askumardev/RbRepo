@@ -13,3 +13,9 @@ arr.each_with_index do |x, i|
   end
 end
 p result
+
+# str = "aabbbccddda"
+# result = str.chars.chunk(&:itself)
+#             .map { |char, group| "#{group.size}#{char}" }
+#             .join
+# puts result
