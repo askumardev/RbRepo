@@ -1,3 +1,5 @@
+require 'pry'
+
 # O(n*m) — single pass, most general
 def find_rectangle(image)
   top, left, bottom, right = nil, nil, nil, nil
@@ -60,7 +62,7 @@ image2 = [
 
 p find_rectangle(image1)       # => {row: 2, column: 3, width: 3, height: 2}
 p find_rectangle(image2)       # => {row: 3, column: 5, width: 2, height: 2}
-p "-----------------------------------"
+p "---------------alt method result--------------------"
 p find_rectangle_fast(image1)  # => {row: 2, column: 3, width: 3, height: 2}
 p find_rectangle_fast(image2)  # => {row: 3, column: 5, width: 2, height: 2}
 
