@@ -21,6 +21,7 @@ def find_rectangle(image)
   }
 end
 
+# ----------------2nd method-----------------------
 # O(n+m) — leverages the solid-rectangle guarantee
 # Scan rows independently to find vertical bounds,
 # scan columns independently to find horizontal bounds.
