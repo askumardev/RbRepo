@@ -1,11 +1,12 @@
-# The Composite pattern is used to treat individual objects and compositions of objects uniformly. 
-# It allows you to build a tree structure where individual objects and their compositions are treated as the same type. 
-# This pattern is particularly useful for representing hierarchies of objects.
+# The Composite pattern is used to treat individual objects and compositions of objects uniformly.
+# It allows you to build a tree structure where individual objects and their compositions
+# are treated as the same type. This pattern is particularly useful for representing hierarchies of objects.
 
 # Here's an example of how to implement the Composite pattern in Ruby:
 
 # Example: File System
-# Let's consider a simple file system where we have files and directories. Directories can contain both files and other directories. 
+# Let's consider a simple file system where we have files and directories.
+# Directories can contain both files and other directories.
 # We will use the Composite pattern to represent this hierarchy.
 
 # 1. Component Interface
