@@ -14,27 +14,23 @@
 
 # Note:
 # All given inputs are in lowercase letters a-z.
-
-def longest_common_prefix(strs)
-  return '' if strs == []  
-  prefix = strs[0]  
-  strs[1..strs.size - 1].each do |string|
-    if string.size < prefix.size
-      prefix = prefix[0..string.size]
-    end
-    
-    (0..prefix.size).each do |i|
-      next if string[i] == prefix[i]
-      return '' if i == 0      
-      prefix = prefix[0..i - 1]
-      break
+require 'pry'
+def longest_common_prefix(arr)
+  return '' if arr == []
+  prefix = arr.first
+  arr[1..].each do |str|
+    while !str.start_with?(prefix)
+      prefix = prefix[0...-1]
+      #p prefix
+      return '' if prefix.empty?
     end
   end
+
   prefix
 end
 
-strs = ["flower","flow","flight"]
+strs = ["flow","flower","flight"]
 p longest_common_prefix(strs)
 
-strs = ["dog","racecar","car"]
-p longest_common_prefix(strs)
+# strs = ["dog","racecar","car"]
+# p longest_common_prefix(strs)
