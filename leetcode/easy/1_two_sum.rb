@@ -3,91 +3,137 @@
 # the output should be [[0, 3], [2, 4]], as both pairs (2, 7) and (11, -2) add up to 9.
 
 # ruby leetcode/easy/1_two_sum.rb
-def two_sum(nums, target)
-  hash = {}
 
-  nums.each_with_index do |num, index|
-    p "------iteration #{index}--------"
+#----------------------------------------
+# Two Sum - Production / Interview Ready
+#
+# Handles:
+# 1. Empty array
+# 2. Single element array
+# 3. Duplicate values
+# 4. Negative numbers
+# 5. Zero values
+# 6. Nil elements
+# 7. Non-numeric values
+# 8. Multiple valid pairs (configurable)
+# 9. Earliest pair preservation
+# 10. No solution
+
+def two_sum(arr, target, return_all: false)
+  return nil if arr.nil? || arr.length < 2
+  return nil unless target.is_a?(Numeric)
+
+  seen = {}
+  result = []
+
+  arr.each_with_index do |num, index|
+    # Skip invalid elements
+    next unless num.is_a?(Numeric)
+
     complement = target - num
-    p "complement = #{complement}"
 
-    if hash.key?(complement)
-      return [hash[complement], index]
+    if seen.key?(complement)
+      pair = [seen[complement], index]
+
+      if return_all
+        result << pair
+      else
+        return pair
+      end
     end
-    p hash
-    hash[num] = index
+
+    # Preserve earliest occurrence
+    seen[num] ||= index
   end
+
+  return_all ? result : nil
 end
 
-# Example
-nums = [2, 11, 15, 7]
-target = 9
+############################################
+# TEST CASES
+############################################
 
-puts two_sum(nums, target).inspect
+tests = [
+  {
+    description: "Normal case",
+    arr: [2, 11, 7, 5],
+    target: 9
+  },
 
+  {
+    description: "Empty array",
+    arr: [],
+    target: 9
+  },
 
-# require 'pry'
-# def two_sum_indices(nums, target)
-#   num_indices = {}
-#   result = []
+  {
+    description: "Single element",
+    arr: [5],
+    target: 10
+  },
 
-#   nums.each_with_index do |num, index|
-#     complement = target - num
-#     if num_indices.key?(complement)
-#       result << [num_indices[complement], index]
-#     end
-#     num_indices[num] = index
-#   end
-#   return result
-# end
+  {
+    description: "Duplicate numbers",
+    arr: [3, 3],
+    target: 6
+  },
 
-# # Example usage
-# nums = [2, 5, 11, 7, -2]
-# target = 9
-# result = two_sum_indices(nums, target)
+  {
+    description: "No solution",
+    arr: [1, 2, 3, 4],
+    target: 100
+  },
 
-# if result.empty?
-#   puts "No such pairs found."
-# else
-#   puts "Indices of the pairs: #{result}"
-# end
+  {
+    description: "Negative numbers",
+    arr: [-1, -2, -3, -4],
+    target: -5
+  },
 
+  {
+    description: "Zeros",
+    arr: [0, 4, 3, 0],
+    target: 0
+  },
 
+  {
+    description: "Repeated values",
+    arr: [1, 1, 1, 8],
+    target: 9
+  },
 
-#Explaination
+  {
+    description: "Nil element present",
+    arr: [2, nil, 7],
+    target: 9
+  },
 
-# The approach you're using, often called the "two-pointer technique" with a hash table, is already quite
-# efficient with a time complexity of O(n) where n is the size of the array. It's one of the most
-# optimal ways to solve this problem.
+  {
+    description: "Non-numeric element",
+    arr: [2, "abc", 7],
+    target: 9
+  },
 
-# If you're looking for alternative methods, you could use nested loops, but the time complexity would be O(n^2),
-# which is less efficient. Here's an example of the nested loop approach:
+  {
+    description: "Multiple pairs",
+    arr: [1, 8, 2, 7, 3, 6],
+    target: 9
+  },
+  {
+    description: "Non-numeric target ",
+    arr: [2, "abc", 7],
+    target: "a"
+  },
+]
 
-# # another solution
-# def two_sum_indices_bruteforce(nums, target)
-#   result = []
+tests.each do |test|
+  puts "\n#{test[:description]}"
+  p two_sum(test[:arr], test[:target])
+end
 
-#   (0..nums.length - 2).each do |i|
-#     ((i + 1)..nums.length - 1).each do |j|
-#       if nums[i] + nums[j] == target
-#         result << [i, j]
-#       end
-#     end
-#   end
+############################################
+# Return ALL pairs
+############################################
 
-#   return result
-# end
-
-# # Example usage
-# nums = [2, 5, 11, 7, -2]
-# target = 9
-# result_bruteforce = two_sum_indices_bruteforce(nums, target)
-
-# if result_bruteforce.empty?
-#   puts "No such pairs found (bruteforce)."
-# else
-#   puts "Indices of the pairs (bruteforce): #{result_bruteforce}"
-# end
-
-# However, as mentioned, the nested loop approach is less efficient, especially for large arrays.
-# Stick with the original solution using a hash table, as it is more optimal.
+puts "\nAll pairs:"
+p two_sum([1, 8, 2, 7, 3, 6], 9, return_all: true)
