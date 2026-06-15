@@ -1,4 +1,4 @@
-# ruby adv/meta.rb
+# ruby adv/meta_prog/meta.rb
 
 def somemethod
   puts "Enter something"
@@ -28,5 +28,3 @@ end
 
 String.add_new_method('Satish')
 'string'.Satish
-
-
