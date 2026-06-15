@@ -8,26 +8,43 @@
 
 # ruby algo/move_zeros.rb
 
-def move_zeroes(nums)
-  insert_pos = 0
+nums = [0, 12, 0, 3, 4]
 
-  # Move all non-zero elements to the front
-  nums.each do |num|
-    if num != 0
-      nums[insert_pos] = num
-      insert_pos += 1
-    end
+non_zeros = []
+zeros = []
+nums.each do |x|
+  if x != 0
+    non_zeros << x
+  else
+    zeros << x
   end
-
-  # Fill remaining positions with 0
-  while insert_pos < nums.length
-    nums[insert_pos] = 0
-    insert_pos += 1
-  end
-
-  nums
 end
 
-# Example
-nums = [0, 1, 0, 3, 12]
-puts move_zeroes(nums).inspect
+p non_zeros.sort + zeros
+
+# non_zeros, zeros = nums.partition(&:nonzero?)
+# p non_zeros.sort + zeros
+
+# def move_zeroes(nums)
+#   insert_pos = 0
+
+#   # Move all non-zero elements to the front
+#   nums.each do |num|
+#     if num != 0
+#       nums[insert_pos] = num
+#       insert_pos += 1
+#     end
+#   end
+
+#   # Fill remaining positions with 0
+#   while insert_pos < nums.length
+#     nums[insert_pos] = 0
+#     insert_pos += 1
+#   end
+
+#   nums
+# end
+
+# # Example
+# nums = [0, 1, 0, 3, 12]
+# puts move_zeroes(nums).inspect
