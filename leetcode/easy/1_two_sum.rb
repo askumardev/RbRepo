@@ -19,7 +19,7 @@
 # 9. Earliest pair preservation
 # 10. No solution
 
-def two_sum(arr, target, return_all: false)
+def two_sum(arr, target, return_all: false, return_format: :indices)
   return nil if arr.nil? || arr.length < 2
   return nil unless target.is_a?(Numeric)
 
@@ -33,7 +33,13 @@ def two_sum(arr, target, return_all: false)
     complement = target - num
 
     if seen.key?(complement)
-      pair = [seen[complement], index]
+      pair = if return_format == :indices
+        [seen[complement], index]
+      elsif return_format == :numbers
+        [arr[seen[complement]], num]
+      else
+        [seen[complement], index]
+      end
 
       if return_all
         result << pair
@@ -48,6 +54,30 @@ def two_sum(arr, target, return_all: false)
 
   return_all ? result : nil
 end
+
+############################################
+# USER INPUT FOR OUTPUT FORMAT
+############################################
+
+puts "Choose output format:"
+puts "1. Print Indices (e.g., [0, 3])"
+puts "2. Print Numbers (e.g., [2, 7])"
+print "Enter your choice (1 or 2): "
+choice = gets.chomp.to_i
+
+format = case choice
+         when 1
+           :indices
+         when 2
+           :numbers
+         else
+           puts "Invalid choice! Defaulting to indices."
+           :indices
+         end
+
+puts "\n" + "="*50
+puts "Output Format: #{format == :indices ? 'INDICES' : 'NUMBERS'}"
+puts "="*50 + "\n"
 
 ############################################
 # TEST CASES
@@ -128,12 +158,15 @@ tests = [
 
 tests.each do |test|
   puts "\n#{test[:description]}"
-  p two_sum(test[:arr], test[:target])
+  puts "Array: #{test[:arr].inspect}, Target: #{test[:target]}"
+  p two_sum(test[:arr], test[:target], return_format: format)
 end
 
 ############################################
 # Return ALL pairs
 ############################################
 
-puts "\nAll pairs:"
-p two_sum([1, 8, 2, 7, 3, 6], 9, return_all: true)
+puts "\n" + "="*50
+puts "All pairs (#{format == :indices ? 'INDICES' : 'NUMBERS'}):"
+puts "="*50
+p two_sum([1, 8, 2, 7, 3, 6], 9, return_all: true, return_format: format)
