@@ -19,7 +19,7 @@ class Human
         puts "I’m whispering"
    end
 end
- 
+
 Human.new.talk puts "I’m talking"
 Human.new.whisper error
 Human.new.send(:talk) "I’m talking"
@@ -49,3 +49,6 @@ Post
 
 @user  = User.joins(:posts)
 @user.post.title
+
+
+# ruby interview/citiustech.rb

@@ -8,3 +8,6 @@ class Product < ApplicationRecord
     %w[electronics clothing books].include?(category)
   end
 end
+
+
+# ruby interview/coforge.rb

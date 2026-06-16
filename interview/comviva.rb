@@ -43,6 +43,9 @@ p new_arr
 # products = Product.joins(:price).select("products.name, products.description, prices.price, prices.currency")
 
 # products.each do |product|
-#   puts "Name: #{product.name}, Description: #{product.description}, Price: #{product.price}, 
+#   puts "Name: #{product.name}, Description: #{product.description}, Price: #{product.price},
 #         Currency: #{product.currency}"
 # end
+
+
+# ruby interview/comviva.rb
