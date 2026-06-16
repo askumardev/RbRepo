@@ -8,6 +8,24 @@
 
 # ruby algo/move_zeros.rb
 
+def move_zeros(arr)
+  insert_pos = 0
+
+  arr.each_index do |i|
+    if arr[i] != 0
+      arr[insert_pos], arr[i] = arr[i], arr[insert_pos]
+      insert_pos += 1
+    end
+  end
+
+  arr
+end
+
+arr = [0, 12, 0, 3, 4]
+p move_zeros(arr)
+# => [12, 3, 4, 0, 0]
+
+# -----------------------------
 nums = [0, 12, 0, 3, 4]
 
 non_zeros = []
