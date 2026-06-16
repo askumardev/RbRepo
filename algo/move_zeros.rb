@@ -25,9 +25,9 @@ arr = [0, 12, 0, 3, 4]
 p move_zeros(arr)
 # => [12, 3, 4, 0, 0]
 
-# -----------------------------
-nums = [0, 12, 0, 3, 4]
+puts "-----------------------------"
 
+nums = [0, 12, 0, 3, 4]
 non_zeros = []
 zeros = []
 nums.each do |x|
@@ -39,7 +39,15 @@ nums.each do |x|
 end
 
 p non_zeros.sort + zeros
+p "------------------single liners ascending---------------------------"
+result = arr.reject(&:zero?).sort + arr.select(&:zero?)
 
+p result
+
+p "------------------single liners descending---------------------------"
+result = arr.reject(&:zero?).sort.reverse + arr.select(&:zero?)
+
+p result
 # non_zeros, zeros = nums.partition(&:nonzero?)
 # p non_zeros.sort + zeros
 
