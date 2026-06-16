@@ -1,4 +1,4 @@
-# ruby misc/commas.rb
+# ruby misc_probs/commas.rb
 
 # Method name: commas
 # Inputs:      A number, n
@@ -21,17 +21,14 @@
 # has a piece of paper with a comma-less number on it.  How would you decide to
 # insert the commas?  Which comma would you insert first?
 
-def commas(num)
+def commas(n)
+  str = n.to_s
+  return str if str.length <= 3
+  commas(str[0...-3].to_i) + "," + str[-3..]
 end
 
-if __FILE__ == $PROGRAM_NAME
-  # What are the common cases?  What are the corner cases?
-  # Your sanity checks should look like
-  #   p commas(input) == ...expected return value...
-end
-
-# Hint #1
-# Use .to_s to convert a number to a string.  That is,
-#
-#  5.to_s   == "5"
-#  100.to_s == "100"
+puts commas(123)     # == "123"
+puts commas(1234)    # == "1,234"
+puts commas(12345)   # == "12,345"
+puts commas(1234567) # "1,234,567"
+puts commas(-1234567)     # "-1,234,567"
