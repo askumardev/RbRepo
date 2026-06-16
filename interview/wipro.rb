@@ -44,12 +44,12 @@ Person.new.greet
 Person.new.bye
 
 #---------------------------------------
-# Class.superclass
-# => Module
-# irb(main):002:0> Class.superclass.superclass
-# => Object
-# irb(main):003:0> Class.superclass.superclass.superclass
-# => BasicObject
+# Class.superclass  => Module
+#
+# Class.superclass.superclass => Object
+#
+# Class.superclass.superclass.superclass => BasicObject
+#
 # -------------------------------------
 # class OrdersController < ApplicationController
 #    def checkout
