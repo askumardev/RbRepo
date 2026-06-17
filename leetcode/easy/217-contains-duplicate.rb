@@ -2,7 +2,8 @@
 
 # Given an array of integers, find if the array contains any duplicates.
 
-# Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+# Your function should return true if any value appears at least twice
+# in the array, and it should return false if every element is distinct.
 
 # Example 1:
 # Input: [1,2,3,1]
@@ -18,12 +19,17 @@
 
 def contains_duplicate(nums)
   nums_hash = Hash.new(0)
-  
+
   nums.each do |num|
+    p num
     nums_hash[num] += 1
-      
+    p nums_hash
+
     return true if nums_hash[num] == 2
   end
-  
+
   false
 end
+
+nums = [1,1,1,3,3,4,3,2,4,2]
+p contains_duplicate(nums)
