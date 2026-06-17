@@ -60,7 +60,7 @@ def is_same_tree(p, q)
   is_same_tree(p.left, q.left) &&
     is_same_tree(p.right, q.right)
 end
-
+p "----------------------------------------"
 # Tree 1
 #      1
 #     / \
@@ -79,7 +79,7 @@ tree2.right = TreeNode.new(3)
 
 puts is_same_tree(tree1, tree2) # true
 
-
+p "----------------------------------------"
 # Tree 1
 #      2
 #     / \
@@ -98,7 +98,7 @@ tree2.right = TreeNode.new(3)
 
 puts is_same_tree(tree1, tree2) # true
 
-
+p "----------------------------------------"
 # Tree 1
 #      2
 #       \
