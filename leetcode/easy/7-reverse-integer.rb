@@ -15,15 +15,19 @@
 # Output: 21
 
 # Note:
-# Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−2^31,  2^31 − 1]. 
+# Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−2^31,  2^31 − 1].
 # For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
 def reverse(x)
-  x = x.to_s.reverse  
-  multiplier = x[x.size - 1] == '-' ? -1 : 1  
-  return 0 if x.to_i > 2 ** 31 - 1 || x.to_i < -1 * 2 ** 31  
-  x.to_i * multiplier
+  sign = x < 0 ? -1 : 1
+  reversed = x.abs.to_s.reverse.to_i
+  reversed *= sign
+  return 0 if reversed < -(2**31) || reversed > (2**31 - 1)
+
+  reversed
 end
 
-p reverse(123)
-p reverse(-321)
+p reverse(123)          # 321
+p reverse(-321)         # -123
+p reverse(120)          # 21
+p reverse(1534236469)   # 0 (overflow)
