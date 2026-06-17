@@ -14,17 +14,20 @@
 
 def is_anagram(s, t)
   return false if s.size != t.size
-  
+
   s_hash = Hash.new(0)
   t_hash = Hash.new(0)
-  
+
   s = s.split('')
   t = t.split('')
-  
+
   (0..(s.size - 1)).each do |i|
     s_hash[s[i]] += 1
     t_hash[t[i]] += 1
   end
-  
+
   s_hash == t_hash
 end
+
+p is_anagram("silent", "listen")
+p is_anagram("rat", "car")

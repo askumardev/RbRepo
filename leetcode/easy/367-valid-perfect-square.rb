@@ -10,7 +10,7 @@
 
 # Example 2:
 # Input: num = 14
-# Output: false 
+# Output: false
 
 # Constraints:
 
@@ -18,16 +18,37 @@
 
 def is_perfect_square(num)
   i = 1
-  
+
   loop do
     square_num = i ** 2
-    
+
     if square_num == num
         return true
     elsif square_num > num
         return false
     end
-    
+
     i += 1
   end
 end
+
+p is_perfect_square(9)
+p is_perfect_square(8)
+
+
+
+You could write the same logic more clearly as:
+
+def is_perfect_squaree(num)
+  i = 1
+
+  while i * i <= num
+    return true if i * i == num
+    i += 1
+  end
+
+  false
+end
+
+p is_perfect_squaree(9)
+p is_perfect_squaree(8)
