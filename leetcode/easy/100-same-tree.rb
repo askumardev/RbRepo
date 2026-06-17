@@ -42,26 +42,75 @@
 # @param {TreeNode} q
 # @return {Boolean}
 
+class TreeNode
+  attr_accessor :val, :left, :right
+
+  def initialize(val = 0, left = nil, right = nil)
+    @val = val
+    @left = left
+    @right = right
+  end
+end
+
 def is_same_tree(p, q)
-  @same = true    
-  traverse(p, q)  
-  @same
+  return true if p.nil? && q.nil?
+  return false if p.nil? || q.nil?
+  return false if p.val != q.val
+
+  is_same_tree(p.left, q.left) &&
+    is_same_tree(p.right, q.right)
 end
 
-def traverse(p, q)
-  if p.nil? || q.nil?
-    if !(p.nil? && q.nil?)
-      @same = false
-    end
-    
-    return
-  end
+# Tree 1
+#      1
+#     / \
+#    2   3
+tree1 = TreeNode.new(1)
+tree1.left = TreeNode.new(2)
+tree1.right = TreeNode.new(3)
 
-  if p.val != q.val
-    @same = false 
-    return
-  end
+# Tree 2
+#      1
+#     / \
+#    2   3
+tree2 = TreeNode.new(1)
+tree2.left = TreeNode.new(2)
+tree2.right = TreeNode.new(3)
 
-  traverse(p.right, q.right)
-  traverse(p.left, q.left)
-end
+puts is_same_tree(tree1, tree2) # true
+
+
+# Tree 1
+#      2
+#     / \
+#    1   3
+tree1 = TreeNode.new(2)
+tree1.left = TreeNode.new(1)
+tree1.right = TreeNode.new(3)
+
+# Tree 2
+#      1
+#     / \
+#    2   3
+tree2 = TreeNode.new(1)
+tree2.left = TreeNode.new(2)
+tree2.right = TreeNode.new(3)
+
+puts is_same_tree(tree1, tree2) # true
+
+
+# Tree 1
+#      2
+#       \
+#        3
+tree1 = TreeNode.new(2)
+tree1.right = TreeNode.new(3)
+
+# Tree 2
+#      1
+#     /
+#    2
+tree2 = TreeNode.new(1)
+tree2.left = TreeNode.new(2)
+
+puts is_same_tree(tree1, tree2) # true
