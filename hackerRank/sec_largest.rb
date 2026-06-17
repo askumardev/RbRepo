@@ -2,7 +2,6 @@
 
 def second_largest(arr)
   largest = second = -Float::INFINITY
-  p largest
 
   arr.each do |n|
     if n > largest
