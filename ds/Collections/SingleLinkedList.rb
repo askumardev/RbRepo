@@ -1,4 +1,4 @@
-# ruby ds/Collections/LinkedList.rb
+# ruby ds/Collections/SingleLinkedList.rb
 
 class LinkedList
   def initialize

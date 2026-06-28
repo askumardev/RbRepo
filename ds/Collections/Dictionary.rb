@@ -1,4 +1,4 @@
-# ruby ds/Collections/Directory.rb
+# ruby ds/Collections/Dictionary.rb
 
 # Create a Dictionary or map.
 hm = {} # (or hm = Hash.new)
@@ -14,6 +14,6 @@ hm.each do |key, value|
   puts "#{key}  cost :#{value}"
 end
 hm.delete("Mango")
-puts "Apple present :: #{hm.key?("Apple")}" 
-puts "Mango present :: #{hm.key?("Mango")}" 
-puts "Grape present :: #{hm.key?("Grape")}"  
+puts "Apple present :: #{hm.key?("Apple")}"
+puts "Mango present :: #{hm.key?("Mango")}"
+puts "Grape present :: #{hm.key?("Grape")}"
