@@ -1,3 +1,5 @@
+# ruby solid/liskov_substitution_principle.rb
+
 class Bird
 end
 
@@ -12,3 +14,12 @@ class Penguin < Bird
     puts "Swimming"
   end
 end
+
+
+puts "--- Testing FlyingBird ---"
+eagle = FlyingBird.new
+eagle.fly  # Outputs: Flying
+
+puts "\n--- Testing Penguin ---"
+pingu = Penguin.new
+pingu.swim # Outputs: Swimming

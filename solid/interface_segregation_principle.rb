@@ -1,3 +1,5 @@
+# ruby solid/interface_segregation_principle.rb
+
 module Workable
   def work; end
 end

@@ -75,7 +75,8 @@ end
 
 
 
-# Software entities such as classes, modules, methods, etc should be open for extension but close for modification
+# Software entities such as classes, modules, methods, etc should be 
+# open for extension but close for modification
 
 # This principal’s primary goal is to design the code’s architecture in such a way that functionality
 # can be extended rather than modified or refactored.
