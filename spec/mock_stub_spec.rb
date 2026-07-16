@@ -12,7 +12,8 @@ describe Calculator do
     # Stubbing the add method of Calculator
     # Uses a real Calculator object.
     # Focuses on controlling the output of the add method using allow.
-    # Does not check whether add was called, only that when it is called with certain arguments, it returns a specific value.
+    # Does not check whether add was called, only that when it is called with certain arguments, it
+    # returns a specific value.
     allow(calculator).to receive(:add).with(2, 3).and_return(5)
     # Mock another parameter set: Expect add(4, 5) to be called and return 10
     expect(calculator).to receive(:add).with(4, 5).and_return(10)
