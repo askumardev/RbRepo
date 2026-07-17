@@ -1,25 +1,22 @@
 # ruby interview/longest_substr.rb
 
-def substr(a)
-  return '' unless a.length.positive?
+def longest_unique_substring(str)
+  start = 0
+  longest = ''
+  seen = {}
 
-  result = 0
-  (0...a.first.length).each do |k|
-    all_matched = true
-    character = a.first[k]
-    a.each { |str| all_matched &= (character == str[k]) }
-    break unless all_matched
-
-    result += 1
+  str.chars.each_with_index do |char, i|
+    if seen[char] && seen[char] >= start
+      start = seen[char] + 1
+    end
+    seen[char] = i
+    current = str[start..i]
+    longest = current if current.length > longest.length
   end
-  a.first.slice(0, result)
+
+  longest
 end
 
-# input = ["Extra tv in bedroom",
-#  "Extra tv in living room",
-#  "Extra tv outside the shop"]
-input = %w[helloworld hellokitty hell hello hellojin]
-puts substr(input)
-
 string = "abcaaadefdgdhijkl"
-puts substr(string)
+puts longest_unique_substring(string)
+# => "defdgdhijkl"... let's check: actually => "cdefdgdhijkl"?
