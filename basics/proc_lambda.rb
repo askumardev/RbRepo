@@ -1,5 +1,85 @@
 # ruby basics/proc_lambda.rb
 
+# In Ruby, both Proc and Lambda are callable objects, but they have an important difference in how they handle return.
+
+# A lambda behaves more like a normal method. If I use return inside a lambda, it returns from the lambda itself.
+
+# A regular Proc has non-local return behavior. A return inside a Proc tries to return from the method or scope where that Proc was created.
+#Because of that, if the Proc is called after its defining method has already returned, Ruby can raise a LocalJumpError.
+
+# For example, if I define a method that creates a Proc containing return and then invoke that Proc outside the method, the return has no valid method context to return from.
+
+# There is another difference: lambdas enforce argument arity similar to methods, while regular Procs are more lenient with arguments.
+
+# So my rule of thumb is: use lambdas when I want method-like behavior and predictable control flow, and use Procs when I specifically need Proc semantics, such as callbacks or reusable blocks.
+
+# This distinction is important because using return inside a regular Proc can unexpectedly terminate the surrounding method.
+
+#lambdas with arguments
+# puts "lambdas with arguments"
+# times_two = ->(x) { x * 2 }
+# p times_two.call(10)# 20
+# #p times_two.call(10,20) #wrong number of arguments (given 2, expected 1) (ArgumentError)
+
+# #Proc with arguments
+# puts "Proc with arguments"
+# times_two = Proc.new {|x| x * 2 }
+# p times_two.call(10)
+# p times_two.call(10,20)
+
+# #Proc vs lambda
+# my_proc = Proc.new { |x| puts x }
+# #There is no dedicated Lambda class. A lambda is just a special Proc object.
+# #If you take a look at the instance methods from Proc, you will notice there is a lambda? method.
+
+#return in proc and lambda
+puts "******return in proc*******"
+def proc_method
+  puts "---before proc"
+  my_proc = Proc.new do
+    puts "proc1"
+    return  # This will return from the entire method `proc_method`
+    # break ---> throws JumpError
+    puts "proc2"
+  end
+  my_proc.call  # This line will never be executed
+  puts "after proc"
+end
+proc_method
+p "----------------------------------------"
+puts "******return in lambda*******"
+def lambda_method
+  puts "---before lambda"
+  lmbd = lambda do
+    puts "lambda1"
+    return  # This only returns from the lambda block, not the method
+    # break ---> return and break are same
+    puts "lambda2"
+  end
+  lmbd.call
+  puts "after lambda"  # This line will be executed
+end
+lambda_method
+
+def method_proc
+  thing  = Proc.new { return 1}
+  thing.call
+  return 2
+end
+
+def method_lambda
+  thing1  = lambda { return 1}
+  thing1.call
+  return 2
+end
+puts "******=======method_proc=============****"
+puts method_proc # => 1
+puts "******=======method_lambda=============****"
+puts method_lambda # => 2
+
+
+p "----------------------------------------"
+
 puts "*******Ruby Blocks******"
 def print_once
   yield #When you use the yield keyword, the code inside the block will run & do its work
@@ -33,63 +113,3 @@ say = lambda { puts "Alternate ways of calling a lambda" }
 say.()
 say[]
 say.===
-
-#lambdas with arguments
-puts "lambdas with arguments"
-times_two = ->(x) { x * 2 }
-p times_two.call(10)# 20
-#p times_two.call(10,20) #wrong number of arguments (given 2, expected 1) (ArgumentError)
-
-#Proc with arguments
-puts "Proc with arguments"
-times_two = Proc.new {|x| x * 2 }
-p times_two.call(10)
-p times_two.call(10,20)
-
-#Proc vs lambda
-my_proc = Proc.new { |x| puts x }
-#There is no dedicated Lambda class. A lambda is just a special Proc object. 
-#If you take a look at the instance methods from Proc, you will notice there is a lambda? method.
-
-#return in proc and lambda
-puts "******return in proc*******"
-def proc_method
-  puts "---before proc"
-  my_proc = Proc.new do
-    puts "proc1"
-    return  # This will return from the entire method `proc_method`
-    puts "proc2"
-  end
-  my_proc.call  # This line will never be executed
-  puts "after proc"
-end
-proc_method
-
-puts "******return in lambda*******"
-def lambda_method
-  puts "---before lambda"
-  lmbd = lambda do
-    puts "lambda1"
-    return  # This only returns from the lambda block, not the method
-    puts "lambda2"
-  end
-  lmbd.call
-  puts "after lambda"  # This line will be executed
-end
-lambda_method
-
-def method_proc
-  thing  = Proc.new { return 1}
-  thing.call
-  return 2
-end
-
-def method_lambda
-  thing1  = lambda { return 1}
-  thing1.call
-  return 2
-end
-puts "******=======method_proc=============****"
-puts method_proc # => 1
-puts "******=======method_lambda=============****"
-puts method_lambda # => 2
