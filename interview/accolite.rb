@@ -5,6 +5,7 @@ arr = [1,2,3,4,5,6]
 index = 3
 
 3.times { arr.push(arr.shift) }
+p arr
 
 #---------------alternate ------------------
 r1, r2 = arr.each_slice(index).to_a

@@ -26,22 +26,8 @@ obj.add
 
 p Addition.ancestors
 p "-----------------------------------------"
-class Person
-  def greet
-    puts "hello"
-  end
-end
 
-class Person
-  def bye
-    puts "goodbye"
-  end
-  def greet
-    puts "hello...goodbye"
-  end
-end
-Person.new.greet
-Person.new.bye
+
 
 #---------------------------------------
 # Class.superclass  => Module
