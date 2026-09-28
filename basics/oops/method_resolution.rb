@@ -1,27 +1,27 @@
 # ruby basics/method_resolution.rb
 
-module MyModule
-  def my_method
-    puts 'Module method'
-  end
-end
+# module MyModule
+#   def my_method
+#     puts 'Module method'
+#   end
+# end
 
-class Parent
-  include MyModule
+# class Parent
+#   include MyModule
 
-  def my_method
-    puts 'Parent method'
-  end
-end
+#   def my_method
+#     puts 'Parent method'
+#   end
+# end
 
-class Child < Parent
-  def my_method
-    puts 'Child method'
-  end
-end
+# class Child < Parent
+#   def my_method
+#     puts 'Child method'
+#   end
+# end
 
-obj = Child.new
-obj.my_method
+# obj = Child.new
+# obj.my_method
 
 
 # Child: Ruby finds the my_method in Child and executes it.
