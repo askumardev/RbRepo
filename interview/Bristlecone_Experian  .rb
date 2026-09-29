@@ -13,6 +13,8 @@ cascading effect in micro services and how to fix
 
 database Sharding
 
+api for checkout page
+
 server side rendering vs client rendering
 
 horizontal and vertical scaling
