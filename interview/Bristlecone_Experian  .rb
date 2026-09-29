@@ -15,6 +15,8 @@ database Sharding
 
 api for checkout page
 
+Threads and concurrency while booking a ticket
+
 server side rendering vs client rendering
 
 horizontal and vertical scaling
