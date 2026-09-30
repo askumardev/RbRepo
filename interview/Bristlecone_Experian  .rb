@@ -28,3 +28,5 @@ tiny url design
 proc vs lambda
 
 acid properties
+
+Activerecord vs activemodel
