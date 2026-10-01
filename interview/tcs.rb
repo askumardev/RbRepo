@@ -21,3 +21,5 @@ metaprogramming --> define_method
 how redis executes the job queued
 
 "aabccd" --> find frequency and first non repeating character #b
+
+proc vs lambda
