@@ -1,4 +1,7 @@
-# ruby adv/rack_ex.rb
+require 'rack'
+require 'rackup'
+require 'thin'
+require 'rackup/handler/thin'
 
 class JSONServer
   def call(_env)
@@ -21,8 +24,15 @@ class RackLogger
   end
 end
 
-use RackLogger
+app = Rack::Builder.new do
+  use RackLogger
 
-map '/hello.json' do
-  run JSONServer.new
+  map '/hello.json' do
+    run JSONServer.new
+  end
 end
+
+Rackup::Handler::Thin.run(app, Port: 9292)
+
+# bundle exec ruby adv/rack_ex.rb
+# http://localhost:9292/hello.json
