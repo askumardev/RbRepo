@@ -1,4 +1,4 @@
-# ruby adv/rack_demo.rb
+# bundle exec ruby adv/rack_demo.rb
 
 require 'rack'
 require 'thin'
@@ -9,10 +9,11 @@ class RackApp
   end
 end
 
-@app = RackApp.new
+app = RackApp.new
 
-# Start Thin server with the block syntax
-Thin::Server.new('0.0.0.0', 3000) do
+rack_app = Rack::Builder.new do
   use Rack::CommonLogger
-  run @app
-end.start
+  run app
+end.to_app
+
+Thin::Server.new('0.0.0.0', 3000, rack_app).start
