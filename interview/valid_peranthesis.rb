@@ -14,11 +14,9 @@ def valid_parentheses(string)
   stack  = []
 
   string.each_char do |ch|
-    p ch
     if OPENING_PARENS.include?(ch)
       stack << ch
     elsif CLOSING_PARENS.include?(ch)
-      p "----#{stack}----"
       ch == PARENS[stack.last] ? stack.pop : (return false)
     end
   end
