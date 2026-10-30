@@ -335,3 +335,57 @@ end
 # Prevent race conditions in inventory updates.
 # Optimize queries and error handling.
 # Ensure the checkout flow is scalable, secure, and maintainable.
+
+
+30/10
+------
+concern vs module
+
+new column created for existing table. what to do
+
+require vs load
+
+include vs prepend vs extend
+
+includes vs eagerload
+
+how did u check code cleanup
+
+simplecov
+
+why redis
+
+
+
+Write a query to find duplicate records from employees table
+column => id, name, email
+
+1. SQL query
+SELECT email, COUNT(*) AS count
+FROM employees
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+
+2. ActiveRecord query
+Employee.group(:email)
+        .having("COUNT(*) > 1")
+        .count
+
+
+3. Retrieve all duplicate employee records
+duplicate_emails = Employee.group(:email)
+                            .having("COUNT(*) > 1")
+                            .pluck(:email)
+
+Employee.where(email: duplicate_emails)
+        .pluck(:id, :name, :email)
+
+# Employee.where(email: "satish@example.com").pluck(:id, :name, :email)
+
+# Employee.order(salary: :desc).distict.limit(2).last
+Employee.select(:salary)
+        .distinct
+        .order(salary: :desc)
+        .offset(1)
+        .first
