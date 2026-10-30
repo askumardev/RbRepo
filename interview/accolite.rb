@@ -4,7 +4,7 @@ arr = [1,2,3,4,5,6]
 #output = [4,5,6,1,2,3]
 index = 3
 
-3.times { arr.push(arr.shift) }
+index.times { arr.push(arr.shift) }
 p arr
 
 #---------------alternate ------------------
