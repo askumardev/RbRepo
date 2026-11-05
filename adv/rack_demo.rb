@@ -42,8 +42,8 @@ end
 
 # rails -v
 # Rails 7.2.4
-
-# rails middleware
+# for Development environment, the middleware stack is as follows:
+# rails middleware  
 # use Rack::MiniProfiler
 # use ActionDispatch::HostAuthorization
 # use Rack::Sendfile
@@ -64,6 +64,32 @@ end
 # use ActionDispatch::Reloader
 # use ActionDispatch::Callbacks
 # use ActiveRecord::Migration::CheckPending
+# use ActionDispatch::Cookies
+# use ActionDispatch::Session::CookieStore
+# use ActionDispatch::Flash
+# use ActionDispatch::ContentSecurityPolicy::Middleware
+# use ActionDispatch::PermissionsPolicy::Middleware
+# use Rack::Head
+# use Rack::ConditionalGet
+# use Rack::ETag
+# use Rack::TempfileReaper
+# run PracRails::Application.routes
+
+
+# for production environment, the middleware stack is as follows:
+# RAILS_ENV=production rails middleware
+# use ActionDispatch::SSL
+# use Rack::Sendfile
+# use ActionDispatch::Static
+# use ActionDispatch::Executor
+# use Rack::Runtime
+# use Rack::MethodOverride
+# use ActionDispatch::RequestId
+# use ActionDispatch::RemoteIp
+# use Rails::Rack::Logger
+# use ActionDispatch::ShowExceptions
+# use ActionDispatch::DebugExceptions
+# use ActionDispatch::Callbacks
 # use ActionDispatch::Cookies
 # use ActionDispatch::Session::CookieStore
 # use ActionDispatch::Flash
