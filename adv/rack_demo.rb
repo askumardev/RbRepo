@@ -40,6 +40,42 @@ def call(env)
 end
 
 
+# rails -v
+# Rails 7.2.4
+
+# rails middleware
+# use Rack::MiniProfiler
+# use ActionDispatch::HostAuthorization
+# use Rack::Sendfile
+# use ActionDispatch::Static
+# use ActionDispatch::Executor
+# use ActionDispatch::ServerTiming
+# use ActiveSupport::Cache::Strategy::LocalCache::Middleware
+# use Rack::Runtime
+# use Rack::MethodOverride
+# use ActionDispatch::RequestId
+# use ActionDispatch::RemoteIp
+# use Sprockets::Rails::QuietAssets
+# use Rails::Rack::Logger
+# use ActionDispatch::ShowExceptions
+# use WebConsole::Middleware
+# use ActionDispatch::DebugExceptions
+# use ActionDispatch::ActionableExceptions
+# use ActionDispatch::Reloader
+# use ActionDispatch::Callbacks
+# use ActiveRecord::Migration::CheckPending
+# use ActionDispatch::Cookies
+# use ActionDispatch::Session::CookieStore
+# use ActionDispatch::Flash
+# use ActionDispatch::ContentSecurityPolicy::Middleware
+# use ActionDispatch::PermissionsPolicy::Middleware
+# use Rack::Head
+# use Rack::ConditionalGet
+# use Rack::ETag
+# use Rack::TempfileReaper
+# run PracRails::Application.routes
+
+
 # When Middleware A calls @app.call(env), it invokes Middleware B. Middleware B invokes C, and so on.
 
 # Once the controller generates a response:
