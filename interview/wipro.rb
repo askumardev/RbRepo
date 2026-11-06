@@ -371,6 +371,7 @@ HAVING COUNT(*) > 1;
 Employee.group(:email)
         .having("COUNT(*) > 1")
         .count
+{"casey.patel@example.com"=>2, "morgan.lee@example.com"=>2, "riley.kim@example.com"=>2}
 
 
 3. Retrieve all duplicate employee records
@@ -384,8 +385,9 @@ Employee.where(email: duplicate_emails)
 # Employee.where(email: "satish@example.com").pluck(:id, :name, :email)
 
 # Employee.order(salary: :desc).distict.limit(2).last
-Employee.select(:salary)
-        .distinct
-        .order(salary: :desc)
-        .offset(1)
-        .first
+second_salary = Employee.select(:salary).distinct.order(salary: :desc).offset(1).limit(1)
+Employee.where(salary: second_salary)#.pluck(:id,:name,:email,:salary)
+
+Employee.where(
+  salary: Employee.where("salary < ?", Employee.maximum(:salary)).select("MAX(salary)")
+)#.pluck(:id,:name,:email,:salary)
