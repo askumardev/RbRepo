@@ -3,23 +3,46 @@
 require 'active_support'
 require 'active_support/core_ext/object/blank'
 
-p "----------nil str test----------------"
-# if we dont declare active support as require the blank method will return the errors
-p "".nil?
-p "".empty?
-p "".blank? #undefined method `blank?' for an instance of String (NoMethodError)
-p "----------empty array test----------------"
-p [].nil?
-p [].empty?
-p [].blank? #undefined method `blank?' for an instance of String (NoMethodError)
-p "----------empty hash test----------------"
-p {}.nil?
-# p {}.empty? #undefined method `empty?' for nil (NoMethodError)
-p {}.blank? #undefined method `blank?' for an instance of String (NoMethodError)
-p "--------------nil test------------------------"
-p nil.nil?
-# p nil.empty? #undefined method `empty?' for nil (NoMethodError)
-p nil.blank? #undefined method `blank?' for an instance of String (NoMethodError)
+puts "---------- String test ----------"
+
+p "".nil?       # false
+p "".empty?     # true
+p "".blank?     # true
+
+p " ".nil?      # false
+p " ".empty?    # false
+p " ".blank?    # true
+
+p "hello".blank? # false
+
+puts "---------- Array test ----------"
+
+p [].nil?       # false
+p [].empty?     # true
+p [].blank?     # true
+
+p [1, 2].empty? # false
+p [1, 2].blank? # false
+
+puts "---------- Hash test ----------"
+
+p {}.nil?       # false
+p {}.empty?     # true
+p {}.blank?     # true
+
+p({ a: 1 }.empty?) # false
+
+puts "---------- Nil test ----------"
+
+p nil.nil?      # true
+p nil.blank?    # true
+p nil.empty?    # NoMethodError: undefined method `empty?' for nil:NilClass
+
+puts "---------- Other test ----------"
+
+p 0.blank?      # false
+p false.blank?  # true
+p true.blank?   # false
 p "--------------Array test------------------------"
 students = ["Jeery", "Tom", "Eddie"]
 puts students[4] #nil  #this will output nothing since index doesnot exist
