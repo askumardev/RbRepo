@@ -7,7 +7,7 @@
 # super() (empty parentheses): Calls the parent method with zero arguments, regardless of what the current method received.
 
 # super(arg1, arg2): Passes specific, explicit arguments to the parent method.
-
+p "==================super with no arguments-------------------"
 class Animal
   def name
     puts 'Animal'
@@ -24,7 +24,7 @@ end
 cat = Cat.new
 puts cat.name
 
-
+p "-----------------super with 0 arguments-------------------"
 class Grandparent
   def foo
     "Hello from Grandparent"
@@ -47,17 +47,24 @@ child = Child.new
 puts child.foo
 
 
-class Parent
+class Parent1
   def greet(name)
     "Hello, #{name}!"
   end
 end
-
-class Child < Parent
+p "-----------------super with arguments-------------------"
+class Child1 < Parent1
   def greet(name, age)
     super(name) + " You are #{age} years old."
   end
 end
 
-child = Child.new
+child1 = Child1.new
+puts child1.greet("Rahul", 25) # Output: "Hello, Rahul! You are 25 years old."  
+  def greet(name, age)
+    super(name) + " You are #{age} years old."
+  end
+end
+
+child1 = Child1.new
 puts child.greet("Rahul", 25) # Output: "Hello, Rahul! You are 25 years old."
