@@ -35,4 +35,4 @@ puts context.execute_strategy(3, 4)  # Output: 7
 context = Context.new(MultiplyStrategy.new)
 puts context.execute_strategy(3, 4)  # Output: 12
 
-# ruby design_patterns/strategy_dp.rb
+# ruby design_patterns/strategy_rb.rb

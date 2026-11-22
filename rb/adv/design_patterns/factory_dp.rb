@@ -33,7 +33,7 @@ animal = AnimalFactory.create_animal(:dog)
 puts animal.speak  # Output: Woof!
 
 animal = AnimalFactory.create_animal(:cat)
-puts animal.speak  # Output: Woof!
+puts animal.speak  # Output: Meow!
 
 
 # ruby design_patterns/factory_dp.rb
