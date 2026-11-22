@@ -1,7 +1,9 @@
 # The Exception Tree
-# Since Ruby's exceptions are implemented in a class heirarchy, it can be helpful to see it laid out. 
+# Since Ruby's exceptions are implemented in a class heirarchy, it can be helpful to see 
+# it laid out. 
 # Below is a list of exception classes that ship with Ruby's standard library. 
-# Third-party gems like rails will add additional exception classes to this chart, but they will all inherit from some class on this list.
+# Third-party gems like rails will add additional exception classes to this chart, but 
+# they will all inherit from some class on this list.
 
 Exception
  NoMemoryError
