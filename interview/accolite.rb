@@ -5,9 +5,11 @@ arr = [1,2,3,4,5,6]
 index = 3
 
 index.times { arr.push(arr.shift) }
-# 1st -> arr = [2,3,4,5,6,1]
-# 2nd -> arr = [3,4,5,6,1,2]
-# 3rd -> arr = [4,5,6,1,2,3]
+# arr.shift removes and returns the first element.
+# arr.push(...) appends that element to the end.
+# 1st ->arr.shift-> [2,3,4,5,6] -> arr.push-> [2,3,4,5,6,1]
+# 2nd ->arr.shift-> [3,4,5,6,1] -> arr.push-> [3,4,5,6,1,2]
+# 3rd ->arr.shift-> [4,5,6,1,2] -> arr.push-> [4,5,6,1,2,3]
 p arr
 
 #---------------alternate ------------------
