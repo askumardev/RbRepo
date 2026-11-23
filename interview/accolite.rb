@@ -5,6 +5,9 @@ arr = [1,2,3,4,5,6]
 index = 3
 
 index.times { arr.push(arr.shift) }
+# 1st -> arr = [2,3,4,5,6,1]
+# 2nd -> arr = [3,4,5,6,1,2]
+# 3rd -> arr = [4,5,6,1,2,3]
 p arr
 
 #---------------alternate ------------------
