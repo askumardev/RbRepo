@@ -1,4 +1,4 @@
-# ruby arr_hsh/two_sum2.rb
+# ruby rb/basics/arr_hsh/find_pair_with_sum.rb
 
 # Given an array of integers numbers that is already sorted in ascending order, find two numbers such that
 # they add up to a specific target number.
