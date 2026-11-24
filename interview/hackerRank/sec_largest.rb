@@ -1,6 +1,6 @@
 # ruby interview/hackerRank/sec_largest.rb  # Command used to run this Ruby program
 
-def second_largest(arr)  # Defines a method that accepts an array
+def second_largest(arr)
   largest = arr[0]
   second_largest = nil
 
