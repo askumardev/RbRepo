@@ -117,4 +117,22 @@ what is dsa
 any sort program
 
 input: [1,2,3,4,5,6,7,8,9,10]
+
+arr = (1..10).to_a
+new_arr=[]
+until arr.empty?
+  p "-------pop first------------"
+  new_arr << arr.pop
+  p arr
+  p new_arr
+  p "-------befor shift------------"
+  new_arr << arr.shift
+  
+  p "-------after shift------------"
+  p arr
+  p new_arr
+end
+p "########################"
+p arr
+p new_arr
 o/p: [10,1,9,2,8,3,7,4,6,5]
