@@ -9,4 +9,4 @@ end
 
 p two_sum([3,2,4], 7)
 
-# ruby leetcode/two_numbers.rb
+# ruby interview/leetcode/two_numbers.rb
