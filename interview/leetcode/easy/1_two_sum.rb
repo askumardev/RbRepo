@@ -1,3 +1,5 @@
+# ruby interview/leetcode/easy/1_two_sum.rb
+
 #We have an array with elements [2,5,11,7,-2] and the target is 9.
 # Get all pairs that add up to the target
 # the output should be [[0, 3], [2, 4]], as both pairs (2, 7) and (11, -2) add up to 9.
@@ -79,7 +81,21 @@ puts "Numbers: #{two_sum_numbers(arr, target).inspect}"
 
 # Output:
 # [2, 7]
+p "=================================="
+def two_sum(arr)
+  target = 9
+  h = {}
 
+  arr.each_with_index do |num, index|
+    comp = target - num
+
+    return [h[comp], index] if h.key?(comp)
+
+    h[num] = index
+  end
+end
+
+p two_sum([2, 5, 7, 11])
 
 # def two_sum(arr, target, return_all: false, return_format: :indices)
 #   return nil if arr.nil? || arr.length < 2
